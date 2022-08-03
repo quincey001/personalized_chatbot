@@ -999,7 +999,16 @@ responses:
 
        You can also go to a walk-in vaccination clinic without an appointment.
   utter_covid_diabetes_1:
-  - text: There is not enough data to show whether people with diabetes are more likely to get COVID-19 than the general population. The problem people with diabetes face is they are more likely to have worse complications if they get it, not greater chance of getting the virus. Also, the more health conditions someone has (for example, diabetes plus heart disease), adds to their risk of getting those serious complications from COVID-19. .
+  - text: |-
+      There is not enough data to show whether people with diabetes are more likely to get
+      COVID-19 than the general population.
+
+      The problem people with diabetes face is they are more likely to have worse complications
+      if they get it, not greater chance of getting the virus.
+
+      Also, the more health conditions someone has (for example, diabetes plus heart disease),
+      adds to their risk of getting those serious complications from COVID-19.
+
     buttons:
     - title: Do people with diabetes have serious complications from COVID-19?
       payload: /covid_diabetes_2
@@ -1007,22 +1016,37 @@ responses:
       payload: /covid_diabetes_3
   utter_covid_diabetes_2:
   - text: |-
-      People with diabetes are more likely to have serious complications from COVID-19. In general, people with diabetes are more likely to have more severe symptoms and complications when infected with any virus. Your risk of getting very sick from COVID-19 is likely to be lower if your diabetes is well-managed.
-      Having heart disease or other complications in addition to diabetes could worsen the chance of getting seriously ill from COVID-19, like other viral infections, because more than one condition makes it harder for your body to fight the infection.
+      People with diabetes are more likely to have serious complications from COVID-19.
+      In general, people with diabetes are more likely to have more severe symptoms and
+      complications when infected with any virus. Your risk of getting very sick from COVID-19
+      is likely to be lower if your diabetes is well-managed.
+
+      Having heart disease or other complications in addition to diabetes could worsen the chance
+      of getting seriously ill from COVID-19, like other viral infections, because more than one
+      condition makes it harder for your body to fight the infection.
     buttons:
     - title: Do persons with type 1 and type 2 diabetes meet different risks?
       payload: /covid_diabetes_3
   utter_covid_diabetes_3:
   - text: |-
-      Based on what the CDC is reporting at this time, people with type 1 or gestational diabetes might be at an increased risk for severe illness from COVID-19. important to remember that people with either type of diabetes can vary in their age, complications they’ve developedand how well they have been able to manage their diabetes.
-      People who already have diabetes-related health problems are likely to have worse outcomes if they contract COVID-19 than people with diabetes who are otherwise healthy, whichever type of diabetes they have.
+      Based on what the CDC is reporting at this time, people with type 1 or gestational diabetes
+      might be at an increased risk for severe illness from COVID-19. important to remember that
+      people with either type of diabetes can vary in their age, complications they’ve developedand
+      how well they have been able to manage their diabetes.
+
+      People who already have diabetes-related health problems are likely to have worse outcomes
+      if they contract COVID-19 than people with diabetes who are otherwise healthy, whichever type
+      of diabetes they have.
     buttons:
     - title: Is the risk of type 1 and type 2 diabetes the same?
       payload: /covid_diabetes_12
     - title: Does COVID-19 cause diabetes?
       payload: /covid_diabetes_4
   utter_covid_diabetes_4:
-  - text: Several studies have suggested that adults face an increased risk of diabetes diagnosis after contracting COVID-19. Youth younger than 18 years old with COVID-19 were shown to be at higher risk of developing diabetes more than 30 days after their COVID-19 infection.
+  - text: |-
+      Several studies have suggested that adults face an increased risk of diabetes diagnosis
+      after contracting COVID-19. Youth younger than 18 years old with COVID-19 were shown to
+      be at higher risk of developing diabetes more than 30 days after their COVID-19 infection.
     buttons:
     - title: Can covid patients who are diabetic bring their own blood glucose monitors?
       payload: /covid_diabetes_8
@@ -1030,7 +1054,7 @@ responses:
       payload: /covid_diabetes_10
   utter_covid_diabetes_5:
   - text: |-
-      * If you fell like you are developing symptoms, call your doctor.
+       * If you fell like you are developing symptoms, call your doctor.
        * When you call:
        * Have your glucose reading available
        * Have your ketone reading available
@@ -1061,35 +1085,69 @@ responses:
     - title: Does COVID-19 cause diabetes?
       payload: /covid_diabetes_4
   utter_covid_diabetes_8:
-  - text: Yes. Self-management of diabetes by a patient using their own devices, even in a hospital setting, is consistent with device labeling.
+  - text: |-
+      Yes. Self-management of diabetes by a patient using their own devices, even in a hospital
+      setting, is consistent with device labeling.
+
     buttons:
     - title: Should i stop taking certain blood pressure medication to lower my risk of covid?
       payload: /covid_diabetes_9
   utter_covid_diabetes_9:
   - text: |-
-      Blood pressure control is an essential part of managing (hypertension, heart and kidney diseases and) diabetes. In addition, certain blood pressure lowering medications are often recommended for people living with diabetes to protect them from kidney and heart-related complications, even in the absence of high blood pressure.
-      At the present time, there is no confirmed scientific link between these blood pressure medications and the risk of COVID-19 infection or its complications. Please do NOT stop or change any of your medications without discussing with your GP.
+      Blood pressure control is an essential part of managing (hypertension, heart and kidney
+      diseases and) diabetes. In addition, certain blood pressure lowering medications are often
+      recommended for people living with diabetes to protect them from kidney and heart-related
+      complications, even in the absence of high blood pressure.
+
+      At the present time, there is no confirmed scientific link between these blood pressure
+      medications and the risk of COVID-19 infection or its complications. Please do NOT stop or
+      change any of your medications without discussing with your GP.
+
   utter_covid_diabetes_10:
   - text: |-
-      Coronaviruses can cause more severe symptoms and complications in people with diabetes, as well as in older people and those with other long-term conditions, such as cancer or chronic lung disease. Everyone with diabetes, including those with type 1 and type 2, is more at risk of severe complications if they get coronavirus, but the way it affects you can vary depending on what type of diabetes you have.
+      Coronaviruses can cause more severe symptoms and complications in people with diabetes,
+      as well as in older people and those with other long-term conditions, such as cancer or
+      chronic lung disease. Everyone with diabetes, including those with type 1 and type 2,
+      is more at risk of severe complications if they get coronavirus, but the way it affects
+      you can vary depending on what type of diabetes you have.
 
-      you are more at risk of having serious blood sugar highs and lows, as well as longer-term problems with your eyes, feet and other areas of your body.
-      For most people, coronavirus is a mild illness, but some people develop a more serious form of the virus, and could die.
+      you are more at risk of having serious blood sugar highs and lows, as well as longer-term
+      problems with your eyes, feet and other areas of your body.
+
+      For most people, coronavirus is a mild illness, but some people develop a more serious form
+      of the virus, and could die.
   utter_covid_diabetes_11:
   - text: |-
-      It is important that people with diabetes follow the sick day rules should they become ill from any illness. If you routinely check your blood sugar at home, you'll probably need to do it more often at least every four hours, including during the night.
-      If your blood sugar is persistently high or low, or if you have symptoms of a hyper (hyperglycaemia) contact your GP practice or diabetes team by phone who will help you if you have any queries or if you are unsure about what to do regarding your diabetes.
+      It is important that people with diabetes follow the sick day rules should they become ill
+      from any illness. If you routinely check your blood sugar at home, you'll probably need to
+      do it more often at least every four hours, including during the night.
+
+      If your blood sugar is persistently high or low, or if you have symptoms of a hyper (hyperglycaemia)
+      contact your GP practice or diabetes team by phone who will help you if you have any queries or if you
+      are unsure about what to do regarding your diabetes.
+
   utter_covid_diabetes_12:
   - text: |-
-      In general, the American Diabetes Association does not know of any reason to think COVID-19 will pose a difference in risk between type 1 and type 2 diabetes. More important is that people with either type of diabetes vary in their age, complications and how well they have been managing their diabetes.
-      People who already have diabetes-related health problems are likely to have worse outcomes if they contract COVID-19 than people with diabetes who are otherwise healthy, whichever type of diabetes they have.
+      In general, the American Diabetes Association does not know of any reason to think COVID-19
+      will pose a difference in risk between type 1 and type 2 diabetes. More important is that
+      people with either type of diabetes vary in their age, complications and how well they have
+      been managing their diabetes.
+
+      People who already have diabetes-related health problems are likely to have worse outcomes
+      if they contract COVID-19 than people with diabetes who are otherwise healthy, whichever type
+      of diabetes they have.
     buttons:
     - title: Advice for people with diabetes to protect themselves?
       payload: /covid_diabetes_11
   utter_covid_cancer_1:
   - text: |-
-      Yes. The majority of people receiving cancer treatment can have the COVID-19 vaccine. Only patients with a history of serious allergic reaction (anaphylaxis) to a COVID-19 vaccine or any of its ingredients should not receive the COVID-19 vaccine.
-      If you have a low platelet count or you are currently fighting a severe infection, your healthcare team may advise you when the best time to receive the vaccine is.
+      Yes. The majority of people receiving cancer treatment can have the COVID-19 vaccine. Only
+      patients with a history of serious allergic reaction (anaphylaxis) to a COVID-19 vaccine or
+      any of its ingredients should not receive the COVID-19 vaccine.
+
+      If you have a low platelet count or you are currently fighting a severe infection, your
+      healthcare team may advise you when the best time to receive the vaccine is.
+
     buttons:
     - title: More Information for high risk groups
       payload: /covid_risk_3
@@ -1098,9 +1156,16 @@ responses:
     - title: Is there a higher risk of side effects for people who are having chemotherapy or radiotherapy?
       payload: /covid_cancer_5
   utter_covid_cancer_2:
-  - text: Patients with a history of serious allergic reaction (anaphylaxis) to a COVID-19 vaccine or any of its ingredients should not receive the COVID-19 vaccine. The Pfizer/BioNTech and Moderna vaccines do not contain any latex, animal products or egg proteins and are not contraindicated in egg allergy
+  - text: |-
+      Patients with a history of serious allergic reaction (anaphylaxis) to a COVID-19 vaccine
+      or any of its ingredients should not receive the COVID-19 vaccine. The Pfizer/BioNTech and
+      Moderna vaccines do not contain any latex, animal products or egg proteins and are not
+      contraindicated in egg allergy
+
   utter_covid_cancer_3:
-  - text: Yes. It is recommended that you get the COVID-19 vaccine as soon as possible. It is advisable to discuss the timing of vaccination with your surgeon.
+  - text: |-
+      Yes. It is recommended that you get the COVID-19 vaccine as soon as possible. It is advisable
+      to discuss the timing of vaccination with your surgeon.
   utter_covid_cancer_4:
   - text: |-
        * You are likely to be invited for an additional dose if any of the following apply to you:
@@ -1114,19 +1179,31 @@ responses:
     - title: Can patients with cancer on clinical trials receive the COVID-19 vaccine?
       payload: /covid_cancer_6
   utter_covid_cancer_5:
-  - text: Most of the known side effects of the COVID-19 vaccine are mild to moderate and usually resolve within a few days after vaccination. There have not been any reports of higher incidence of side effects in patients with cancer.
+  - text: |-
+      Most of the known side effects of the COVID-19 vaccine are mild to moderate and usually
+      resolve within a few days after vaccination. There have not been any reports of higher
+      incidence of side effects in patients with cancer.
     buttons:
     - title: if my antibody test shows the low antibody level, do I need an additional vaccine dose?
       payload: /covid_cancer_7
+
   utter_covid_cancer_6:
-  - text: Yes, patients should avail of the COVID-19 vaccine as soon as it is offered to them. Your healthcare team will advise on the timing of vaccination in relation to the clinical trial.
+  - text: |-
+      Yes, patients should avail of the COVID-19 vaccine as soon as it is offered to them.
+      Your healthcare team will advise on the timing of vaccination in relation to the clinical
+      trial.
     buttons:
     - title: My cancer surgery is coming up soon. Should I take the COVID-19 vaccine?
       payload: /covid_cancer_3
     - title: I have cancer, are there any risks associated with the COVID-19 vaccine?
       payload: /covid_cancer_2
   utter_covid_cancer_7:
-  - text: No. Those who are recommended to receive an additional dose are identified based on clinical diagnosis or treatment history, rather than antibody test results. There is no agreed or recommended antibody level above which indicates a person is protected.
+  - text: |-
+      No. Those who are recommended to receive an additional dose are identified based on
+      clinical diagnosis or treatment history, rather than antibody test results.
+      There is no agreed or recommended antibody level above which indicates a person
+      is protected.
+
     buttons:
     - title: Can patients with cancer on clinical trials receive the COVID-19 vaccine?
       payload: /covid_cancer_6
@@ -1146,7 +1223,8 @@ responses:
     - title: Are people with immunodeficiency more likely to catch COVID-19?
       payload: /covid_immunodeficiency_4
   utter_covid_immunodeficiency_2:
-  - text: It is important that regular treatments for immunodeficiencies are continued, because
+  - text: |-
+      It is important that regular treatments for immunodeficiencies are continued, because
       stopping these treatments can place people with these conditions at greater risk from COVID-19.
 
       Vaccination should occur on a different day (if possible) from regular infusion
@@ -1159,7 +1237,7 @@ responses:
       payload: /covid_immunodeficiency_8
 
   utter_covid_immunodeficiency_3:
-  - text:
+  - text: |-
       Precautions they take to prevent infections are consistent with the actions listed
       below, and they should follow the usual advice from their physician.
 
@@ -1178,7 +1256,8 @@ responses:
       payload: /covid_immunodeficiency_8
 
   utter_covid_immunodeficiency_5:
-  - text: Immune deficiency is a misnomer much of the time.  Most of the inborn errors of immunity
+  - text: |-
+      Immune deficiency is a misnomer much of the time.  Most of the inborn errors of immunity
       including COVID are disorders of immune regulation and many are associated with
       hyper inflammation outside of COVID.
 
@@ -1192,7 +1271,8 @@ responses:
       payload: /covid_immunodeficiency_4
 
   utter_covid_immunodeficiency_6:
-  - text: Both the Pfizer/BioNTech and Oxford-AstraZeneca coronavirus vaccine in clinical trials,
+  - text: |-
+      Both the Pfizer/BioNTech and Oxford-AstraZeneca coronavirus vaccine in clinical trials,
       have been found to be safe and offer good protection. However, we do not yet know
       how effective these vaccines might be for people with immunodeficiency.
     buttons:
@@ -1200,7 +1280,8 @@ responses:
       payload: /covid_immunodeficiency_7
 
   utter_covid_immunodeficiency_7:
-  - text: We do not know precisely the mix of people who have taken part in the clinical trials
+  - text: |-
+      We do not know precisely the mix of people who have taken part in the clinical trials
       but patients who are immunocompromised would not be eligible to take part in a vaccine
       trial in the way that they are conventionally set up.
     buttons:
@@ -1208,25 +1289,30 @@ responses:
       payload: /covid_immunodeficiency_1
 
   utter_covid_immunodeficiency_8:
-  - text: Wider benefits include the likely development of robust herd immunity, protecting
+  - text: |-
+      Wider benefits include the likely development of robust herd immunity, protecting
       immunodeficiency patients by reducing the amount of virus circulating in the community.  It
       will also mean reliable antibody levels in plasma donors and this will be reflected
       in replacement IVIG/SCIG therapies after about 6 months or so after the vaccine
       is widely taken up.
 
   utter_covid_kidney_1:
-  - text: There is no information about the safety of the vaccine specific to people with
+  - text: |-
+      There is no information about the safety of the vaccine specific to people with
       kidney disease or who are on dialysis. However, the vaccine clinical trials included
       participants who have other health problems, such as diabetes, high blood pressure,
-      heart disease, liver disease, lung disease, asthma and HIV. The results of the clinical
-      trials showed that the vaccine is safe for people who have these health problems.
-      Talk with your doctor to know if the COVID-19 vaccine is safe for you.
+      heart disease, liver disease, lung disease, asthma and HIV.
+
+      The results of the clinical trials showed that the vaccine is safe for people who
+      have these health problems. Talk with your doctor to know if the COVID-19 vaccine
+      is safe for you.
     buttons:
     - title: Should rare kidney disease patients get the COVID-19 vaccine?
       payload: /covid_kidney_5
 
   utter_covid_kidney_2:
-  - text: Since COVID-19 is a new disease, there is limited information regarding risk factors
+  - text: |-
+      Since COVID-19 is a new disease, there is limited information regarding risk factors
       for severe illness. Clinical expertise suggests that older adults and anyone with
       serious underlying medical conditions might be at higher risk for severe illness
       from COVID-19. This includes people living with kidney disease or end stage renal
@@ -1236,14 +1322,17 @@ responses:
       payload: /covid_kidney_3
 
   utter_covid_kidney_3:
-  - text: Yes. While dialysis and care team appointments may look a little different during
-        this time, it is important that you continue your treatment as directed by your doctor or care team.
+  - text: |-
+      Yes. While dialysis and care team appointments may look a little different during
+      this time, it is important that you continue your treatment as directed by your
+      doctor or care team.
     buttons:
     - title: will the covid vaccine effect kidney disease treatments and medications?
       payload: /covid_kidney_6
 
   utter_covid_kidney_4:
-  - text: There is no evidence to suggest the COVID-19 vaccine will directly affect your kidneys.
+  - text: |-
+      There is no evidence to suggest the COVID-19 vaccine will directly affect your kidneys.
       The COVID-19 vaccine trains your immune system to fight against any future COVID-19
       infection. Vaccines train your immune system to fight disease.
     buttons:
@@ -1253,7 +1342,8 @@ responses:
       payload: /covid_kidney_8
 
   utter_covid_kidney_5:
-  - text: If you have chronic kidney disease at any stage or have received an organ transplant,
+  - text: |-
+      If you have chronic kidney disease at any stage or have received an organ transplant,
       you are at an increased risk for complications from the COVID-19 virus. As with
       any vaccine, you have the choice to receive the COVID-19 vaccine. We strongly encourage
       you to have a conversation with your doctor to decide if the vaccine is right for
@@ -1261,14 +1351,18 @@ responses:
 
 
   utter_covid_kidney_6:
-  - text: Generally, vaccines do not have interactions with medications. However, many kidney
+  - text: |-
+      Generally, vaccines do not have interactions with medications. However, many kidney
       disease patients are taking immunosuppressants, which cause your body to have a
-      weakened or suppressed immune system. It is best to discuss the COVID-19 vaccine
-      and all of your medications, including over the counter and herbal supplements,
-      with your doctor to determine what is best for you
+      weakened or suppressed immune system.
+
+      It is best to discuss the COVID-19 vaccine and all of your medications, including
+      over the counter and herbal supplements, with your doctor to determine what is best
+      for you
 
   utter_covid_kidney_7:
-  - text: People with underlying medical conditions, such as kidney disease, are likely to
+  - text: |-
+      People with underlying medical conditions, such as kidney disease, are likely to
       be given access to the vaccine prior to healthy individuals.
       Family members who get the vaccine will help protect the medically vulnerable people (people who have
       weakened or suppressed immune systems and transplant patients) in the household.
@@ -1313,7 +1407,8 @@ responses:
       payload: /covid_lung_disease_2
 
   utter_covid_lung_disease_4:
-  - text: Whether you take oral or inhaled medication, it is important to continue your
+  - text: |-
+          Whether you take oral or inhaled medication, it is important to continue your
           regimen as prescribed.If you use a nebulizer to take your medication at home,
           it is safe to continue doing so.
 
@@ -1336,7 +1431,8 @@ responses:
       payload: /covid_lung_disease_4
 
   utter_covid_lung_disease_6:
-  - text: Follow the advice from your country health authorities this will be slightly different
+  - text: |-
+      Follow the advice from your country health authorities this will be slightly different
       in each country depending on how many cases there are in your country.
       If you have a lung condition, the following are important.
 
@@ -1358,7 +1454,8 @@ responses:
     - title: Should I get vaccinated if I have lung disease?
       payload: /covid_lung_disease_2
   utter_covid_lung_disease_7:
-  - text: It is very important not to make any changes to your treatment while the COVID-19
+  - text: |-
+      It is very important not to make any changes to your treatment while the COVID-19
       pandemic is ongoing, unless your doctor advises you to. Your treatments help to
       keep your lungs healthy and any changes to your treatment that have not been recommended
       by a healthcare professional could put you at higher risk of a flare-up of your
@@ -1371,7 +1468,8 @@ responses:
     - title: Do lung disease patients more likely to get covid?
       payload: /covid_lung_disease_5
   utter_covid_lung_disease_8:
-  - text: You should follow the same advice as for anyone else in your country. In most countries
+  - text: |-
+      You should follow the same advice as for anyone else in your country. In most countries
       this means that you should self-isolate, meaning you do not go out (isolation periods
       vary from 10-14 days across Europe) and you should get a test if this is available
       in your region. The others in your household will also have to isolate until they
@@ -1390,11 +1488,11 @@ responses:
 
   utter_covid_old_people_1:
   - text:  |-
-           * stay at home as much as possibles \n
-           * limit contact with other people \n
-           * keep your distance if you do go out (stay two metres apart) \n
-           * wash your hands well and often \n
-           * work from home if you can \n
+           * stay at home as much as possibles
+           * limit contact with other people
+           * keep your distance if you do go out (stay two metres apart)
+           * wash your hands well and often
+           * work from home if you can
            * Do not leave home if you or anyone in your household has symptoms. If you have symptoms
              you should book a free test.
     buttons:
@@ -1415,36 +1513,39 @@ responses:
       payload: /covid_old_people_5
 
   utter_covid_old_people_3:
-  - text: If you or your loved one learn that you might have been exposed to someone diagnosed
-         with COVID-19 or if anyone in your household develops symptoms such as cough,
-         fever or shortness of breath, call your family doctor, nurse helpline or urgent
+  - text: |-
+          If you or your loved one learn that you might have been exposed to someone diagnosed
+          with COVID-19 or if anyone in your household develops symptoms such as cough,
+          fever or shortness of breath, call your family doctor, nurse helpline or urgent
           care facility.
 
-         For a medical emergency such as severe shortness of breath
+          For a medical emergency such as severe shortness of breath
           or high fever, call 911.
     buttons:
     - title: Are old people at high risk of getting COVID-19
       payload: /covid_old_people_5
 
   utter_covid_old_people_4:
-  - text: Older people and those with other health conditions, particularly hypertension,
-      diabetes and heart disease, are more likely to become more seriously ill with COVID-19.
-      It is important that you take care of your general health, including any specific
-      conditions you already have.
+  - text: |-
+          * Older people and those with other health conditions, particularly hypertension,
+            diabetes and heart disease, are more likely to become more seriously ill with COVID-19.
+            It is important that you take care of your general health, including any specific
+            conditions you already have.
 
-      If you have any existing conditions, it is particularly important to do everything
-      you can to reduce your risk of getting COVID-19, for example, washing your hands,
-      avoiding large gatherings of people, and staying away from anyone who is ill.
+          * If you have any existing conditions, it is particularly important to do everything
+            you can to reduce your risk of getting COVID-19, for example, washing your hands,
+            avoiding large gatherings of people, and staying away from anyone who is ill.
     buttons:
     - title: What if elderly use hydroxychloroquine on a regular basis but can't obtain a refill since it's being used for COVID-19?
       payload: /covid_old_people_7
   utter_covid_old_people_5:
-  - text:  Those who are most at risk are those who are not socially distancing or who are unable
+  - text: |-
+      * Those who are most at risk are those who are not socially distancing or who are unable
       to socially distance. Conditions that put people at risk of having severe illness
       when they get COVID-19 include heart disease, diabetes, high blood pressure, lung
       disease, and chronic kidney disease.
 
-      A higher proportion of hospitalized COVID-19 patients are above 70 years old,
+      * A higher proportion of hospitalized COVID-19 patients are above 70 years old,
       however, there are new studies showing that how healthy the individual is matters
       more than their actual age when it comes to how severe their illness is.
     buttons:
@@ -1452,7 +1553,8 @@ responses:
       payload: /covid_old_people_6
 
   utter_covid_old_people_6:
-  - text: Currently, there is no evidence that taking aspirin or ibuprofen can lead to a more
+  - text: |-
+      Currently, there is no evidence that taking aspirin or ibuprofen can lead to a more
       severe infection with COVID-19. If you are taking aspirin, it is important to continue
       taking as directed and to talk with your healthcare provider if you have any further
       questions. Only your healthcare provider should be making changes to your medications.
@@ -1461,42 +1563,47 @@ responses:
       payload: /covid_old_people_8
 
   utter_covid_old_people_7:
-  - text: Unfortunately, hydroxychloroquine has been touted as a treatment for COVID-19 despite
+  - text: |-
+      * Unfortunately, hydroxychloroquine has been touted as a treatment for COVID-19 despite
       the lack of scientific evidence. It is an antimalarial drug that is also commonly
-      used to treat a wide range of autoimmune diseases. If you take this medication regularly
-      and are concerned about running out, contact your primary medical provider to discuss
-      your concerns.
+      used to treat a wide range of autoimmune diseases.
+
+      * If you take this medication regularly and are concerned about running out, contact your
+      primary medical provider to discuss your concerns.
     buttons:
     - title: What should old people do if they have dental issues?
       payload: /covid_old_people_8
 
   utter_covid_old_people_8:
-  - text: Dental settings have unique characteristics that warrant additional infection control.
+  - text: |-
+      Dental settings have unique characteristics that warrant additional infection control.
       Postpone elective procedures, surgeries, and non-urgent dental visits. For emergency
       dental work, dental providers must follow the CDC guidelines for providing dental
       care. Please confirm with your dentist if their facility is able to follow the CDC
       guidelines.
 
   utter_covid_pregnancy_1:
-   - text: Yes. Pregnant women can receive COVID-19 vaccines. COVID-19 vaccines offer strong
-      protection against severe illness from COVID-19.
+  - text: |-
+       * Yes. Pregnant women can receive COVID-19 vaccines. COVID-19 vaccines offer strong
+       protection against severe illness from COVID-19.
 
-      Increasing evidence on the safety and effectiveness of COVID-19 vaccination
-      during pregnancy suggests that the benefits of vaccination during pregnancy outweigh
-      potential risks whenever there is ongoing or anticipated community transmission
-      of the virus.
+       * Increasing evidence on the safety and effectiveness of COVID-19 vaccination
+        during pregnancy suggests that the benefits of vaccination during pregnancy outweigh
+        potential risks whenever there is ongoing or anticipated community transmission
+        of the virus.
 
-      COVID-19 vaccination before or during pregnancy is especially important
-      in settings with moderate to high community transmission or for women at higher
-      individual risk of exposure or severe illness.
-     buttons:
-     - title: Can women who are trying to become pregnant receive COVID-19 vaccines?
-       payload: /covid_pregnancy_4
-     - title: Are COVID-19 vaccines during pregnancy effective?
-       payload: /covid_pregnancy_3
+       * COVID-19 vaccination before or during pregnancy is especially important
+        in settings with moderate to high community transmission or for women at higher
+        individual risk of exposure or severe illness.
+    buttons:
+    - title: Can women who are trying to become pregnant receive COVID-19 vaccines?
+      payload: /covid_pregnancy_4
+    - title: Are COVID-19 vaccines during pregnancy effective?
+      payload: /covid_pregnancy_3
 
   utter_covid_pregnancy_2:
-   - text: Numerous studies indicate that pregnant women with COVID-19 are more likely to develop
+   - text: |-
+       Numerous studies indicate that pregnant women with COVID-19 are more likely to develop
        severe illness compared with non-pregnant women. This means that pregnant women with COVID-19
        are more likely to require hospitalization, intensive care and invasive ventilation to help with breathing.
 
@@ -1512,7 +1619,8 @@ responses:
        payload: /covid_pregnancy_8
 
   utter_covid_pregnancy_3:
-   - text: COVID-19 vaccines have been found to be highly effective in preventing severe illness,
+   - text: |-
+      COVID-19 vaccines have been found to be highly effective in preventing severe illness,
       hospitalization and death from COVID-19. Based on experience with other vaccines
       used during pregnancy, all of the WHO EUL-approved COVID-19 vaccines are expected
       to work as well in pregnant women as in nonpregnant people.
@@ -1526,7 +1634,8 @@ responses:
        payload: /covid_pregnancy_2
 
   utter_covid_pregnancy_4:
-   - text: Yes. Getting vaccinated beforehand is an important way for women to protect themselves
+   - text: |-
+      Yes. Getting vaccinated beforehand is an important way for women to protect themselves
       and their babies from COVID-19 during pregnancy. People who are trying to conceive
       can receive COVID-19 vaccines.
 
@@ -1539,7 +1648,8 @@ responses:
 
 
   utter_covid_pregnancy_5:
-   - text: There have been very rare reports of a type of blood clot called cerebral venous
+   - text: |-
+      There have been very rare reports of a type of blood clot called cerebral venous
       sinus thrombosis among patients that have received the Johnson & Johnson vaccine.
       Though very rare, the risk of certain blood clots appears to be highest in women
       aged 18.
@@ -1553,12 +1663,14 @@ responses:
       or shortness of breath should seek immediate evaluation.
 
   utter_covid_pregnancy_6:
-   - text: Yes! Recent studies on pregnant people who received the COVID-19 vaccine during
+   - text: |-
+      Yes! Recent studies on pregnant people who received the COVID-19 vaccine during
       pregnancy demonstrate that immunity is passed to the baby. This immunity may offer
       protection against COVID-19 to your baby.
 
   utter_covid_pregnancy_7:
-   - text: The COVID-19 vaccines are currently being offered to breastfeeding individuals. The
+   - text: |-
+      The COVID-19 vaccines are currently being offered to breastfeeding individuals. The
       COVID-19 vaccines are not believed to be a risk for breastfed infants of mothers
       who were vaccinated as any vaccine component that makes it into the breast milk
       is likely to be quickly inactivated when the milk is digested by the baby.
@@ -1574,7 +1686,8 @@ responses:
        payload: /covid_pregnancy_10
 
   utter_covid_pregnancy_8:
-   - text: Stress, changes in weight and exercise, and other major lifestyle changes can affect
+   - text: |-
+      Stress, changes in weight and exercise, and other major lifestyle changes can affect
       periods. All of those changes are common during the COVID-19 pandemic. Studies have
       also shown that some women who had COVID-19 experienced changes in the duration
       and flow of their menstrual cycles.
@@ -1588,7 +1701,8 @@ responses:
       pregnancy loss.
 
   utter_covid_pregnancy_9:
-   - text: Studies of mating animals have demonstrated no evidence that COVID vaccines affect
+   - text: |-
+      Studies of mating animals have demonstrated no evidence that COVID vaccines affect
       fertility. Follow-up data from vaccinated individuals of reproductive age as well
       as studies on patients before and after vaccination do not show any evidence that
       the COVID-19 vaccines cause fertility problems (problems trying to get pregnant)
@@ -1597,11 +1711,12 @@ responses:
      - title: How does COVID-19 affect pregnant women and their babies?
        payload: /covid_pregnancy_2
   utter_covid_pregnancy_10:
-   - text: The CDC recommends that everyone ages 18 years and older receive a booster.
+   - text: |-
+      The CDC recommends that everyone ages 18 years and older receive a booster.
 
-           The booster dose has been shown to provide stronger protection against severe
-           illness from the COVID variants. This additional immunity will help protect you
-          and your baby.
+      The booster dose has been shown to provide stronger protection against severe
+      illness from the COVID variants. This additional immunity will help protect you
+      and your baby.
 actions:
 - action_covid_other_1
 - action_covid_question_type

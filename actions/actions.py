@@ -8,9 +8,9 @@ import random
 class GetRandomName():
     def __init__(self):
         self.name_recom = ""
-        for i in range(0,5):
-            number = random.randint(0, len(NAME)-1)
-            self.name_recom += NAME[number]
+        numberlist = random.sample(range(0, len(NAME) - 1), 5)
+        for i in numberlist:
+            self.name_recom += NAME[i]
 
 
 class ActionGreeting(Action):
@@ -66,7 +66,7 @@ class ValidateProfileForm(FormValidationAction):
             msg = "Sorry🤗, Please type female or male as your fictitious gender"
             dispatcher.utter_message(text=msg)
             return {"gender": None}
-
+        dispatcher.utter_message(text="your gender ")
         return {"gender": user_gender}
 
     def validate_age(
@@ -199,12 +199,15 @@ class ActionDefaultAskAffirmation(Action):
             ) -> Dict[Text, Any]:
         # select the top three intents from the tracker
         # ignore the first one -- nlu fallback  == tracker.latest_message["intent_ranking"][1:4]
-        predicted_intents = tracker.latest_message["intent_ranking"][1:4]
+        predicted_intents = tracker.latest_message["intent_ranking"][1:2]
         predict = []
-        for i in range(3):
-            if predicted_intents[i]["confidence"] > 0.1:
-                if len(predicted_intents[i]["name"]) > 10:
-                    predict.append(predicted_intents[i])
+
+        if predicted_intents[0]["confidence"] > 0.1:
+            if len(predicted_intents[0]["name"]) > 10 \
+                    and predicted_intents[0]["name"] != "ask_covid_question_type"\
+                    and predicted_intents[0]["name"] != "out_of_scope"\
+                    and predicted_intents[0]["name"] != "bot_challenge":
+                predict.append(predicted_intents[0])
 
         if len(predict) > 0:
             # print(predict)
@@ -678,14 +681,14 @@ INTENT = {
     "covid_lung_disease_6":"Are there additional measures for lung disease people to avoid getting covid?",
     "covid_lung_disease_7":"Can I increase my normal dosage of treatments to protect myself from COVID-19?",
     "covid_lung_disease_8":"What should lung disease patients do if they get covid?",
-    "covid_old_people_1":"What old people should do to stop covid from spreading",
-    "covid_old_people_2":"COVID-19 Community Helpline for old people",
-    "covid_old_people_3":"What should old people do if they have a symptoms or exposure",
-    "covid_old_people_4":"How can old people manage their health?",
-    "covid_old_people_5":"Are old people at high risk of getting COVID-19",
+    "covid_old_people_1":"What older people should do to stop covid from spreading",
+    "covid_old_people_2":"COVID-19 Community Helpline for older people",
+    "covid_old_people_3":"What should older people do if they have a symptoms or exposure",
+    "covid_old_people_4":"How can older people manage their health?",
+    "covid_old_people_5":"Are older people at high risk of getting COVID-19",
     "covid_old_people_6":"Does aspirin make COVID-19 worse?",
     "covid_old_people_7":"What if elderly use hydroxychloroquine on a regular basis but can't obtain a refill since it's being used for COVID-19?",
-    "covid_old_people_8":"What should old people do if they have dental issues",
+    "covid_old_people_8":"What should older people do if they have dental issues",
    }
 TEST_INTENT = {
     "covid_test_1":"What kinds of test are available?",
@@ -947,9 +950,9 @@ LUNG_BUTTON = [{
                 ]
 
 OLD_INTENT = {
-    "covid_old_people_1":"What old people should do to stop covid from spreading",
-    "covid_old_people_3":"What old people should do to stop covid from spreading",
-    "covid_old_people_5":"What old people should do to stop covid from spreading",
+    "covid_old_people_1":"What older people should do to stop covid from spreading",
+    "covid_old_people_3":"What older people should do to stop covid from spreading",
+    "covid_old_people_5":"What older people should do to stop covid from spreading",
 }
 OLD_BUTTON = [{
                 "title": list(OLD_INTENT.values())[i],
