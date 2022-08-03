@@ -1,0 +1,401 @@
+version: "2.0"
+
+stories:
+
+- story: thanks path
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+  - action: utter_anything_else
+
+- story: bye path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask which COVID-19 test can get
+  steps:
+  - intent: covid_test_1
+  - action: action_covid_test_1
+
+- story: ask what is antigen test
+  steps:
+  - intent: covid_test_2
+  - action: action_covid_test_2
+
+- story: ask when to get a pcr test
+  steps:
+  - intent: covid_test_3
+  - action: utter_covid_test_3
+
+- story: ask how to do antigen test
+  steps:
+  - intent: covid_test_4
+  - action: utter_covid_test_4
+
+- story: ask when to do antigen test
+  steps:
+  - intent: covid_test_5
+  - action: action_covid_test_5
+- story: ask how to get antigen test
+  steps:
+  - intent: covid_test_6
+  - action: utter_covid_test_6
+- story: ask can child get antigen test
+  steps:
+  - intent: covid_test_7
+  - action: utter_covid_test_7
+- story: ask how to get antigen test to child
+  steps:
+  - intent: covid_test_8
+  - action: utter_covid_test_8
+- story: ask what to do after positive antigen
+  steps:
+  - intent: covid_test_9
+  - action: utter_covid_test_9
+- story: ask what to do after negative antigen
+  steps:
+  - intent: covid_test_10
+  - action: utter_covid_test_10
+- story: ask get recovery certificate
+  steps:
+  - intent: covid_test_11
+  - action: utter_covid_test_11
+- story: ask what to do after positive pcr
+  steps:
+  - intent: covid_test_12
+  - action: utter_covid_test_12
+- story: ask what to do after invalid pcr
+  steps:
+  - intent: covid_test_13
+  - action: utter_covid_test_13
+- story: ask what is pcr
+  steps:
+  - intent: covid_test_14
+  - action: utter_covid_test_14
+
+- story: common covid symptoms
+  steps:
+  - intent: covid_symptom_1
+  - action: action_covid_symptom_1
+- story: less common covid symptoms
+  steps:
+  - intent: covid_symptom_2
+  - action: action_covid_symptom_2
+- story: severe covid symptoms
+  steps:
+  - intent: covid_symptom_3
+  - action: utter_covid_symptom_3
+- story: actions for having symptom
+  steps:
+  - intent: covid_symptom_4
+  - action: utter_covid_symptom_4
+- story: actions for child have symptom
+  steps:
+  - intent: covid_symptom_5
+  - action: utter_covid_symptom_5
+- story: actions for severe symptom
+  steps:
+  - intent: covid_symptom_6
+  - action: utter_covid_symptom_6
+- story: actions for high fever
+  steps:
+  - intent: covid_symptom_7
+  - action: utter_covid_symptom_7
+- story: more about high fever
+  steps:
+  - intent: covid_symptom_8
+  - action: utter_covid_symptom_8
+- story: more about child high fever
+  steps:
+  - intent: covid_symptom_9
+  - action: utter_covid_symptom_9
+- story: action for dehydration
+  steps:
+  - intent: covid_symptom_10
+  - action: utter_covid_symptom_10
+- story: more about child high fever
+  steps:
+  - intent: covid_symptom_11
+  - action: action_covid_symptom_11
+- story: symptoms of dehydration
+  steps:
+  - intent: covid_symptom_12
+  - action: utter_covid_symptom_12
+- story: dehydration in adults and children
+  steps:
+  - intent: covid_symptom_13
+  - action: utter_covid_symptom_13
+- story: action to severe dehydration
+  steps:
+  - intent: covid_symptom_14
+  - action: utter_covid_symptom_14
+- story: more children have dehydration
+  steps:
+  - intent: covid_symptom_15
+  - action: utter_covid_symptom_15
+- story: action children dehydration
+  steps:
+  - intent: covid_symptom_16
+  - action: utter_covid_symptom_16
+- story: symptoms of dehydration in baby and children
+  steps:
+  - intent: covid_symptom_17
+  - action: utter_covid_symptom_17
+- story: action children dehydration
+  steps:
+  - intent: covid_symptom_18
+  - action: utter_covid_symptom_18
+- story: symptoms of fatigue
+  steps:
+  - intent: covid_symptom_19
+  - action: utter_covid_symptom_19
+- story: action to fatigue
+  steps:
+  - intent: covid_symptom_20
+  - action: utter_covid_symptom_20
+
+- story: how treat covid symptom
+  steps:
+  - intent: covid_treatment_1
+  - action: utter_covid_treatment_1
+- story: medicine treat covid symptom
+  steps:
+  - intent: covid_treatment_2
+  - action: utter_covid_treatment_2
+- story: antibiotics treat covid
+  steps:
+  - intent: covid_treatment_3
+  - action: utter_covid_treatment_3
+- story: ibuprofen treat covid symptom
+  steps:
+  - intent: covid_treatment_4
+  - action: utter_covid_treatment_4
+- story: treat coughing
+  steps:
+  - intent: covid_treatment_5
+  - action: utter_covid_treatment_5
+- story: ask asthma with covid
+  steps:
+  - intent: covid_treatment_6
+  - action: utter_covid_treatment_6
+- story: action to short breath
+  steps:
+  - intent: covid_treatment_7
+  - action: utter_covid_treatment_7
+- story: action to losing smell
+  steps:
+  - intent: covid_treatment_8
+  - action: utter_covid_treatment_8
+
+- story: Anti-inflammatory medicines
+  steps:
+  - intent: covid_treatment_9
+  - action: utter_covid_treatment_9
+- story: more cough treatment for children
+  steps:
+  - intent: covid_treatment_10
+  - action: utter_covid_treatment_10
+
+- story: what is covid
+  steps:
+  - intent: covid_other_1
+  - action: action_covid_other_1
+- story: who need test
+  steps:
+  - intent: covid_other_2
+  - action: utter_covid_other_2
+- story: action to feel unwell
+  steps:
+  - intent: covid_other_3
+  - action: utter_covid_other_3
+- story: covid isolation
+  steps:
+  - intent: covid_isolation_1
+  - action: utter_covid_isolation_1
+- story: when do isolation
+  steps:
+  - intent: covid_isolation_2
+  - action: utter_covid_isolation_2
+- story: how to do isolation
+  steps:
+  - intent: covid_isolation_3
+  - action: utter_covid_isolation_3
+- story: not to do in isolation
+  steps:
+  - intent: covid_isolation_4
+  - action: utter_covid_isolation_4
+- story: when stop isolation
+  steps:
+  - intent: covid_isolation_5
+  - action: utter_covid_isolation_5
+- story: action after seven days
+  steps:
+  - intent: covid_isolation_6
+  - action: utter_covid_isolation_6
+- story: children isolation
+  steps:
+  - intent: covid_isolation_7
+  - action: utter_covid_isolation_7
+- story: time for children isolation
+  steps:
+  - intent: covid_isolation_8
+  - action: utter_covid_isolation_8
+- story: handle isolation
+  steps:
+  - intent: covid_isolation_9
+  - action: utter_covid_isolation_9
+
+
+- story: who in high risk
+  steps:
+  - intent: covid_risk_1
+  - action: utter_covid_risk_1
+
+- story: who in very high risk
+  steps:
+  - intent: covid_risk_2
+  - action: utter_covid_risk_2
+- story: more high risk
+  steps:
+  - intent: covid_risk_3
+  - action: utter_covid_risk_3
+
+- story: more very high risk
+  steps:
+  - intent: covid_risk_4
+  - action: utter_covid_risk_4
+
+- story: covid vaccine 1
+  steps:
+  - intent: covid_vaccine_1
+  - action: utter_covid_vaccine_1
+- story: covid vaccine 2
+  steps:
+  - intent: covid_vaccine_2
+  - action: utter_covid_vaccine_2
+- story: covid vaccine 3
+  steps:
+  - intent: covid_vaccine_3
+  - action: utter_covid_vaccine_3
+- story: covid vaccine 4
+  steps:
+  - intent: covid_vaccine_4
+  - action: utter_covid_vaccine_4
+- story: covid vaccine 5
+  steps:
+  - intent: covid_vaccine_5
+  - action: utter_covid_vaccine_5
+- story: covid vaccine 6
+  steps:
+  - intent: covid_vaccine_6
+  - action: utter_covid_vaccine_6
+- story: covid vaccine 7
+  steps:
+  - intent: covid_vaccine_7
+  - action: utter_covid_vaccine_7
+- story: covid vaccine 8
+  steps:
+  - intent: covid_vaccine_8
+  - action: utter_covid_vaccine_8
+- story: covid vaccine 9
+  steps:
+  - intent: covid_vaccine_9
+  - action: utter_covid_vaccine_9
+- story: covid vaccine 10
+  steps:
+  - intent: covid_vaccine_10
+  - action: utter_covid_vaccine_10
+- story: covid vaccine 11
+  steps:
+  - intent: covid_vaccine_11
+  - action: utter_covid_vaccine_11
+- story: covid vaccine 12
+  steps:
+  - intent: covid_vaccine_12
+  - action: utter_covid_vaccine_12
+- story: covid vaccine 13
+  steps:
+  - intent: covid_vaccine_13
+  - action: utter_covid_vaccine_13
+- story: covid vaccine 14
+  steps:
+  - intent: covid_vaccine_14
+  - action: utter_covid_vaccine_14
+- story: covid vaccine 15
+  steps:
+  - intent: covid_vaccine_15
+  - action: utter_covid_vaccine_15
+- story: covid vaccine 16
+  steps:
+  - intent: covid_vaccine_16
+  - action: utter_covid_vaccine_16
+- story: covid vaccine 17
+  steps:
+  - intent: covid_vaccine_17
+  - action: utter_covid_vaccine_17
+- story: covid vaccine 18
+  steps:
+  - intent: covid_vaccine_18
+  - action: utter_covid_vaccine_18
+- story: covid vaccine 19
+  steps:
+  - intent: covid_vaccine_19
+  - action: utter_covid_vaccine_19
+- story: covid vaccine 20
+  steps:
+  - intent: covid_vaccine_20
+  - action: utter_covid_vaccine_20
+- story: covid vaccine 21
+  steps:
+  - intent: covid_vaccine_21
+  - action: utter_covid_vaccine_21
+- story: covid vaccine 22
+  steps:
+  - intent: covid_vaccine_22
+  - action: utter_covid_vaccine_22
+- story: covid vaccine 23
+  steps:
+  - intent: covid_vaccine_23
+  - action: utter_covid_vaccine_23
+- story: covid vaccine 24
+  steps:
+  - intent: covid_vaccine_24
+  - action: utter_covid_vaccine_24
+- story: covid vaccine 25
+  steps:
+  - intent: covid_vaccine_25
+  - action: utter_covid_vaccine_25
+- story: covid vaccine 26
+  steps:
+  - intent: covid_vaccine_26
+  - action: utter_covid_vaccine_26
+- story: what is mRNA vaccine
+  steps:
+  - intent: covid_vaccine_27
+  - action: utter_covid_vaccine_27
+
+- story: more vaccine information for pregnant woman
+  steps:
+  - intent: covid_vaccine_28
+  - action: utter_covid_vaccine_28
+
+- story: recommended vaccine for pregnant woman
+  steps:
+  - intent: covid_vaccine_29
+  - action: utter_covid_vaccine_29
+
+- story: more vaccine safety
+  steps:
+  - intent: covid_vaccine_30
+  - action: utter_covid_vaccine_30
+
+- story: uncommon vaccine side effects
+  steps:
+  - intent: covid_vaccine_31
+  - action: utter_covid_vaccine_31
+
+- story: more vaccine side effects
+  steps:
+  - intent: covid_vaccine_32
+  - action: utter_covid_vaccine_32

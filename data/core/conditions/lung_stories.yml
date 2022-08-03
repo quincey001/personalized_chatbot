@@ -1,0 +1,115 @@
+version: "2.0"
+
+stories:
+
+- story: covid lung disease 1
+  steps:
+  - intent: covid_lung_disease_1
+  - action: utter_covid_lung_disease_1
+
+- story: covid lung disease 2
+  steps:
+  - intent: covid_lung_disease_2
+  - action: utter_covid_lung_disease_2
+
+- story: covid lung disease 3
+  steps:
+  - intent: covid_lung_disease_3
+  - action: utter_covid_lung_disease_3
+
+- story: covid lung disease 4
+  steps:
+  - intent: covid_lung_disease_4
+  - action: utter_covid_lung_disease_4
+
+- story: covid lung disease 5
+  steps:
+  - intent: covid_lung_disease_5
+  - action: utter_covid_lung_disease_5
+
+- story: covid lung disease 6
+  steps:
+  - intent: covid_lung_disease_6
+  - action: utter_covid_lung_disease_6
+
+- story: covid lung disease 7
+  steps:
+  - intent: covid_lung_disease_7
+  - action: utter_covid_lung_disease_7
+
+- story: covid lung disease 8
+  steps:
+  - intent: covid_lung_disease_8
+  - action: utter_covid_lung_disease_8
+
+- story: lung 11
+  steps:
+  - intent: covid_lung_disease_1
+  - action: utter_covid_lung_disease_1
+  - intent: covid_lung_disease_2
+  - action: utter_covid_lung_disease_2
+  - intent: covid_lung_disease_5
+  - action: utter_covid_lung_disease_5
+  - intent: covid_lung_disease_4
+  - action: utter_covid_lung_disease_4
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: lung 12
+  steps:
+  - intent: covid_lung_disease_1
+  - action: utter_covid_lung_disease_1
+  - intent: covid_lung_disease_3
+  - action: utter_covid_lung_disease_3
+  - intent: covid_lung_disease_2
+  - action: utter_covid_lung_disease_2
+  - intent: covid_lung_disease_5
+  - action: utter_covid_lung_disease_5
+  - intent: covid_lung_disease_4
+  - action: utter_covid_lung_disease_4
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: lung 13
+  steps:
+  - intent: covid_lung_disease_2
+  - action: utter_covid_lung_disease_2
+  - intent: covid_lung_disease_5
+  - action: utter_covid_lung_disease_5
+  - intent: covid_lung_disease_4
+  - action: utter_covid_lung_disease_4
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: lung 14
+  steps:
+  - intent: covid_lung_disease_8
+  - action: utter_covid_lung_disease_8
+  - intent: covid_lung_disease_6
+  - action: utter_covid_lung_disease_6
+  - intent: covid_lung_disease_2
+  - action: utter_covid_lung_disease_2
+  - intent: covid_lung_disease_5
+  - action: utter_covid_lung_disease_5
+  - intent: covid_lung_disease_4
+  - action: utter_covid_lung_disease_4
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: lung 15
+  steps:
+  - intent: covid_lung_disease_8
+  - action: utter_covid_lung_disease_8
+  - intent: covid_lung_disease_7
+  - action: utter_covid_lung_disease_7
+  - intent: covid_lung_disease_5
+  - action: utter_covid_lung_disease_5
+  - intent: covid_lung_disease_4
+  - action: utter_covid_lung_disease_4
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye

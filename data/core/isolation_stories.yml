@@ -1,0 +1,92 @@
+version: "2.0"
+
+stories:
+
+- story: covid isolation story 1
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_isolation_1
+  - action: utter_covid_isolation_1
+  - intent: covid_isolation_2
+  - action: utter_covid_isolation_2
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid isolation story 2
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_isolation_1
+  - action: utter_covid_isolation_1
+  - intent: covid_isolation_5
+  - action: utter_covid_isolation_5
+  - intent: covid_isolation_6
+  - action: utter_covid_isolation_6
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid isolation story 3
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_isolation_2
+  - action: utter_covid_isolation_2
+  - intent: covid_isolation_6
+  - action: utter_covid_isolation_6
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid isolation story 4
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_isolation_2
+  - action: utter_covid_isolation_2
+  - intent: covid_isolation_7
+  - action: utter_covid_isolation_7
+  - intent: covid_isolation_8
+  - action: utter_covid_isolation_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: covid isolation story 5
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_isolation_3
+  - action: utter_covid_isolation_3
+  - intent: covid_isolation_9
+  - action: utter_covid_isolation_9
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid isolation story 6
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_isolation_4
+  - action: utter_covid_isolation_4
+  - intent: covid_isolation_9
+  - action: utter_covid_isolation_9
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid isolation story 7
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_isolation_5
+  - action: utter_covid_isolation_5
+  - intent: covid_isolation_6
+  - action: utter_covid_isolation_6
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye

@@ -1,0 +1,95 @@
+version: "2.0"
+
+nlu:
+- intent: covid_kidney_1
+  examples: |
+    - Is the COVID-19 vaccine safe for patients with kidney disease?
+    - Is the covid vaccine safe for patients with kidney disease
+    - Is the COVID-19 vaccine safe for me, i have kidney disease?
+    - Is the COVID-19 vaccination safe for kidney disease patients?
+    - Is the COVID-19 vaccine safe for kidney disease patients?
+    - i want to know if the COVID-19 vaccine is safe for kidney disease patients?
+    - i would like to know if the covid vaccine is safe for kidney disease patients
+    - are the covid vaccines safe to kidney disease people
+    - is the covid vaccine safe to kidney disease people
+
+- intent: covid_kidney_2
+  examples: |
+    - Are people with Chronic Kidney Disease at higher risk of complications?
+    - Are patients with Chronic Kidney Disease more likely to develop complications?
+    - i want to know Are patients with Chronic Kidney Disease more likely to develop complications?
+    - i want to know if the chronic kidney disease patients are more likely to have complications
+    - Are patients with Chronic Kidney Disease more likely to experience complications?
+    - Are patients with Chronic Kidney Disease more likely to suffer complications?
+    - Are patients with Chronic Kidney Disease more likely to have complications?
+    - Are patients with Chronic Kidney Disease more likely to get complications?
+
+
+- intent: covid_kidney_3
+  examples: |
+    - Should I continue my dialysis treatment and care team appointments?
+    - Should I continue with my dialysis therapy and visits with the care team?
+    - Should I continue on my dialysis therapy and visits with the care team?
+    - Should I continue on my dialysis treatment and discussions with the care team?
+    - Should I continue on my dialysis treatment
+    - Should I continue with my dialysis treatment and ask my care team?
+    - Should I continue with my dialysis treatment
+
+- intent: covid_kidney_4
+  examples: |
+    - Does the COVID-19 vaccine affect the kidneys?
+    - does the covid vaccine effect my kidney
+    - Is the COVID-19 vaccination harmful to the kidneys?
+    - Does the COVID-19 vaccination harm the kidneys?
+    - i want to know if the covid vaccine bad for my kidney
+    - Does the COVID-19 vaccination effect my kidneys?
+    - i would like to know if the covid vaccine bad for my kidney
+
+- intent: covid_kidney_5
+  examples: |
+    - Should rare kidney disease patients get the COVID-19 vaccine?
+    - Should people with uncommon kidney diseases receive the COVID-19 vaccine?
+    - Should patients with uncommon kidney diseases receive the COVID-19 vaccine?
+    - Should patients with rare kidney diseases receive the COVID-19 vaccine?
+    - Should patients with rare kidney diseases take the COVID-19 vaccine?
+    - Should people with rare kidney diseases take the COVID-19 vaccine?
+    - i want to know Should people with rare kidney diseases take the COVID-19 vaccine?
+    - Should people with unusual kidney diseases receive the COVID-19 vaccine?
+    - Should people with unusual kidney diseases take the COVID-19 vaccine?
+    - Should people with unusual kidney diseases have the COVID-19 vaccine?
+
+
+- intent: covid_kidney_6
+  examples: |
+    - will the covid vaccine effect kidney disease treatments and medications?
+    - Will the COVID-19 vaccine affects kidney disease treatments and medications?
+    - Will the COVID-19 vaccination affect kidney disease treatments and medications?
+    - Will the COVID-19 vaccine interfere with the treatments and medications I take for my kidney disease?
+    - Will the COVID-19 vaccination affect to my kidney disease treatments and medications?
+    - i want to konw Will the COVID-19 vaccination affect to my kidney disease treatments and medications?
+    - Will the COVID-19 vaccine affect to my kidney disease treatments and medications?
+    - Will the COVID-19 vaccine conflict to my kidney disease treatments and medications?
+    - Will the COVID-19 vaccine impact to my kidney disease treatments and medications?
+    - Will the COVID-19 vaccine compromise to my kidney disease treatments and medications?
+
+- intent: covid_kidney_7
+  examples: |
+    - Should family members of kidney patients and transplant patients wait to get vaccinated?
+    - should family members of kidney patients to get vaccinated
+    - should family members of transplant patients to get vaccinated
+    - i want to know should family members of kidney disease patients wait to get vaccinated
+    - should family members of kidney patients to get vaccinated
+    - Should family members of kidney and transplant patients wait to get vaccinated?
+    - Should family members of kidney patients wait to get vaccinated?
+    - i want to know, should family members of kidney patients get vaccinated
+
+- intent: covid_kidney_8
+  examples: |
+    - Should people with End Stage Kidney Disease (ESKD) get the vaccine?
+    - Should people with End Stage Kidney Disease (ESKD) get the covid vaccine?
+    - Should the vaccination be given to persons with End-Stage Kidney Disease (ESKD)?
+    - Should the vaccine be given to persons with End-Stage Kidney Disease (ESKD)?
+    - can people with End Stage kidney disease get the vaccine
+    - Should people with End-Stage Kidney Disease (ESKD) obtain the vaccine?
+    - Should patients with End-Stage Kidney Disease (ESKD) obtain the vaccine?
+    - Should patients with End-Stage Kidney Disease (ESKD) receive the vaccine?

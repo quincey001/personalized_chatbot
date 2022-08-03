@@ -1,0 +1,95 @@
+version: "2.0"
+
+nlu:
+- intent: covid_immunodeficiency_1
+  examples: |
+    - Are COVID-19 vaccines safe for people with immunodeficiency?
+    - Are COVID-19 vaccines safe for people with immunodeficiencies?
+    - Are vaccines safe for people with immunodeficiencies?
+    - Are covid vaccines safe for people with immunodeficiencies?
+    - i want to know if vaccines is safe for people with immunodeficiencies?
+    - i would like to know if vaccines is safe for people with immunodeficiencies?
+    - can you tell me if vaccines is safe for people with immunodeficiencies?
+    - Are COVID-19 vaccinations safe for immunocompromised people?
+    - Are vaccinations safe for immunocompromised people?
+    - Are covid vaccinations safe for immunocompromised people?
+    - is covid vaccine safe for immunodeficiencies people
+    - Are COVID-19 vaccinations safe for patients with immune deficiencies?
+
+- intent: covid_immunodeficiency_2
+  examples: |
+    - Do immunodeficiency treatments need to be stopped to have a COVID-19 vaccine?
+    - Is it necessary to discontinue immunodeficiency treatments in order to develop a COVID-19 vaccine?
+    - do i neet to stop my immunodeficiency treatment to have a vaccine
+    - do i neet to stop my immunodeficiency treatment to have a covid vaccine
+    - i want to know if i need to stop my immunodeficiency treatment to have a covid vaccine
+    - i want to know if i need to have a vaccine, do i neet to stop my immunodeficiency treatment
+    - can i stop my immunodeficiency treatment to have a covid vaccine
+    - can i stop my immunodeficiency treatment
+
+- intent: covid_immunodeficiency_3
+  examples: |
+    - What precautions should people with immunodeficiencies take?
+    - What measures should immunocompromised persons take to protect themselves
+    - i would like to know what precautions can people with immunodeficiencies take
+    - i want to know what precautions can people with immunodeficiency take
+    - tell me some advice for people with immunodeficiency
+    - advice for people with immunodeficiencies
+    - suggestions for people with immunodeficiencies
+    - What precautions should patients with immunodeficiencies take?
+    - What precautions should patients with immunodeficiency take?
+
+
+- intent: covid_immunodeficiency_4
+  examples: |
+    - Are people with immunodeficiency more likely to catch COVID-19?
+    - Are immunocompromised persons more prone to contract COVID-19?
+    - Are immunocompromised people more likely to contract COVID-19?
+    - i want to know Are immunocompromised people more likely to contract COVID-19?
+    - i would like to know Are immunocompromised people more likely to contract COVID-19?
+    - Is it more likely for those with immune deficiencies to contract COVID-19?
+    - Is it more likely for those with immunodeficiency to contract COVID-19?
+    - Is it more likely for those with immunodeficiency to develop COVID-19?
+    - Is it more likely for those with immunodeficiency to get COVID-19?
+
+
+- intent: covid_immunodeficiency_5
+  examples: |
+    - The worst COVID-19 cases seem to be when the immune system goes into override.Would immunodeficient patients produce the same response?
+    - would covid make immunodeficient patients immune system goes into override.
+    - Would covid cause immunocompromised persons' immune systems to go into overdrive?
+    - i want to konw Would covid cause immunocompromised persons' immune systems to go into overdrive?
+    - i would like to know Would covid cause immunocompromised persons' immune systems to go into overdrive?
+    - Would covid cause immunocompromised persons' immune systems to go into overdrive?
+    - Would covid trigger immunocompromised persons' immune systems to go into overdrive?
+
+
+- intent: covid_immunodeficiency_6
+  examples: |
+    - Which of the COVID vaccines is best for people with primary and secondary immunodeficiency?
+    - Which COVID vaccination is better for those who have primary and secondary immunodeficiency?
+    - which covid vaccine is the best for people with immunodeficiencies
+    - which covid vaccine is the best for people with primary and secondary immunodeficiency?
+    - i want to know which covid vaccine is the best for people with primary and secondary immunodeficiency?
+    - i would like to know which covid vaccine is the best for people with primary and secondary immunodeficiency?
+    - best vaccine for people with primary and secondary immunodeficiency?
+
+
+- intent: covid_immunodeficiency_7
+  examples: |
+    - how many covid vaccine trials are involved people with immunodeficiency
+    - Have any of the vaccine trials involved people with immunodeficiency?
+    - Have any of the vaccination studies involved persons who are immunocompromised?
+    - how many covid vaccine trials are involved people with immunodeficiency
+    - i would like to know how many covid vaccine trials are involved people with immunodeficiency
+    - can you tell me how many covid vaccine trials are involved people with immunodeficiency
+
+- intent: covid_immunodeficiency_8
+  examples: |
+    - What are the benefits of getting a vaccine for people with immunodeficiency?
+    - What wider benefits will a COVID vaccination programme have for the immunodeficiency community?
+    - i want to know What are the benefits of getting a vaccine for people with immunodeficiency?
+    - What are the advantages of receiving a vaccination for persons who are immunocompromised?
+    - What are the benefits of receiving a vaccination for persons who are immunocompromised?
+    - What are the benefits of having a vaccination for persons who are immunocompromised?
+    - What are the benefits of having a vaccination for people whom is immunocompromised?

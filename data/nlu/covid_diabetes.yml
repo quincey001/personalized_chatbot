@@ -1,0 +1,130 @@
+version: "2.0"
+
+nlu:
+- intent: covid_diabetes_1
+  examples: |
+    - Are people with diabetes more likely to get COVID-19?
+    - Are people with diabetes more likely to get COVID-19
+    - Are Diabetes patients more likely to catch COVID-19
+    - Are diabetics more likely to develop COVID-19?
+    - Are diabetics more likely to obtain COVID-19?
+    - Diabetes patients are more prone to contract COVID-19.
+    - i want to know if people with diabetes more likely to get covid?
+
+- intent: covid_diabetes_2
+  examples: |
+    - Do people with diabetes have serious complications from COVID-19?
+    - Do people with diabetes have a higher chance of serious complications from COVID-19?
+    - Do patients with diabetes have an increased risk of significant COVID-19 complications?
+    - Do those who have diabetes have an increased risk of significant COVID-19 complications?
+    - Do patients with diabetes have an increased risk of significant COVID-19 complications?
+    - Do people with diabetes have a serious complications from COVID-19?
+    - Do patients with diabetes get serious COVID-19 complications?
+
+- intent: covid_diabetes_3
+  examples: |
+    - Are the risks different for people with type 1 and type 2 diabetes?
+    - Do persons with type 1 and type 2 diabetes face different risks?
+    - Do persons with type 1 and type 2 diabetes have different risks?
+    - Do persons with type 1 and type 2 diabetes meet different risks?
+    - i want to know if there are different risks for people with type 1 and type 2
+    - if there are different risks for people with type 1 and type 2
+    - people with type 1 and type 2 have different risks
+
+- intent: covid_diabetes_4
+  examples: |
+    - Does COVID-19 cause diabetes?
+    - Is COVID-19 a cause of diabetes?
+    - i want to know if the covid cause diabetes?
+    - i would like to know if the covid cause diabetes?
+    - i want to know Does COVID-19 induce diabetes?
+    - i would like to know Does covid induce diabetes?
+
+
+- intent: covid_diabetes_5
+  examples: |
+    - What should diabetics do if they feel they are developing covid symptoms?
+    - What should I do if I think I'm developing symptoms of COVID-19 and i have diabetes?
+    - What should I do if I suspect I'm acquiring COVID-19 symptoms and i have diabetes?
+    - i have diabetes, What should I do if I suspect I'm acquiring COVID-19 symptoms?
+    - What should people with diabetes do if them suspect acquiring COVID-19 symptoms?
+    - What should diabetics do if they feel they are developing COVID-19 symptoms?
+    - What should persons with diabetes do if they feel they are developing COVID-19 symptoms?
+    - What should people who have diabetes do if they feel they are getting COVID-19 symptoms?
+    - What should individuals who are diabetic do if they feel they are getting COVID-19 symptoms?
+
+
+- intent: covid_diabetes_6
+  examples: |
+    - what should diabetics do if they have covid
+    - What are the emergency warning signs and what should I do if I am experiencing them?
+    - What are the emergency warning signs for diabetics get covid?
+    - What are the emergency warning signals for diabetics to look out for, when they have covid?
+    - what should people with diabetics do if they have covid
+    - i have a diabetes, what should i do if i have a covid
+    - i have a diabetes, what should i do if i develop a covid
+    - i want to know what should diabetics do if they have covid
+
+- intent: covid_diabetes_7
+  examples: |
+    - What should diabetics do to prevent the spread of covid at home?
+    - What should diabetics do at home to avoid the spread of covid?
+    - what can i do to prevent the spread of covid at home if i have a diabetes
+    - if i have a diabetes what can i do to prevent the spread of covid at home
+    - how can i avoid getting covid at home if i am diabetics
+    - i want to know what can i do to protect the spread of covid at home
+    - what can i do to prevent the spread of covid at home if i have a diabetics
+
+- intent: covid_diabetes_8
+  examples: |
+    - Can covid patients who are diabetic bring their own blood glucose monitors?
+    - Can COVID-19 patients with diabetes bring their own blood glucose monitors to the hospital if they need to be hospitalized?
+    - Can COVID-19 patients diabetic individuals bring their own blood glucose monitors
+    - Can COVID-19 patients who are diabetic bring their own blood glucose monitors?
+    - Can diabetic COVID-19 patients bring their own blood glucose monitors?
+    - can i bring my own blood glucose monitors if i am a diabetics covid patient
+    - i want to know Can COVID-19 patients who are diabetic bring their own blood glucose monitors?
+
+- intent: covid_diabetes_9
+  examples: |
+    - should i stop taking certain blood pressure medication to lower my risk of covid
+    - Should I stop using certain blood pressure medications to reduce my chances of developing covid?
+    - Should I Stop Taking Certain Blood Pressure Medications?
+    - Should I stop taking certain blood pressure medications because I heard that these drugs may affect my risk of COVID-19 infection?"
+    - Should I stop using certain blood pressure meds since I've heard they may increase my chances of contracting COVID-19?
+    - should i stop taking certain blood pressure medication to lower my risk of COVID-19
+    - i want to know Should I Stop Taking Certain Blood Pressure Medications?
+    - i would like to know Should I Stop Taking Certain Blood Pressure Medications?
+
+- intent: covid_diabetes_10
+  examples: |
+    - How coronavirus can affect people with diabetes
+    - How diabetic patients might be affected by coronavirus
+    - i want to know How diabetic patients might be affected by coronavirus
+    - i would like to know How diabetic patients might be affected by coronavirus
+    - can you tell me How diabetic patients might be affected by coronavirus
+    - tell me how covid effect people with diabetes
+    - how covid effect people with diabetes
+    - i want to know how covid effect people with diabetes
+    - i would like to know how covid effect people with diabetes
+    - tell me how covid effect people with diabetes
+
+- intent: covid_diabetes_11
+  examples: |
+    - Advice for people with diabetes
+    - Advice for people with diabetes to protect themselves
+    - Advice for people with diabetes to protect themselves
+    - Advice for diabetics on how to protect yourself
+    - Diabetes self-protection advice during covid
+    - how diabetes do during covid
+    - give me some advice for people with diabetes
+
+- intent: covid_diabetes_12
+  examples: |
+    - Is the risk of type 1 and type 2 diabetes the same?
+    - Are the risks similar for people with type 1 and type 2 diabetes?
+    - Are the dangers for patients with type 1 and type 2 diabetes the same?
+    - i want to know Is the risk of type 1 and type 2 diabetes the same?
+    - i would like to know Is the risk of type 1 and type 2 diabetes the same?
+    - i want to know if the risk of type 1 and type 2 diabetes the same?
+    - Are the risks for patients with type 1 and type 2 diabetes the same?

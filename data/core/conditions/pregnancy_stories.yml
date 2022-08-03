@@ -1,0 +1,220 @@
+version: "2.0"
+
+stories:
+  
+- story: covid pregnancy 1
+  steps:
+  - intent: covid_pregnancy_1
+  - action: utter_covid_pregnancy_1
+    
+- story: covid pregnancy 2
+  steps:
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+    
+- story: covid pregnancy 3
+  steps:
+  - intent: covid_pregnancy_3
+  - action: utter_covid_pregnancy_3
+    
+- story: covid pregnancy 4
+  steps:
+  - intent: covid_pregnancy_4
+  - action: utter_covid_pregnancy_4
+    
+- story: covid pregnancy 5
+  steps:
+  - intent: covid_pregnancy_5
+  - action: utter_covid_pregnancy_5
+    
+- story: covid pregnancy 6
+  steps:
+  - intent: covid_pregnancy_6
+  - action: utter_covid_pregnancy_6
+    
+- story: covid pregnancy 7
+  steps:
+  - intent: covid_pregnancy_7
+  - action: utter_covid_pregnancy_7
+    
+- story: covid pregnancy 8
+  steps:
+  - intent: covid_pregnancy_8
+  - action: utter_covid_pregnancy_8
+    
+- story: covid pregnancy 9
+  steps:
+  - intent: covid_pregnancy_9
+  - action: utter_covid_pregnancy_9
+    
+- story: covid pregnancy 10
+  steps:
+  - intent: covid_pregnancy_10
+  - action: utter_covid_pregnancy_10
+
+- story: covid pregnancy 11
+  steps:
+  - intent: covid_pregnancy_1
+  - action: utter_covid_pregnancy_1
+  - intent: covid_pregnancy_4
+  - action: utter_covid_pregnancy_4
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_5
+  - action: utter_covid_pregnancy_5
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid pregnancy 12
+  steps:
+  - intent: covid_pregnancy_1
+  - action: utter_covid_pregnancy_1
+  - intent: covid_pregnancy_4
+  - action: utter_covid_pregnancy_4
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_6
+  - action: utter_covid_pregnancy_6
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid pregnancy 13
+  steps:
+  - intent: covid_pregnancy_1
+  - action: utter_covid_pregnancy_1
+  - intent: covid_pregnancy_4
+  - action: utter_covid_pregnancy_4
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_8
+  - action: utter_covid_pregnancy_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid pregnancy 14
+  steps:
+  - intent: covid_pregnancy_1
+  - action: utter_covid_pregnancy_1
+  - intent: covid_pregnancy_3
+  - action: utter_covid_pregnancy_3
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_8
+  - action: utter_covid_pregnancy_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid pregnancy 15
+  steps:
+  - intent: covid_pregnancy_1
+  - action: utter_covid_pregnancy_1
+  - intent: covid_pregnancy_3
+  - action: utter_covid_pregnancy_3
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_5
+  - action: utter_covid_pregnancy_5
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid pregnancy 16
+  steps:
+  - intent: covid_pregnancy_1
+  - action: utter_covid_pregnancy_1
+  - intent: covid_pregnancy_3
+  - action: utter_covid_pregnancy_3
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_6
+  - action: utter_covid_pregnancy_6
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid pregnancy 17
+  steps:
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_6
+  - action: utter_covid_pregnancy_6
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid pregnancy 18
+  steps:
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_5
+  - action: utter_covid_pregnancy_5
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: covid pregnancy 19
+  steps:
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_8
+  - action: utter_covid_pregnancy_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid pregnancy 20
+  steps:
+  - intent: covid_pregnancy_7
+  - action: utter_covid_pregnancy_7
+  - intent: covid_pregnancy_9
+  - action: utter_covid_pregnancy_9
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_5
+  - action: utter_covid_pregnancy_5
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid pregnancy 21
+  steps:
+  - intent: covid_pregnancy_7
+  - action: utter_covid_pregnancy_7
+  - intent: covid_pregnancy_9
+  - action: utter_covid_pregnancy_9
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_6
+  - action: utter_covid_pregnancy_6
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid pregnancy 22
+  steps:
+  - intent: covid_pregnancy_7
+  - action: utter_covid_pregnancy_7
+  - intent: covid_pregnancy_9
+  - action: utter_covid_pregnancy_9
+  - intent: covid_pregnancy_2
+  - action: utter_covid_pregnancy_2
+  - intent: covid_pregnancy_8
+  - action: utter_covid_pregnancy_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid pregnancy 23
+  steps:
+  - intent: covid_pregnancy_7
+  - action: utter_covid_pregnancy_7
+  - intent: covid_pregnancy_10
+  - action: utter_covid_pregnancy_10
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye

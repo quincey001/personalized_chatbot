@@ -1,0 +1,96 @@
+version: "2.0"
+
+nlu:
+- intent: covid_lung_disease_1
+  examples: |
+    - Do patients with lung disease have covid complications?
+    - Do lung illness patients suffer covid complications?
+    - do lung disease patients will get covid complications
+    - do lung disease patients will receive covid complications
+    - will patients with lung disease have covid complications
+    - i want to know will patients with lung disease have covid complications
+    - i would like to know will patients with lung disease have covid complications
+
+- intent: covid_lung_disease_2
+  examples: |
+    - Should I get vaccinated if I have lung disease?
+    - If I have lung illness, should I be vaccinated?
+    - if i have lung disease, should i take a vaccine
+    - should i get covid vaccine if i have lung disease
+    - should i receive covid vaccine if i have lung disease
+    - can i get the covid vaccine if i have lung disease
+    - can i get the vaccine if i have lung disease
+
+
+- intent: covid_lung_disease_3
+  examples: |
+    - what should i do If i have symptoms of COVID-19
+    - What should I do if I have COVID-19 symptoms?
+    - What should I do if I experience COVID-19 symptoms?
+    - what should lung disease patients do If they have symptoms of COVID-19
+    - What should lung disease patients do if they have COVID-19 symptoms?
+    - what should lung disease people do If they have symptoms of COVID-19
+    - tell me what should do if i have symptoms of COVID-19 and i am a lung disease patient
+
+
+- intent: covid_lung_disease_4
+  examples: |
+    - should i Keep taking my prescribed medications if i have suspected covid
+    - should i keep taking my prescribed medication if i have suspected covid
+    - should i keep taking your prescribed medication if i have suspected covid
+    - Should I continue taking my suggested medicine if I suspect covid?
+    - Should I continually take my suggested medicine if I suspect covid?
+    - Should I continually take my prescribed medicine if I suspect covid?
+    - i want to know should i stop taking my prescribed medications if i have suspected covid
+    - should i stop taking my prescribed medications if i have suspected covid
+    - should lung disease patients keep taking prescribed medication if they have suspected covid
+
+- intent: covid_lung_disease_5
+  examples: |
+    - do lung disease patients more likely to get covid
+    - are lung disease patients more likely to get covid
+    - am I at more risk of getting COVID-19 than somebody who does not have a lung condition?
+    - Is my chance of contracting COVID-19 higher than that of someone who does not have a lung condition?
+    - Is my risk of COVID-19 higher than that of someone who does not have a lung condition?
+    - Is my COVID-19 risk higher than that of someone without a lung condition?
+    - Are persons with lung problems more likely to develop covid?
+    - Are patients with lung problems more likely to develop covid?
+    - Are patients with lung problems more likely to suffer from covid?
+
+
+- intent: covid_lung_disease_6
+  examples: |
+    - are there additional measures for lung disease people to avoid getting covid
+    - Are there any additional measures that I should take to limit my risk of getting sick as I have a lung condition?
+    - are there additional measures for lung disease patients to avoid getting covid
+    - are there additional measures for lung disease patients to lower covid risk
+    - are there additional measures for people who have a lung condition to avoid getting covid
+    - i want to know how to lower the covid risk for lung disease patients
+    - tell me some measures to reduce covid risk for lung disease people
+    - can you tell me some measures to reduce covid risk for lung disease people
+
+
+
+- intent: covid_lung_disease_7
+  examples: |
+    - Can I increase my normal dosage of treatments to protect myself from COVID-19?
+    - Can I raise my usual treatment dosage to protect myself from COVID-19?
+    - Can I increase my usual treatment dosage to protect myself from COVID-19?
+    - Can I increase my regular treatment dosage to protect myself from COVID-19?
+    - should i raise my regular dosage of treatments to protect myself from COVID-19?
+    - should i raise my regular dosage of lung disease treatment
+    - should i raise my normal dosage of lung disease treatment to avoid COVID-19?
+    - should i raise my regular of lung disease treatment to avoid covid
+    - can i increase my regular of lung disease treatment to avoid covid
+
+- intent: covid_lung_disease_8
+  examples: |
+    - what should lung disease patients do if they get covid
+    - What should people with lung disease do if they get covid?
+    - I have a lung condition and think that I have COVID-19, what steps should I take?
+    - what should lung disease patients do if they get covid
+    - What should people with lung disease do if they get covid?
+    - can you tell me what should i do if have a covid and i am a lung disease patient
+    - i would like to know what should i do if i get covid and i am a lung disease patient
+    - what should lung disease people do if they have a covid
+    - what should lung disease people do if they have covid

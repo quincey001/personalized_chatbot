@@ -1,0 +1,16 @@
+version: "2.0"
+
+rules:
+- rule: single stage fallback | ask user to choose what they meant
+  steps:
+    - intent: nlu_fallback
+    - action: action_default_ask_affirmation
+
+- rule: single stage fallback | call default fallback if user in not ok
+  steps:
+    - action: action_default_ask_affirmation
+    - intent: out_of_scope
+    - active_loop: action_default_fallback
+
+
+

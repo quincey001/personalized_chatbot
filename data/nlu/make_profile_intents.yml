@@ -1,0 +1,225 @@
+version: "2.0"
+
+nlu:
+- intent: make_name_request
+  examples: |
+    - [Victoria](name)
+    - [Hannah](name)
+    - [Addison](name)
+    - [Paul](name)
+    - [Leah](name)
+    - [Lucy](name)
+    - [Steven](name)
+    - [Eliana](name)
+    - [Ivy](name)
+    - [Everly](name)
+    - [Lillian](name)
+    - [John](name)
+    - [Paisley](name)
+    - [Elena](name)
+    - [Naomi](name)
+    - [Maya](name)
+    - [Robert](name)
+    - [Andrew](name)
+    - i want to use [Victoria](name)
+    - i want to use [Hannah](name)
+    - i want to use [Addison](name)
+    - i want to use [Paul](name)
+    - i want to use [Leah](name)
+    - i want to use [Lucy](name)
+    - i want to use [Steven](name)
+    - i want to use [Eliana](name)
+    - i want to use [Ivy](name)
+    - i want to use [Everly](name)
+    - i want to use [Lillian](name)
+    - i want to use [John](name)
+    - i want to use [Paisley](name)
+    - i want to use [Elena](name)
+    - i want to use [Naomi](name)
+    - i want to use [Maya](name)
+    - i want to use [Robert](name)
+    - i want to use [Andrew](name)
+    - can i choose [Victoria](name)
+    - can i choose [Hannah](name)
+    - can i choose [Addison](name)
+    - can i choose [Paul](name)
+    - can i choose [Leah](name)
+    - can i choose [Lucy](name)
+    - can i choose [Steven](name)
+    - can i choose [Eliana](name)
+    - can i choose [Ivy](name)
+    - can i choose [Everly](name)
+    - can i choose [Lillian](name)
+    - can i choose [John](name)
+    - can i choose [Paisley](name)
+    - can i choose [Elena](name)
+    - can i choose [Naomi](name)
+    - can i choose [Maya](name)
+    - can i choose [Robert](name)
+    - can i choose [Andrew](name)
+- lookup: name
+  examples: |
+    - Victoria
+    - Hannah
+    - Addison
+    - Paul
+    - Leah
+    - Lucy
+    - Steven
+    - Eliana
+    - Ivy
+    - Everly
+    - Lillian
+    - John
+    - Paisley
+    - Elena
+    - Naomi
+    - Maya
+    - Robert
+    - Andrew
+- synonym: Victoria
+  examples: |
+    - victoria
+    - victor
+    - victory
+    - victori
+- synonym: Hannah
+  examples: |
+    - Hanna
+    - hannah
+- synonym: Addison
+  examples: |
+    - addison
+    - addiso
+    - addisonn
+- synonym: Paul
+  examples: |
+    - paul
+    - paull
+    - pual
+- synonym: Leah
+  examples: |
+    - leah
+- synonym: Lucy
+  examples: |
+    - lucy
+- synonym: Steven
+  examples: |
+    - steven
+- synonym: Eliana
+  examples: |
+    - eliana
+- synonym: Ivy
+  examples: |
+    - ivy
+- synonym: Everly
+  examples: |
+    - everly
+- synonym: Lillian
+  examples: |
+    - lillian
+- synonym: John
+  examples: |
+    - john
+- synonym: Paisley
+  examples: |
+    - paisley
+- synonym: Elena
+  examples: |
+    - elena
+- synonym: Naomi
+  examples: |
+    - naomi
+- synonym: Robert
+  examples: |
+    - robert
+- synonym: Maya
+  examples: |
+    - maya
+- synonym: Andrew
+  examples: |
+    - andrew
+
+- intent: make_gender_request
+  examples: |
+    - [female](gender)
+    - [male](gender)
+    - i want to choose [female](gender)
+    - i want to choose [male](gender)
+    - i want to use [female](gender)
+    - i want to use [male](gender)
+    - choose [male](gender)
+    - choose [female](gender)
+    - i prefer [female](gender)
+    - i prefer [male](gender)
+    - my preference is [female](gender)
+    - my preference is [male](gender)
+    - set my gender as [female](gender)
+    - set my gender as [male](gender)
+    - set [female](gender)
+    - set [male](gender)
+
+- intent: make_age_request
+  examples: |
+    - my age is [20](age)
+    - i am [20](age)
+    - [20](age)
+    - I want to choose [48](age) as for my age
+    - set my age as [48](age)
+
+- regex: age
+  examples: |
+    - \d{1,2}
+
+- intent: make_condition_request
+  examples: |
+    - i have [diabetes](condition)
+    - i have [kidney disease](condition)
+    - i have [immunodeficiency](condition)
+    - i have [cancer](condition)
+    - i have [lung disease](condition)
+    - i have [diabetes](condition) health condition
+    - i have [kidney disease](condition) health condition
+    - i have [immunodeficiency](condition) health condition
+    - i have [cancer](condition) health condition
+    - i have [lung disease](condition) health condition
+    - i have [none](condition) health condition
+    - [diabetes](condition)
+    - [kidney disease](condition)
+    - [immunodeficiency](condition)
+    - [cancer](condition)
+    - [lung disease](condition)
+    - [none](condition)
+
+- lookup: condition
+  examples: |
+    - diabetes
+    - kidney disease
+    - immunodeficiency
+    - cancer
+    - lung disease
+    - none
+- synonym: diabetes
+  examples: |
+    - diabetes
+    - bad diabetes
+    - diabetes disease
+
+- synonym: kidney disease
+  examples: |
+    - kidney
+    - chronic kidney disease
+    - Kidney
+- synonym: immunodeficiency
+  examples: |
+    - immunodeficiency syndrome
+    - severe combined immunodeficiency syndrome
+    - combined immunodeficiency syndrome
+- synonym: cancer
+  examples: |
+    - cancer treatment
+    - Cancer
+- synonym: lung disease
+  examples: |
+    - lung problems
+    - lung issue

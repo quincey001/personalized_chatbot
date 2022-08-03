@@ -1,0 +1,95 @@
+version: "2.0"
+
+nlu:
+- intent: covid_cancer_1
+  examples: |
+    - Is it safe to get the COVID-19 vaccine while receiving cancer treatment?
+    - Is it safe to have the COVID-19 vaccination while being treated for cancer?
+    - Is it safe to receive the COVID-19 vaccine while being treated for cancer?
+    - Is it safe to receive the COVID-19 vaccine while being being treated for cancer?
+    - Is it safe to have the COVID-19 vaccine while being being treated for cancer?
+    - Is it safe to obtain the COVID-19 vaccine while being being treated for cancer?
+    - I want to know if Is it safe to get the covid vaccine while receiving cancer treatment?
+    - I want to know if Is it safe to have the covid vaccination while being treated for cancer?
+    - I want to know if Is it safe to receive the covid vaccine while being treated for cancer?
+    - I want to know if Is it safe to receive the covid vaccine while being being treated for cancer?
+    - I want to know if Is it safe to have the covid vaccine while being being treated for cancer?
+    - I want to know if Is it safe to obtain the covid vaccine while being being treated for cancer?
+
+- intent: covid_cancer_2
+  examples: |
+    - Are there any contraindications with the COVID-19 vaccine?
+    - I have cancer, are there any risks associated with the COVID-19 vaccine?
+    - I have a cancer, Are there any contraindications with the COVID-19 vaccine?
+    - does the COVID-19 vaccination have any contraindications?
+    - Is the COVID-19 vaccination contraindicated in any way?
+    - Is the COVID-19 vaccination contraindicated?
+    - Is the COVID-19 vaccine contraindicated in any way?
+    - I want to know does the COVID-19 vaccination have any contraindications?
+    - i want to know Is the COVID-19 vaccination contraindicated in any way?
+    - i want to know Is the COVID-19 vaccination contraindicated?
+    - i would like to know Is the COVID-19 vaccine contraindicated in any way?
+
+- intent: covid_cancer_3
+  examples: |
+    - I am due for cancer surgery soon. Should I get the COVID-19 vaccine?
+    - I'm about to have cancer surgery. Should I be vaccinated against COVID-19?
+    - I'm preparing for cancer surgery. Should I be vaccinated against COVID-19?
+    - I'm preparing for cancer surgery. Should I receive vaccine for COVID-19?
+    - I'm about to have cancer surgery. Should I receive vaccine for COVID-19?
+    - I'm close to having cancer surgery. Should I receive vaccine for COVID-19?
+    - My cancer surgery is coming up shortly. Should I receive the COVID-19 vaccine?
+    - My cancer surgery is coming up soon. Should I receive the COVID-19 vaccine?
+    - My cancer surgery is coming up soon. Should I get the COVID-19 vaccine?
+    - My cancer surgery is coming up soon. Should I take the COVID-19 vaccine?
+
+
+- intent: covid_cancer_4
+  examples: |
+    - Will I need an additional dose of a COVID-19 vaccine, if i have a cancer?
+    - Should I need an additional dose of a COVID-19 vaccine, if i have a cancer?
+    - can I need an additional dose of a COVID-19 vaccine, if i have a cancer?
+    - can I need an additional dose, if i have a cancer?
+    - If I have cancer, will I require an additional dosage of the COVID-19 vaccine?
+    - If I have cancer, will I require an additional dose of the COVID-19 vaccine?
+    - If I have cancer, will I require an additional dose of covid vaccine?
+    - If I have cancer, would I need an additional dose of the COVID-19 vaccine?
+    - If I have cancer, do I need an additional dose of the COVID-19 vaccine?
+    - If I have cancer, do I need an additional dose of the covid vaccine?
+
+- intent: covid_cancer_5
+  examples: |
+    - Is there a higher risk of side effects for people who are having chemotherapy or radiotherapy?
+    - i want to know Is there a greater risk of adverse effects for persons undergoing chemotherapy or radiotherapy?
+    - Is there a greater risk of adverse effects for persons undergoing chemotherapy or radiotherapy?
+    - Is there a greater risk of adverse effects for persons receiving chemotherapy or radiotherapy?
+    - Is there a greater risk of adverse effects for persons having chemotherapy or radiotherapy?
+    - Is there a higher risk of adverse effects for persons having chemotherapy or radiotherapy?
+    - Is there a higher risk of adverse effects for persons receiving chemotherapy or radiotherapy?
+    - Is there a higher chance of negative effects for persons receiving chemotherapy or radiotherapy?
+
+- intent: covid_cancer_6
+  examples: |
+    - Can patients with cancer on clinical trials receive the COVID-19 vaccine?
+    - if i diagnosis cancer, can i have a covid vaccine?
+    - Can patients undergoing clinical trials for cancer be given the COVID-19 vaccine?
+    - Can patients in clinical trials for cancer be given the COVID-19 vaccine?
+    - Can patients in clinical trials with cancer be given the COVID-19 vaccine?
+    - Can COVID-19 vaccine be given to cancer patients in clinical trials?
+    - Can patients with cancer on clinical trials receive the COVID-19 vaccine?
+    - i want to know Can patients undergoing clinical trials for cancer be given the COVID-19 vaccine?
+    - i would like to knowCan patients in clinical trials for cancer be given the COVID-19 vaccine?
+    - i want to knowCan patients in clinical trials with cancer be given the COVID-19 vaccine?
+    - i would like to know Can COVID-19 vaccine be given to cancer patients in clinical trials?
+
+- intent: covid_cancer_7
+  examples: |
+    - if my antibody test shows the low antibody level, do I need an additional vaccine dose?
+    - my antibody test shows the low antibody level, does this mean I need an additional vaccine dose?
+    - I had an antibody test after I completed my vaccine course and it showed a low antibody level, does this mean I need an additional vaccine dose?
+    - I underwent an antibody test after finishing my vaccine course, and it revealed a low antibody level; does this suggest I need another vaccine dose?
+    - my antibody test  is in low antibody level, does this mean I need an additional vaccine dose?
+    - my antibody test shows the low antibody level, does this mean I need an additional vaccine dose?
+    - Does the fact that my antibody test shows a low antibody level imply that I require an extra vaccination dose?
+    - if my antibody test shows the low antibody level, does this mean I need an additional vaccine dose?
+    - if my antibody test shows the low antibody level, do I need an additional vaccine dose?

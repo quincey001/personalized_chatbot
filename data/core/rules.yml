@@ -1,0 +1,52 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: anything else? - yes
+  steps:
+  - action: utter_anything_else
+  - intent: affirm
+  - action: utter_continue
+
+- rule: anything else? - no
+  steps:
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- rule: Ask Covid Question Type
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+
+- rule: ok
+  steps:
+  - intent: affirm
+  - action: utter_continue
+
+- rule: Activate Profile Form
+  steps:
+  - intent: greet
+  - action: action_greeting
+  - action: make_profile_form
+  - active_loop: make_profile_form
+
+- rule: Submit Profile Form
+  condition:
+  - active_loop: make_profile_form
+  steps:
+  - action: make_profile_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_set_profile

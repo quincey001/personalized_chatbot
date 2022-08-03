@@ -1,0 +1,472 @@
+version: "2.0"
+
+stories:
+
+- story: covid test story 1
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_test_1
+  - action: action_covid_test_1
+  - intent: covid_test_2
+  - action: action_covid_test_2
+  - intent: covid_test_5
+  - action: action_covid_test_5
+  - intent: covid_test_6
+  - action: utter_covid_test_6
+  - intent: covid_test_9
+  - action: utter_covid_test_9
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid test story 2
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_test_1
+  - action: action_covid_test_1
+  - intent: covid_test_2
+  - action: action_covid_test_2
+  - intent: covid_test_5
+  - action: action_covid_test_5
+  - intent: covid_test_6
+  - action: utter_covid_test_6
+  - intent: covid_test_10
+  - action: utter_covid_test_10
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: covid test story 22
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_test_1
+  - action: action_covid_test_1
+  - intent: covid_test_2
+  - action: action_covid_test_2
+  - intent: covid_test_5
+  - action: action_covid_test_5
+  - intent: covid_test_4
+  - action: utter_covid_test_4
+  - intent: covid_test_7
+  - action: utter_covid_test_7
+  - intent: covid_test_8
+  - action: utter_covid_test_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid test story 3
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_test_1
+  - action: action_covid_test_1
+  - intent: covid_test_2
+  - action: action_covid_test_2
+  - intent: covid_test_5
+  - action: action_covid_test_5
+  - intent: covid_test_7
+  - action: utter_covid_test_7
+  - intent: covid_test_8
+  - action: utter_covid_test_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid test story 5
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_test_1
+    - action: action_covid_test_1
+    - intent: covid_test_2
+    - action: action_covid_test_2
+    - intent: covid_test_6
+    - action: utter_covid_test_6
+    - intent: covid_test_9
+    - action: utter_covid_test_9
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid test story 6
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_test_1
+    - action: action_covid_test_1
+    - intent: covid_test_2
+    - action: action_covid_test_2
+    - intent: covid_test_6
+    - action: utter_covid_test_6
+    - intent: covid_test_10
+    - action: utter_covid_test_10
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid test story 7
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_test_1
+    - action: action_covid_test_1
+    - intent: covid_test_14
+    - action: utter_covid_test_14
+    - intent: covid_test_3
+    - action: utter_covid_test_3
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid test story 8
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_test_1
+    - action: action_covid_test_1
+    - intent: covid_test_14
+    - action: utter_covid_test_14
+    - intent: covid_test_12
+    - action: utter_covid_test_12
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid test story 9
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_test_1
+    - action: action_covid_test_1
+    - intent: covid_test_14
+    - action: utter_covid_test_14
+    - intent: covid_test_13
+    - action: utter_covid_test_13
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+
+- story: covid test story 10
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_test_4
+    - action: utter_covid_test_4
+    - intent: covid_test_7
+    - action: utter_covid_test_7
+    - intent: covid_test_8
+    - action: utter_covid_test_8
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 1
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_2
+    - action: action_covid_symptom_2
+    - intent: covid_symptom_4
+    - action: utter_covid_symptom_4
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 2
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_2
+    - action: action_covid_symptom_2
+    - intent: covid_symptom_5
+    - action: utter_covid_symptom_5
+    - intent: covid_symptom_16
+    - action: utter_covid_symptom_16
+    - intent: covid_symptom_15
+    - action: utter_covid_symptom_15
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 3
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_2
+    - action: action_covid_symptom_2
+    - intent: covid_symptom_5
+    - action: utter_covid_symptom_5
+    - intent: covid_symptom_16
+    - action: utter_covid_symptom_16
+    - intent: covid_symptom_17
+    - action: utter_covid_symptom_17
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 4
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_2
+    - action: action_covid_symptom_2
+    - intent: covid_symptom_5
+    - action: utter_covid_symptom_5
+    - intent: covid_symptom_16
+    - action: utter_covid_symptom_16
+    - intent: covid_symptom_18
+    - action: utter_covid_symptom_18
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 5
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_2
+    - action: action_covid_symptom_2
+    - intent: covid_symptom_6
+    - action: utter_covid_symptom_6
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 6
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_2
+    - action: action_covid_symptom_2
+    - intent: covid_symptom_7
+    - action: utter_covid_symptom_7
+    - intent: covid_symptom_8
+    - action: utter_covid_symptom_8
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 7
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_2
+    - action: action_covid_symptom_2
+    - intent: covid_symptom_7
+    - action: utter_covid_symptom_7
+    - intent: covid_symptom_9
+    - action: utter_covid_symptom_9
+    - intent: covid_symptom_16
+    - action: utter_covid_symptom_16
+    - intent: covid_symptom_15
+    - action: utter_covid_symptom_15
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 8
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_2
+    - action: action_covid_symptom_2
+    - intent: covid_symptom_7
+    - action: utter_covid_symptom_7
+    - intent: covid_symptom_9
+    - action: utter_covid_symptom_9
+    - intent: covid_symptom_16
+    - action: utter_covid_symptom_16
+    - intent: covid_symptom_17
+    - action: utter_covid_symptom_17
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 9
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_2
+    - action: action_covid_symptom_2
+    - intent: covid_symptom_7
+    - action: utter_covid_symptom_7
+    - intent: covid_symptom_9
+    - action: utter_covid_symptom_9
+    - intent: covid_symptom_16
+    - action: utter_covid_symptom_16
+    - intent: covid_symptom_18
+    - action: utter_covid_symptom_18
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 10
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_12
+    - action: utter_covid_symptom_12
+    - intent: covid_symptom_14
+    - action: utter_covid_symptom_14
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 11
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_12
+    - action: utter_covid_symptom_12
+    - intent: covid_symptom_11
+    - action: action_covid_symptom_11
+    - intent: covid_symptom_10
+    - action: utter_covid_symptom_10
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 12
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_12
+    - action: utter_covid_symptom_12
+    - intent: covid_symptom_11
+    - action: action_covid_symptom_11
+    - intent: covid_symptom_5
+    - action: utter_covid_symptom_5
+
+- story: covid symptom story 13
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_12
+    - action: utter_covid_symptom_12
+    - intent: covid_symptom_11
+    - action: action_covid_symptom_11
+    - intent: covid_symptom_13
+    - action: utter_covid_symptom_13
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 14
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_12
+    - action: utter_covid_symptom_12
+    - intent: covid_symptom_11
+    - action: action_covid_symptom_11
+    - intent: covid_symptom_14
+    - action: utter_covid_symptom_14
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 15
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_12
+    - action: utter_covid_symptom_12
+    - intent: covid_symptom_14
+    - action: utter_covid_symptom_14
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 16
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_1
+    - action: action_covid_symptom_1
+    - intent: covid_symptom_19
+    - action: utter_covid_symptom_19
+    - intent: covid_symptom_20
+    - action: utter_covid_symptom_20
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 17
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_19
+    - action: utter_covid_symptom_19
+    - intent: covid_symptom_20
+    - action: utter_covid_symptom_20
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 18
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_7
+    - action: utter_covid_symptom_7
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 19
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_10
+    - action: utter_covid_symptom_10
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye
+
+- story: covid symptom story 20
+  steps:
+    - intent: ask_covid_question_type
+    - action: action_covid_question_type
+    - intent: covid_symptom_19
+    - action: utter_covid_symptom_19
+    - intent: covid_symptom_19
+    - action: utter_covid_symptom_20
+    - action: utter_anything_else
+    - intent: deny
+    - action: utter_goodbye

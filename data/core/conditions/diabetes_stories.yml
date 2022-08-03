@@ -1,0 +1,226 @@
+version: "2.0"
+
+stories:
+
+- story: covid diabetes 1
+  steps:
+  - intent: covid_diabetes_1
+  - action: utter_covid_diabetes_1
+
+- story: covid diabetes 2
+  steps:
+  - intent: covid_diabetes_2
+  - action: utter_covid_diabetes_2
+
+- story: covid diabetes 3
+  steps:
+  - intent: covid_diabetes_3
+  - action: utter_covid_diabetes_3
+
+- story: covid diabetes 4
+  steps:
+  - intent: covid_diabetes_4
+  - action: utter_covid_diabetes_4
+
+- story: covid diabetes 5
+  steps:
+  - intent: covid_diabetes_5
+  - action: utter_covid_diabetes_5
+
+- story: covid diabetes 6
+  steps:
+  - intent: covid_diabetes_6
+  - action: utter_covid_diabetes_6
+
+- story: covid diabetes 7
+  steps:
+  - intent: covid_diabetes_7
+  - action: utter_covid_diabetes_7
+
+- story: covid diabetes 8
+  steps:
+  - intent: covid_diabetes_8
+  - action: utter_covid_diabetes_8
+
+- story: covid diabetes 9
+  steps:
+  - intent: covid_diabetes_9
+  - action: utter_covid_diabetes_9
+
+- story: covid diabetes 10
+  steps:
+  - intent: covid_diabetes_10
+  - action: utter_covid_diabetes_10
+
+- story: covid diabetes 11
+  steps:
+  - intent: covid_diabetes_11
+  - action: utter_covid_diabetes_11
+
+- story: covid diabetes 12
+  steps:
+  - intent: covid_diabetes_12
+  - action: utter_covid_diabetes_12
+
+- story: diabetes 11
+  steps:
+  - intent: covid_diabetes_1
+  - action: utter_covid_diabetes_1
+  - intent: covid_diabetes_2
+  - action: utter_covid_diabetes_2
+  - intent: covid_diabetes_3
+  - action: utter_covid_diabetes_3
+  - intent: covid_diabetes_4
+  - action: utter_covid_diabetes_4
+  - intent: covid_diabetes_8
+  - action: utter_covid_diabetes_8
+  - intent: covid_diabetes_9
+  - action: utter_covid_diabetes_9
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: diabetes 12
+  steps:
+  - intent: covid_diabetes_1
+  - action: utter_covid_diabetes_1
+  - intent: covid_diabetes_2
+  - action: utter_covid_diabetes_2
+  - intent: covid_diabetes_3
+  - action: utter_covid_diabetes_3
+  - intent: covid_diabetes_4
+  - action: utter_covid_diabetes_4
+  - intent: covid_diabetes_10
+  - action: utter_covid_diabetes_10
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: diabetes 13
+  steps:
+  - intent: covid_diabetes_1
+  - action: utter_covid_diabetes_1
+  - intent: covid_diabetes_2
+  - action: utter_covid_diabetes_2
+  - intent: covid_diabetes_3
+  - action: utter_covid_diabetes_3
+  - intent: covid_diabetes_12
+  - action: utter_covid_diabetes_12
+  - intent: covid_diabetes_11
+  - action: utter_covid_diabetes_11
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: diabetes 14
+  steps:
+  - intent: covid_diabetes_1
+  - action: utter_covid_diabetes_1
+  - intent: covid_diabetes_3
+  - action: utter_covid_diabetes_3
+  - intent: covid_diabetes_12
+  - action: utter_covid_diabetes_12
+  - intent: covid_diabetes_11
+  - action: utter_covid_diabetes_11
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: diabetes 14
+  steps:
+  - intent: covid_diabetes_4
+  - action: utter_covid_diabetes_4
+  - intent: covid_diabetes_8
+  - action: utter_covid_diabetes_8
+  - intent: covid_diabetes_9
+  - action: utter_covid_diabetes_9
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: diabetes 15
+  steps:
+  - intent: covid_diabetes_4
+  - action: utter_covid_diabetes_4
+  - intent: covid_diabetes_10
+  - action: utter_covid_diabetes_10
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: diabetes 16
+  steps:
+  - intent: covid_diabetes_3
+  - action: utter_covid_diabetes_3
+  - intent: covid_diabetes_4
+  - action: utter_covid_diabetes_4
+  - intent: covid_diabetes_8
+  - action: utter_covid_diabetes_8
+  - intent: covid_diabetes_9
+  - action: utter_covid_diabetes_9
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: diabetes 17
+  steps:
+  - intent: covid_diabetes_3
+  - action: utter_covid_diabetes_3
+  - intent: covid_diabetes_4
+  - action: utter_covid_diabetes_4
+  - intent: covid_diabetes_10
+  - action: utter_covid_diabetes_10
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: diabetes 18
+  steps:
+  - intent: covid_diabetes_3
+  - action: utter_covid_diabetes_3
+  - intent: covid_diabetes_12
+  - action: utter_covid_diabetes_12
+  - intent: covid_diabetes_11
+  - action: utter_covid_diabetes_11
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: diabetes 19
+  steps:
+  - intent: covid_diabetes_5
+  - action: utter_covid_diabetes_5
+  - intent: covid_diabetes_6
+  - action: utter_covid_diabetes_6
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: diabetes 20
+  steps:
+  - intent: covid_diabetes_5
+  - action: utter_covid_diabetes_5
+  - intent: covid_diabetes_7
+  - action: utter_covid_diabetes_7
+  - intent: covid_diabetes_4
+  - action: utter_covid_diabetes_4
+  - intent: covid_diabetes_8
+  - action: utter_covid_diabetes_8
+  - intent: covid_diabetes_9
+  - action: utter_covid_diabetes_9
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: diabetes 21
+  steps:
+  - intent: covid_diabetes_5
+  - action: utter_covid_diabetes_5
+  - intent: covid_diabetes_7
+  - action: utter_covid_diabetes_7
+  - intent: covid_diabetes_4
+  - action: utter_covid_diabetes_4
+  - intent: covid_diabetes_10
+  - action: utter_covid_diabetes_10
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye

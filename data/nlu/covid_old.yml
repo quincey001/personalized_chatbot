@@ -1,0 +1,91 @@
+version: "2.0"
+
+nlu:
+- intent: covid_old_people_1
+  examples: |
+    - how to stop covid from spreading
+    - how to stop coronavirus from spreading
+    - methods to prevent the spread of coronavirus
+    - ways to prevent the spread of covid
+    - ways for old people to prevent the spread of covid
+    - methods to prevent the spread of covid for old people
+    - what old people should do to stop covid from spreading
+    - how old people can do to avoid the spread of covid
+
+
+- intent: covid_old_people_2
+  examples: |
+    - COVID-19 Community Helpline for old people
+    - COVID-19 Community Helpline for the Elderly
+    - COVID-19 Community Helpline
+    - covid Community Helpline for the Elderly
+    - Helpline for the Elderly
+    - Helpline for old people
+    - Helpline
+
+- intent: covid_old_people_3
+  examples: |
+    - what should old people do if they have a symptoms or exposure
+    - what should elderly do if they have symptoms or exposure?
+    - What should elderly do if they have symptoms or have been exposed?
+    - What should elderly do if they get symptoms or have been exposed?
+    - What should old people if they develop symptoms or have been exposed?
+    - What should old people if they receive symptoms or have been exposed?
+    - What should I do if I obtain symptoms or have been exposed, i am old
+    - What should I do if I exhibit symptoms or have been exposed , i am old
+
+- intent: covid_old_people_4
+  examples: |
+    - How can old people manage their health?
+    - How can the elderly control their health?
+    - the way for old people to manage their health
+    - the methods for old people to manage their health
+    - the advice for old people to manage their health
+    - the suggestions for old people to manage their health
+    - what should old people do to manage their health
+    - i want to know how can old people manage their health
+    - can you tell me how can old people manage their health
+
+
+- intent: covid_old_people_5
+  examples: |
+    - are old people at high risk of getting COVID-19
+    - do you think old people are at high risk of getting COVID
+    - are old people at high risk of getting covid
+    - are elderly more likely to get COVID
+    - are old people have the chance to get covid
+    - are old people at high risk of obtaining COVID-19
+    - are old people at high risk of getting COVID
+    - are old people at high risk of getting covid
+    - are old people at high risk of contracting covid
+
+- intent: covid_old_people_6
+  examples: |
+    - Does aspirin make COVID-19 worse?
+    - Is aspirin harmful to COVID-19?
+    - does aspirin make covid worse
+    - is aspirin bad to my covid
+    - does aspirin effect my covid worse?
+    - is aspirin bad
+    - i want to konw if aspirin bad for covid
+    - i would like to know does aspirin make covid worse?
+
+
+
+- intent: covid_old_people_7
+  examples: |
+    - What if I take hydroxychloroquine regularly but cannot get a refill because they are using it for COVID-19?
+    - should old people take hydroxychloroquine regularally
+    - should elderly take hydroxychloroquine regularly
+    - What if elderly use hydroxychloroquine on a regular basis but can't obtain a refill since it's being used for COVID-19?
+    - what should elderly do if they cannot receive hydroxychloroquine
+    - i want to know what should elderly do if they cannot receive hydroxychloroquine
+
+- intent: covid_old_people_8
+  examples: |
+    - What should I do if I have dental issues and need urgent dental work?
+    - how old people deal with dental issues during covid
+    - what should old people do if they have dental issues
+    - can you tell me what what should old people do if they have dental issues
+    - i want to know what should old people do if they have dental issues
+    - i would like to know what should old people do if they have dental issues

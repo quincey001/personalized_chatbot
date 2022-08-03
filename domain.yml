@@ -1,34 +1,1641 @@
-version: "2.0"
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- make_gender_request
+- greet
+- make_condition_request
+- covid_lung_disease_1
+- make_name_request
+- make_age_request
+- covid_diabetes_12
+- affirm
+- covid_diabetes_1
+- covid_diabetes_11
+- covid_diabetes_3
+- deny
+- goodbye
+- thanks
+- bot_challenge
+- out_of_scope
+- nlu_fallback
+- ask_covid_question_type
+- covid_test_1
+- covid_test_2
+- covid_test_3
+- covid_test_4
+- covid_test_5
+- covid_test_6
+- covid_test_7
+- covid_test_8
+- covid_test_9
+- covid_test_10
+- covid_test_11
+- covid_test_12
+- covid_test_13
+- covid_test_14
+- covid_symptom_1
+- covid_symptom_2
+- covid_symptom_3
+- covid_symptom_4
+- covid_symptom_5
+- covid_symptom_6
+- covid_symptom_7
+- covid_symptom_8
+- covid_symptom_9
+- covid_symptom_10
+- covid_symptom_11
+- covid_symptom_12
+- covid_symptom_13
+- covid_symptom_14
+- covid_symptom_15
+- covid_symptom_16
+- covid_symptom_17
+- covid_symptom_18
+- covid_symptom_19
+- covid_symptom_20
+- covid_treatment_1
+- covid_treatment_2
+- covid_treatment_3
+- covid_treatment_4
+- covid_treatment_5
+- covid_treatment_6
+- covid_treatment_7
+- covid_treatment_8
+- covid_treatment_9
+- covid_treatment_10
+- covid_other_1
+- covid_other_2
+- covid_other_3
+- covid_isolation_1
+- covid_isolation_2
+- covid_isolation_3
+- covid_isolation_4
+- covid_isolation_5
+- covid_isolation_6
+- covid_isolation_7
+- covid_isolation_8
+- covid_isolation_9
+- covid_risk_1
+- covid_risk_2
+- covid_risk_3
+- covid_risk_4
+- covid_vaccine_1
+- covid_vaccine_2
+- covid_vaccine_3
+- covid_vaccine_4
+- covid_vaccine_5
+- covid_vaccine_6
+- covid_vaccine_7
+- covid_vaccine_8
+- covid_vaccine_9
+- covid_vaccine_10
+- covid_vaccine_11
+- covid_vaccine_12
+- covid_vaccine_13
+- covid_vaccine_14
+- covid_vaccine_15
+- covid_vaccine_16
+- covid_vaccine_17
+- covid_vaccine_18
+- covid_vaccine_19
+- covid_vaccine_20
+- covid_vaccine_21
+- covid_vaccine_22
+- covid_vaccine_23
+- covid_vaccine_24
+- covid_vaccine_25
+- covid_vaccine_26
+- covid_vaccine_27
+- covid_vaccine_28
+- covid_vaccine_29
+- covid_vaccine_30
+- covid_vaccine_31
+- covid_vaccine_32
+- covid_diabetes_2
+- covid_diabetes_4
+- covid_diabetes_5
+- covid_diabetes_6
+- covid_diabetes_7
+- covid_diabetes_8
+- covid_diabetes_9
+- covid_diabetes_10
+- covid_kidney_1
+- covid_kidney_2
+- covid_kidney_3
+- covid_kidney_4
+- covid_kidney_5
+- covid_kidney_6
+- covid_kidney_7
+- covid_kidney_8
+- covid_immunodeficiency_1
+- covid_immunodeficiency_2
+- covid_immunodeficiency_3
+- covid_immunodeficiency_4
+- covid_immunodeficiency_5
+- covid_immunodeficiency_6
+- covid_immunodeficiency_7
+- covid_immunodeficiency_8
+- covid_cancer_1
+- covid_cancer_2
+- covid_cancer_3
+- covid_cancer_4
+- covid_cancer_5
+- covid_cancer_6
+- covid_cancer_7
+- covid_pregnancy_1
+- covid_pregnancy_2
+- covid_pregnancy_3
+- covid_pregnancy_4
+- covid_pregnancy_5
+- covid_pregnancy_6
+- covid_pregnancy_7
+- covid_pregnancy_8
+- covid_pregnancy_9
+- covid_pregnancy_10
+- covid_lung_disease_2
+- covid_lung_disease_3
+- covid_lung_disease_4
+- covid_lung_disease_5
+- covid_lung_disease_6
+- covid_lung_disease_7
+- covid_lung_disease_8
+- covid_old_people_1
+- covid_old_people_2
+- covid_old_people_3
+- covid_old_people_4
+- covid_old_people_5
+- covid_old_people_6
+- covid_old_people_7
+- covid_old_people_8
+entities:
+- age
+- condition
+- gender
+- name
+- question_type
+slots:
+  name:
+    type: text
+    influence_conversation: true
+  gender:
+    type: text
+    influence_conversation: true
+  age:
+    type: text
+    influence_conversation: true
+  condition:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_continue:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye👋, Have a great day!
+  - text: Goodbye!👋 Have a great day!
+  - text: Ciao!👋 Have a great day!
+  - text: Bye, was nice talking to you!👋
+  utter_iamabot:
+  - text: I am a COVID-19 FAQ ChatBot to answer covid-related questions.
+  utter_thanks:
+  - text: Your Welcome🙂. Glad I could be of some help!
+  - text: No worries!🙂
+  - text: You're welcome!🙂
+  - text: I'm happy to help.🙂
+  utter_anything_else:
+  - text: 'Do you want to know more about: **Covid Test**, **Covid Symptoms**, **Covid Treatment**, **Covid Self-isolation**, **Covid Risk**,**Covid Vaccine**, **Other** ? Example for asking questions: I want to know ...'
+  utter_out_of_scope:
+  - text: Sorry, I can’t deal with that request.😀 Can you try to ask another question
+  - text: I'm sorry, I can't handle that request.😀 Can you try to ask another question
+  - text: I can't help you with that, I'm sorry.😀 Can you try to ask another question
+  - text: Sorry, it seems like I can't handle that request 😀 . Can you try to ask another question
+  utter_default:
+  - text: Sorry, I didn't get that 🤷. Could you please rephrase?
+  - text: I didn't understand, could you rephrase that?
+  - text: I'm sorry, but I didn't understand you. Could you please rephrase what you just said?
+  - text: I'm afraid I didn't get what you just said. Could you rephrase that?
+  - text: I didn't quite get that, could you rephrase your message?
+  - text: Could you rephrase your message? I didn't get it, I'm sorry.
+  utter_greet_2:
+  - text: Hi👋 👋 , I am a COVID-19 FAQ ChatBot to offer you targeted information based on your fictitious persona. You will have some options choose to make up your own fictitious profile, this chatbot will not ask and take your personal information.
+  - text: Hello there🤗, I am a COVID-19 FAQ ChatBot to offer you targeted information based on your fictitious persona. You will have some options choose to make up your own fictitious profile, this chatbot will not take your personal information.
+  utter_greet_3:
+  - text: You will need to choose your **name**, **gender**, **age**, **health conditions** to build your profile.
+  utter_ask_gender:
+  - text: |-
+      ^_^ Please type your preferred gender 🙂
+       * female
+       * male
+  utter_ask_age:
+  - text: ^_^ Please type your preferred age 🙂
+  utter_ask_condition:
+  - text: |-
+      ^_^ Please tell me what health condition you have 🙂
+       * Diabetes
+       * Kidney Disease
+       * Immunodeficiency syndrome
+       * Cancer
+       * Lung Disease
+       * None (Don't have any health condition)
+  utter_set_profile:
+  - text: |-
+      ^_^ Your profile is set up to use:
+       * Name: {name}
+       * Gender: {gender}
+       * Age: {age}
+       * Health Condition: {condition}.
+  utter_covid_test_1:
+  - text: |-
+      There are 2 types of free COVID-19 tests available online from the HSE:
+       * antigen tests (home test kits)
+       * PCR tests (done at a test centre and sent to a lab)
+  utter_covid_test_2:
+  - text: |-
+      * Antigen test is an extra measure to help protect yourself and others from COVID-19 (coronavirus).
+       * You do the tests yourself. You use a swab to take a sample from your nose.
+       * Unlike a COVID-19 PCR test, the test sample does not have to go to a lab.
+       You usually get your result in 15 minutes.
+  utter_covid_test_3:
+  - text: |-
+      You can get a PCR test if you have symptoms and you:
+       * are age 55 or older and have not had a COVID-19 vaccine booster dose
+       * have a high-risk medical condition
+       * have a weak immune system (immunocompromised)
+       * live in the same household as a person who has a weak immune system or provide support or care for them
+       * are pregnant
+       * are a healthcare worker
+       If you have a positive antigen test, you can book a PCR test if you need a COVID-19 Recovery Cert.
+  utter_covid_test_4:
+  - text: |-
+      Follow the instructions that came with the test.
+       * The instructions may vary from test to test.
+       * Click here **[Instruction Link](https://covidservices.hse.ie/)**.
+    buttons:
+    - title: Do children need an antigen test?
+      payload: /covid_test_7
+  utter_covid_test_5:
+  - text: |-
+      If you are a healthcare worker and you are a household close contact, you can get antigen tests if you:
+       * do not have symptoms of COVID-19
+       * have not had COVID-19 in the past 3 months
+       * Antigen tests are not recommended for children under the age of 4.
+  utter_covid_test_6:
+  - text: Get a PCR or antigen test, follow the **[Link](https://covidservices.hse.ie/)**
+    buttons:
+    - title: What should I do if my antigen test is positive?
+      payload: /covid_test_9
+    - title: What should I do if my antigen test is negative?
+      payload: /covid_test_10
+  utter_covid_test_7:
+  - text: |-
+      Most children do not need to get tested unless they have symptoms and they:
+       * have a condition that puts them at higher risk
+       * live with someone who has a weak immune system
+    buttons:
+    - title: How to do an antigen test with children?
+      payload: /covid_test_8
+  utter_covid_test_8:
+  - text: |-
+      To do the antigen test you use a swab to take a sample from your child's nose.
+       When you have finished with an antigen test, put it in a plastic bag and put the bag in your bin.
+       * Watch a video on doing an antigen test with a child: [link] (https://youtu.be/AsRrIe-YI4I).
+  utter_covid_test_9:
+  - text: |-
+      If you have a positive (detected) antigen test result you need to:
+       * self-isolate (stay in your room)
+       * wear a medical grade or respirator face mask if you have to be around other people
+       * report your positive test result.
+  utter_covid_test_10:
+  - text: |-
+      If you have a negative (not detected) antigen test result, you need to report your negative antigen result.
+       * This helps us learn more about antigen testing.
+       * A negative test does not mean that you do not have COVID-19. * It just means that the virus was not found on the sample you took.
+       * If you have symptoms of COVID-19, continue to self-isolate until you've had no symptoms for 48 hours.
+  utter_covid_test_11:
+  - text: |-
+       * Reporting a positive antigen test cannot be used as proof of recovery to get a COVID-19 Recovery Certificate.
+       * If you had a positive antigen test and you need a COVID-19 Recovery Certificate you should book a PCR test.
+    buttons:
+    - title: When can I do an antigen test
+      payload: /covid_test_5
+    - title: What are the most common symptom of covid
+      payload: /covid_symptom_1
+  utter_covid_test_12:
+  - text: |-
+      If you get a positive PCR test result for COVID-19 (coronavirus):
+       * you need to self-isolate (stay in your room) for 7 days. There is a high risk you could spread the virus to other people. Do this even if you completed your first round of COVID-19 vaccination, had a booster or had a positive PCR test in the past.
+  utter_covid_test_13:
+  - text: |-
+      A test sample for COVID-19 (coronavirus) may not always give a clear result. * This is called an indeterminate, invalid or inhibitory result.
+       * It means that the test could not detect if you have COVID-19.
+       * If you get this result, you will get a text message with a link to book a COVID-19 PCR test.
+  utter_covid_test_14:
+  - text: |-
+      * PCR (polymerase chain reaction) tests have been designed to find genetic material called RNA that tells the virus to make these proteins.
+       * This test the most accurate Covid-19 test. When swabs are taken for PCR tests, reagents are used to convert the RNA into DNA in order to identify any infection within the patient.
+    buttons:
+    - title: When can I do PCR test?
+      payload: /covid_test_3
+    - title: What should I do if my PCR test is positive
+      payload: /covid_test_12
+    - title: What should I do if my pcr test is invalid
+      payload: /covid_test_13
+  utter_covid_symptom_1:
+  - text: |-
+      The most common symptoms of COVID-19 (coronavirus) are:
+       * fever (high temperature - 38 degrees Celsius or above) * including having chills
+       * dry cough
+       * fatigue (tiredness)
+       * COVID-19 symptoms can be like symptoms of cold, flu or hay fever.
+  utter_covid_symptom_2:
+  - text: |-
+      ##Less common symptoms of COVID-19 include:
+       * loss or change to your sense of smell or taste – this could mean they're completely gone or just different to normal
+       * nasal congestion (runny or blocked nose)
+       * conjunctivitis (also known as red eye or pink eye)
+       * sore throat
+       * headache
+       * muscle or joint pain (aches and pains)
+       * different types of skin rash
+       * nausea or vomiting
+       * diarrhoea
+       * chills or dizziness
+  utter_covid_symptom_3:
+  - text: |-
+      Symptoms of severe COVID‐19 include:
+       * shortness of breath or breathing difficulties
+       * loss of appetite
+       * confusion
+       * pain or pressure in the chest
+       * fever (high temperature - 38 degrees Celsius or above)
+
+      You may not have all of the symptoms or your symptoms may be mild. You can still get infected if you are fully vaccinated. But your symptoms may be mild. It can take up to 14 days after you are infected for symptoms to show. You can spread COVID-19 during this time.
+  utter_covid_symptom_4:
+  - text: |-
+      If you have any symptoms of COVID-19, even mild ones, you should:
+       * self-isolate (stay in your room) until 48 hours after your symptoms are mostly or fully gone
+       * wear a face mask if you have to be around other people
+       * Do these even if you completed your first round of COVID-19 vaccination, had a booster, or had COVID-19 in the past.
+       Certain groups of people with symptoms should get a COVID-19 test.
+  utter_covid_symptom_5:
+  - text: |-
+      If your child has symptoms of COVID-19 (coronavirus) they need to:
+       * stay at home and isolate from other people
+      wear a medical, respirator or well-fitted face mask around other people, depending on their age
+       * If your child is aged 3 months or less, phone your GP for advice.
+    buttons:
+    - title: Children have a serious dehydration from covid ?
+      payload: /covid_symptom_16
+  utter_covid_symptom_6:
+  - text: |-
+      Many of the symptoms of COVID-19 can be treated at home. But if you are concerned about any of your symptoms, phone your GP.
+       your symptoms of COVID-19 get worse and you:
+       * start feeling very unwell, particularly if your breathing changes, becomes difficult, or your cough gets worse
+       * feel that you are getting increasingly short of breath
+       are showing signs of dehydration.
+  utter_covid_symptom_7:
+  - text: |-
+      Contact your GP if you have a very high fever (over 40 degrees Celsius) and you:
+       * are still feverish after 3 days of home treatment or seem to be getting sicker
+       * are shivering or shaking uncontrollably, or have chattering teeth, and it does not stop within an hour or so
+       * have a severe headache that does not get better after taking painkillers
+       * are getting confused or are unusually drowsy
+    buttons:
+    - title: More about high fever
+      payload: /covid_symptom_8
+    - title: I want to learn more about children have a high fever
+      payload: /covid_symptom_9
+  utter_covid_symptom_8:
+  - text: |-
+      Fever in adults:
+
+       * Your body’s normal temperature is between 36 and 36.8 degrees Celsius.
+       * A high temperature or fever, for most people, is when your body temperature is 38 degrees Celsius or higher. This can be a sign that you are unwell. It usually means you have an infection such as a cold. But it can also be due to more serious infections, such as COVID-19 (coronavirus).
+       * Even if you don’t have a high temperature you may still be seriously ill. So it's important to look at all your symptoms.
+       * A fever is usually caused by your body fighting a viral or bacterial infection.
+       * A fever usually lasts 3 to 5 days and most people will recover from a mild fever with self-care at home.
+  utter_covid_symptom_9:
+  - text: |-
+      A normal temperature is between 36 and 36.8 degrees Celsius.
+       * In children, any temperature of 38 degrees Celsius or above is considered high. High temperature is common in young children. The temperature usually returns to normal in 3 or 4 days.
+
+       * A temperature above 38 degrees Celsius is usually a sign of an infection such as a cold. But it can also be due to more serious infections, so it's important to look at all your child's symptoms.
+
+       * Even if they do not have a high temperature, they may still be seriously ill.
+  utter_covid_symptom_10:
+  - text: |-
+      Contact your GP if you have been dehydrated and are now drinking regularly or are using oral rehydration sachets and you:
+       * are feeling unusually tired
+       * are confused and disorientated
+       * have any dizziness when you stand and it does not go away
+       * have not peed all day
+       * have a weak or rapid pulse
+       * have fits (seizures)
+  utter_covid_symptom_11:
+  - text: |-
+      Adults；
+       * Dehydration means that your body does not have enough fluid. If it's not treated, it can become a serious problem.
+       Information:
+       * Babies, children and people aged 65 and over are more at risk of dehydration.
+       If you have symptoms of flu or COVID-19 (coronavirus) you may be more likely to become dehydrated.
+  utter_covid_symptom_12:
+  - text: |-
+      Symptoms of dehydration in adults and children include:
+       * feeling thirsty
+       * dark yellow and strong-smelling pee - healthy pee should look pale yellow
+       * feeling dizzy or lightheaded
+       * feeling tired
+      dry mouth, lips and eyes
+       * peeing little, and fewer than 4 times a day.
+    buttons:
+    - title: More about dehydration
+      payload: /covid_symptom_11
+    - title: What should I do if I have a severe dehydration
+      payload: /covid_symptom_14
+  utter_covid_symptom_13:
+  - text: |-
+      Drink more fluids when you feel any dehydration symptoms. The best fluids to drink are water or oral rehydration sachets.
+
+       If you find it hard to drink because you feel sick or have been vomiting, start with small sips and then gradually drink more.
+
+       Drink enough during the day so your pee is a pale clear colour.
+
+       Drink plenty of fluids if you are vomiting, have diarrhoea or if you are sweating a lot. You might be at higher risk of dehydration at these times.
+  utter_covid_symptom_14:
+  - text: |-
+      * If you're vomiting or have diarrhoea and are losing too much fluid, you need to put back the sugar, salts and minerals that your body has lost.
+       * Your pharmacist can recommend oral rehydration sachets. These are powders that you mix with water and then drink.
+       * Ask your pharmacist which ones are right for you or your child.
+       * If you are very ill, ask someone else to go to the pharmacy for you.
+  utter_covid_symptom_15:
+  - text: |-
+      Dehydration in babies and children:
+       * Babies and children are more at risk of dehydration than adults. * Make sure that your child drinks enough fluids, such as milk or water, every day. This is especially important if your child is under 5 years old or is sick.
+       * Dehydration in young children is common. It can be serious if it's not dealt with quickly.
+  utter_covid_symptom_16:
+  - text: |-
+      Phone your GP if:
+       you think your child is dehydrated and they:
+       * are under 6 months old
+       * have a chronic medical condition
+       * are not improving after they are given more fluids
+       * start showing signs that they need urgent medical help.
+
+      Take your baby or child to your GP or emergency department (ED) urgently if they:
+       * seem drowsy (hard to wake)
+       * are breathing fast
+       * have few or no tears when they cry
+       * have a soft spot on their head that sinks inwards (sunken fontanelle)
+       * have a dry mouth
+       * have dark yellow pee or have not had a pee in last 12 hours
+       * have cold and blotchy-looking hands and feet
+       * are extremely thirsty
+       * are pale
+       * have less energy than usual
+       * have less than 3 wet nappies per day
+       * seem confused
+    buttons:
+    - title: More about dehydration for children
+      payload: /covid_symptom_15
+    - title: Lower the risk of dehydration for children
+      payload: /covid_symptom_18
+    - title: The symptoms of dehydration in babies and children
+      payload: /covid_symptom_17
+  utter_covid_symptom_17:
+  - text: |-
+      Symptoms of dehydration in babies and children are similar to symptoms of dehydration in adults. Thirst is one of the earliest signs. If your child is thirsty, give them a drink.
+
+
+      Other signs to also look out for in children and babies are:
+       * complaints of a headache
+       * fewer wet nappies than usual or their wet nappies may not feel as heavy (or be as wet) as usual
+  utter_covid_symptom_18:
+  - text: |-
+      Make sure that your child drinks enough fluids every day. This is especially important if your child is under 5 years old or is sick.
+
+       The amount of fluid your child needs depends on how old they are, how active they are and how hot the weather is. But most children aged 1 to 4 years old need 6 to 8 drinks a day.
+  utter_covid_symptom_19:
+  - text: |-
+      Symptoms of fatigue include:
+       * doing tasks in the wrong order
+       * finding it increasingly difficult to perform more than one task at once
+       * forgetting to do things often
+       * working on automatic and not thinking
+       * falling asleep for small amounts of time
+       * feeling tired or yawning all the time
+       * being more irritable than usual
+       * being frustrated by tasks
+       * having difficulty concentrating
+       * being uncommunicative
+    buttons:
+    - title: Reduce tiredness and fatigue from covid
+      payload: /covid_symptom_20
+  utter_covid_symptom_20:
+  - text: |-
+      You can reduce tiredness and fatigue by:
+       * developing a healthy sleep routine
+       * having a nap when you can, if you need to
+       * drinking plenty of water to keep hydrated
+       * eating nutritional food
+  utter_covid_isolation_1:
+  - text: |-
+      * Self-isolation means staying indoors and completely avoiding contact with other people. This includes the people you live with. It is sometimes called self-quarantine.
+
+       * You should self-isolate when there is a high risk you could spread COVID-19 (coronavirus) to other people. If you live with other people, stay on your own in a room with a window you can open, if possible.
+
+       * Do not go outside. Only leave your house if you need urgent medical help, such as going to hospital. Ask other people to go to the shop or pharmacy for you.
+    buttons:
+    - title: When I need to do self-quarantine
+      payload: /covid_isolation_2
+    - title: How long do I need to do self-quarantine
+      payload: /covid_isolation_5
+  utter_covid_isolation_2:
+  - text: |-
+      Self-isolate if you:
+       * have symptoms of COVID-19
+       * get a positive PCR or antigen test result for COVID-19, even if you have mild symptoms or no symptoms
+       * were tested because you had symptoms and are waiting for PCR test results
+       * Do this even if you are vaccinated or have had your booster dose.
+    buttons:
+    - title: What should I do after 7 days of self-isolation
+      payload: /covid_isolation_6
+    - title: When do my children need to quarantine
+      payload: /covid_isolation_7
+  utter_covid_isolation_3:
+  - text: |-
+       Do:
+       * stay at home
+       * keep away from other people – especially older people or anyone with a long-term medical condition
+       * use a different bathroom to others in your household
+       * clean your hands properly after
+       * ask friends, family or delivery drivers to drop off food or supplies
+       * wash your hands properly and often
+       * use your own towel
+       * clean your room every day
+       * wear a medical or respirator face mask
+  utter_covid_isolation_4:
+  - text: |-
+      Don't:
+       * do not go outside unless you have your own outdoor space away from other people
+       * do not go to work, school, religious services or public areas
+       * do not go to the shops or pharmacy for any reason – ask them to deliver or ask someone to go for you
+       * do not share things like food, dishes or other household items
+       * do not use public transport or taxis
+       * do not have any visitors to your home
+    buttons:
+    - title: How to deal with self-isolation
+      payload: /covid_isolation_9
+  utter_covid_isolation_5:
+  - text: |-
+      You should start to self-isolate as soon as you get symptoms of COVID-19 or get a positive antigen test result.
+
+       How long you need to self-isolate depends on the results of your test.
+
+       When you stop self-isolating after 7 days, you need to take extra care for another 3 days to reduce the risk of passing COVID-19 on.
+    buttons:
+    - title: What should I do after 7 days of self-isolation
+      payload: /covid_isolation_6
+  utter_covid_isolation_6:
+  - text: |-
+      After your 7 days of self-isolation,
+       * you can go back to your normal activities. When you stop self-isolating, take extra care for another 3 days.
+       * limit close contact with other people outside your household
+       * wear a face covering
+       * avoid contact with anyone who is at higher risk of severe illness from COVID-19
+       * work from home unless it is essential to go to work in person
+       * Be especially careful in places that are crowded,enclosed, poorly ventilated hard to avoid close contact with people
+  utter_covid_isolation_7:
+  - text: |-
+      Your child will need to isolate from other people if they:
+       * develop symptoms of COVID-19
+       * test positive for COVID-19 - this is either through a PCR or antigen test
+    buttons:
+    - title: How long does it take for children isolation
+      payload: /covid_isolation_8
+  utter_covid_isolation_8:
+  - text: |-
+       (1) If your child has symptoms of COVID-19, they need to isolate from other people (stay at home) until 48 hours after their symptoms are mostly or fully gone.
+
+       (2) If your child tests positive for COVID-19 and has symptoms, they need to stay in isolation until when both of they have not had a high temperature or other symptoms for 48 hours
+
+       (3) It's OK for them to stop isolating after 7 days if they only have a mild cough or changes to their sense of smell – these can last for weeks after the infection has gone.
+
+       (4) If they tested positive but did not have symptoms, they need to isolate for 7 days. This is from the day they got tested.
+
+       (5) If your child gets a negative result, they can stop isolating once they have had no symptoms for 48 hours.
+  utter_covid_isolation_9:
+  - text: |-
+       (1) Keep yourself mobile by getting up and moving around as much as possible. If you have a private garden, backyard or balcony, go out and get some fresh air.
+
+       (2) Stay in touch with people over the phone. Ask a family member, friend or neighbour to check in with you over the phone a few times every day. Let them know how you are feeling.
+
+       (3) Get any food or medicines you need delivered to your home. Ask someone to get these things for you if home delivery is not an option. Do not go to the pharmacy or shop yourself as you could put others at risk.
+  utter_covid_other_1:
+  - text: |-
+      COVID-19 is an illness that can affect the lungs and airways, and sometimes other parts of the body.
+       * It’s caused by a virus called coronavirus.It is highly infectious.
+       * It spreads through the air through droplets produced when people cough or sneeze, or when they touch surfaces where the droplets have landed and then touch their eyes, nose or mouth.
+       * COVID-19 can cause serious illness, hospitalisation and even death.
+  utter_covid_other_2:
+  - text: |-
+       You do not need a test if you are:
+       * under 55 years of age with symptoms of COVID-19 and you are otherwise healthy
+       * age 55 or older and you are fully boosted, even if you have symptoms of COVID-19
+  utter_covid_other_3:
+  - text: |-
+      If you start to feel very unwell, phone your GP. Particularly if your breathing changes or becomes difficult, or your cough gets worse. Do not go to your GP or to a pharmacy in person.
+
+       Immediate action required: Call 112 or 999 if you are very short of breath and your GP is not available.
+  utter_covid_risk_1:
+  - text: |-
+      The list of people in high risk groups includes people who:
+
+       * are age 55 or older and not fully boosted
+       * have a learning disability other than Down Syndrome
+       * are being treated for cancer but are not very high risk
+       * have been treated in the past 5 years for a cancer of the blood or bone marrow
+       * have been treated in the past 1 year for a cancer that did not start in the blood or bone marrow
+       * have chronic heart disease
+       * have chronic kidney disease with an eGFR below 30ml a minute
+      have chronic liver disease
+
+    buttons:
+    - title: More Information for high risk groups
+      payload: /covid_risk_3
+  utter_covid_risk_3:
+  - text: |-
+      * have a condition affecting the brain or nerves
+       * have clinically stable cystic fibrosis
+      have a serious lung condition
+       * have diabetes
+       * are taking medicine that makes you much more likely to get infections (such as high doses of steroids)
+       * have a condition that means you have a high risk of getting infections (such as HIV, lupus or scleroderma)
+       * have an inherited metabolic disorder but are not very high risk
+       * have obesity with a body mass index (BMI) between 35 and 40
+       * have a severe mental illness
+    buttons:
+    - title: What are the most common symptom of covid
+      payload: /covid_symptom_1
+  utter_covid_risk_2:
+  - text: |-
+      The list of people in very high risk groups include people who:
+
+       * have Down Syndrome
+       * have cancer and are being treated with chemotherapy or similar drugs other than hormone therapy
+       * have lung or head and neck cancer and are having radical surgery or radiotherapy
+       * are having radical radiotherapy for lung cancer or head and neck cancer
+       * are having certain complex cancer surgery, for example, surgery for lung cancer, head and neck cancer or oesophageal cancer
+       * have advanced cancer or cancer that has spread to another part of the body
+       * are on dialysis or have end-stage kidney disease and an eGFR less than 15
+    buttons:
+    - title: More Information for very high risk groups
+      payload: /covid_risk_4
+  utter_covid_risk_4:
+  - text: |-
+      * have a condition affecting the brains or nerves that has significantly affected your ability to breathe, meaning you require non-invasive ventilation (such as motor neurone disease or spinal muscular atrophy)
+       * have unstable or severe cystic fibrosis, including people waiting for a transplant
+       * have severe respiratory conditions including Alpha-1 antitrypsin deficiency, severe asthma, pulmonary fibrosis, lung fibrosis, interstitial lung disease and severe COPD
+       * have uncontrolled diabetes
+
+       * have had an organ transplant or are waiting for a transplant
+       * have had a bone marrow or stem cell transplant in the last 12 months, or are waiting for a transplant
+       * have a rare condition that means you have a very high risk of getting infections (such as APECED or errors in the interferon pathway)
+       * sickle cell disease
+
+       * have been treated with drugs such as Rituximab, Cyclophosphamide, Alemtuzumab, Cladribine or Ocrelizumab in the last 6 months
+       * have certain inherited metabolic disorders (such as Maple Syrup Urine Disease)
+       * have obesity with a body mass index (BMI) greater than 40
+    buttons:
+    - title: What kinds of test are available?
+      payload: /covid_test_1
+  utter_covid_treatment_1:
+  - text: |-
+      Do:
+       * self-isolate
+       * get lots of rest and sleep
+       * drink enough water to avoid dehydration - your pee should be light yellow or clear
+       * eat healthily
+       * avoid smoking
+       * keep warm
+       * monitor and treat your symptoms
+  utter_covid_treatment_2:
+  - text: |-
+      The best medicines to use will depend on your:
+       * symptoms
+       * other medical conditions
+       * any other medication you're taking Paracetamol or ibuprofen may help to lower your temperature and treat aches and pains. Paracetamol is usually recommended as the first-line of treatment for most people.
+    buttons:
+    - title: Does antibiotics work to covid symptoms
+      payload: /covid_treatment_3
+    - title: Is ibuprofen good for covid symptoms
+      payload: /covid_treatment_4
+  utter_covid_treatment_3:
+  - text: Antibiotics do not work against COVID-19 or any viruses. They will not relieve your symptoms or speed up your recovery.
+    buttons:
+    - title: More about Anti-inflammatory medicines
+      payload: /covid_treatment_9
+  utter_covid_treatment_4:
+  - text: |-
+      It is OK to take ibuprofen or other anti-inflammatories (NSAID) if you have COVID-19.
+       * Only take one anti-inflammatory medication at a time. It is OK to take paracetamol and an anti-inflammatory at the same time.
+    buttons:
+    - title: More about Anti-inflammatory medicines
+      payload: /covid_treatment_9
+  utter_covid_treatment_9:
+  - text: |-
+      Anti-inflammatory medicines include:
+       * ibuprofen - brand names: Nurofen, Actiprofen, Advil, Brufen, Brupro, Buplex, Easofen, and Fenopine. Ibuprofen gel can be called Nurofen, Melfen, Phorpain, Ibugel and Ibuleve
+       * naproxen – brand name: Naprosyn
+       * diclofenac – brand names: Voltarol, Diclo, Diclac, Cataflam, Difene and Flector
+  utter_covid_treatment_5:
+  - text: |-
+      If your cough is a result of a cold or flu, you do not need to see your GP. Antibiotics will not help a cold or flu.
+
+       There is no quick way to get rid of a cough. It will usually clear up after your immune system has defeated the bug that is causing it.
+       * You should rest and drink plenty of fluids.
+       * You can ease a tickly or chesty cough is with any of the common over-the-counter remedies. Hot lemon with honey has a similar effect as cough medicines.
+    buttons:
+    - title: More cough treatment for baby and children
+      payload: /covid_treatment_10
+  utter_covid_treatment_10:
+  - text: Hot drinks and some medicines are not suitable for babies and children. Ask your pharmacist for advice on treatment for children.
+  utter_covid_treatment_6:
+  - text: |-
+      If you have asthma, you may be using inhalers and tablets to control your asthma. When your symptoms flare up, follow your GP's advice.
+
+       This will vary depending on the pattern and severity of your asthma. It will usually mean taking your reliever inhaler 4 to 5 times a day. You may have to increase your preventer inhaler while you have the cough.
+  utter_covid_treatment_7:
+  - text: |-
+      Shortness of breath has lots of different causes.
+       * Common causes include a cold or chest infection, asthma, being overweight, and smoking.
+       * It can also be a sign of a panic attack.
+       * But sometimes it could be a sign of something more serious, such as a lung condition called chronic obstructive pulmonary disease (COPD) or lung cancer.
+
+       Any treatment you may need depends on what's causing your symptoms. Don't try to self-diagnose the cause of your shortness of breath – always contact a GP.
+  utter_covid_treatment_8:
+  - text: |-
+      Your sense of smell may go back to normal in a few weeks or months.
+       Treating the cause might help.
+       * For example, steroid nasal sprays or drops might help if you have sinusitis or nasal polyps.
+       * A treatment called smell training can also help some people.
+       * Fifth Sense: how to do smell training **[link](https://www.fifthsense.org.uk/smell-training/) **
+       Sometimes changes in sense of smell cannot be treated and may be permanent.
+  utter_covid_vaccine_1:
+  - text: |-
+      * A vaccine is a substance that should improve immunity – protection – to a particular disease.
+       * COVID-19 vaccines protect you from serious illness with COVID-19. If people are vaccinated, it should also reduce the numbers who become seriously ill or even die from COVID-19 in our community.
+       * Vaccines teach your immune system how to protect you from diseases. It is much safer for your immune system to learn how to protect you through vaccination than by contracting COVID-19.
+    buttons:
+    - title: Who need to get the covid vaccine?
+      payload: /covid_vaccine_2
+    - title: People who should not get Nuvaxovid vaccine?
+      payload: /covid_vaccine_3
+  utter_covid_vaccine_2:
+  - text: |-
+      While it is up to you to decide to get the vaccine, the HSE, the World Health Organization and the Department of Health strongly recommend that you do so as soon as it is offered to you. You will need to read this leaflet and the manufacturer’s Patient Information Leaflet before you get your vaccine.
+      You can find the manufacturer’s Patient Information Leaflet on **[HSE](www.hse.ie/covid19vaccinePIL)** and it is strongly recommended that you read this leaflet.
+      You can also talk to a healthcare professional in advance. If you decide to get the vaccine, you will give your informed consent which will be recorded.
+    buttons:
+    - title: Who is my vaccinator
+      payload: /covid_vaccine_11
+    - title: Does the vaccine give me covid
+      payload: /covid_vaccine_12
+  utter_covid_vaccine_3:
+  - text: |-
+       * Yes. You should not get the COVID-19 vaccine Nuvaxovid if:
+       * you have had a severe allergic reaction to any of the ingredients in the vaccine –including polysorbate 80.
+       * you have had a severe allergic reaction to a previous dose of the vaccine.
+       * Talk to your Doctor before getting the COVID-19 vaccine if you:
+       * have had a severe allergic reaction – anaphylaxis – in the past, including to any other vaccine or medication.
+  utter_covid_vaccine_4:
+  - text: |-
+       * For people who have never had any COVID-19 vaccines You need 2 doses of this vaccine, 21 days apart.
+       * For people who have not completed their first round of COVID-19 vaccines:
+       * If you have not completed your first round of COVID-19 vaccines, – ie you have only had one dose of Pfizer, Moderna or Astrazenca COVID-19 vaccines– you can get Nuvaxovid for your second dose 28 days later.
+
+       * People can choose this option because it has been advised by the National Immunisation Advisory Committee – NIAC – in Ireland. It is not yet approved – licensed – by the European Medicines Agency – EMA. At the moment, the EMA has only approved the use of two doses of the same vaccine for your first round of vaccinations.
+    buttons:
+    - title: Should I have an additional dose if I have a weak immune system
+      payload: /covid_vaccine_5
+    - title: What do you think of getting a booster
+      payload: /covid_vaccine_6
+  utter_covid_vaccine_5:
+  - text: |-
+      People who have their first round of COVID-19 vaccines with an mRNA – Pfizer or Moderna – or viral vector vaccine – Astrazeneca or Janssen:
+       * If you had a weak immune system at the time of your first round of COVID-19 vaccination, you should have been offered an additional dose of mRNA vaccines to give you better protection.
+    buttons:
+    - title: mRNA vaccine
+      payload: /covid_vaccine_27
+  utter_covid_vaccine_27:
+  - text: mRNA vaccines – Pfizer or Moderna – are the recommended vaccines for additional doses. However, some people may not be able to get an mRNA vaccine –e.g. they have had a severe allergic reaction– or have chosen not to get one.
+  utter_covid_vaccine_6:
+  - text: |-
+      * People who have their first round of COVID-19 vaccines with an mRNA – Pfizer or Moderna – or viral vector vaccine – Astrazeneca or Janssen:
+       * You should get a booster dose because the protection you get from your initial course of vaccination may weaken with time.
+       * You should get a booster dose at least 5 months after finishing a course of COVID-19 vaccines.
+    buttons:
+    - title: Who is my vaccinator?
+      payload: /covid_vaccine_11
+    - title: Does the vaccine give me covid?
+      payload: /covid_vaccine_12
+  utter_covid_vaccine_7:
+  - text: |-
+      * Getting a COVID-19 vaccine should reduce your risk of getting COVID-19 and protect you from serious complications of the illness.
+       * Our aim in offering the vaccine to the population is to protect people and reduce the illness and deaths caused by this virus.
+    buttons:
+    - title: Do I need to get the vaccine if I had covid?
+      payload: /covid_vaccine_8
+    - title: Can I get a vaccine if I have covid now?
+      payload: /covid_vaccine_9
+    - title: Can I get two vaccines at the same time?
+      payload: /covid_vaccine_10
+  utter_covid_vaccine_8:
+  - text: |-
+      Yes. Even if you have already had COVID-19, you could still get it again.
+      The vaccine will reduce your risk of getting COVID-19 again. Even if you do get COVID-19 again, the vaccine can reduce the seriousness of your symptoms.
+    buttons:
+    - title: Can I get the vaccine if I have a high temperature?
+      payload: /covid_vaccine_13
+    - title: Can I get the covid vaccine if I am pregnant?
+      payload: /covid_vaccine_14
+  utter_covid_vaccine_9:
+  - text: |-
+      * You should delay getting vaccinated until you recover from COVID-19. From the time you test positive –or symptoms started– you should wait:
+       * 4 weeks if you are due to get your first round – first or second dose – of COVID-19 vaccination
+       * 3 months if you are due to get a booster dose or additional dose – if you have a weak immune system.
+    buttons:
+    - title: How long will the vaccine work?
+      payload: /covid_vaccine_20
+    - title: Does the vaccine work in everyone?
+      payload: /covid_vaccine_21
+  utter_covid_vaccine_10:
+  - text: You can get the Nuvaxovid vaccine at the same time as the flu vaccine. However, you should leave at least two weeks between this vaccine and any other vaccine.
+  utter_covid_vaccine_11:
+  - text: Your vaccinator is the person who gives you your vaccine. They are trained by the HSE to give COVID-19 vaccines.
+  utter_covid_vaccine_12:
+  - text: |-
+      No. The COVID-19 vaccine cannot give you COVID-19. It is possible to have caught COVID-19 before getting your vaccine and not realise you have the symptoms until after your vaccination appointment.
+      If you have any symptoms of COVID-19, or if you have a fever which starts more than 2 days after your vaccine, or lasts longer than 2 days, self-isolate – stay in your room – and visit www.hse.ie/covid19 for advice.
+  utter_covid_vaccine_13:
+  - text: You should delay getting the vaccine if you have a fever – temperature of 38 degrees Celsius or above, until you feel better.
+  utter_covid_vaccine_14:
+  - text: Most pregnant women who get the virus – and are not vaccinated – get mild to moderate symptoms. They give birth as planned and the risk of passing on COVID-19 to their baby is low. However, you are more likely to get very unwell and need treatment in intensive care than a woman who is not pregnant. The virus may also cause complications for your baby like premature delivery, miscarriage or stillbirth. You can get this vaccine if you are breastfeeding or trying to get pregnant.
+    buttons:
+    - title: Recommended vaccines for pregnant women
+      payload: /covid_vaccine_29
+    - title: more vaccine information for pregnant women
+      payload: /covid_vaccine_28
+  utter_covid_vaccine_28:
+  - text: Studies have shown no serious side effects so far.However, if you are pregnant and have been advised by your doctor that you cannot receive an mRNA vaccine or you do not wish to have an mRNA vaccine, Nuvaxovid can be considered after a discussion with a healthcare professional – such as a doctor, midwife or vaccinator – about the risks and benefits for you. We have less information on the use of this vaccine in pregnant women. You can read more at **[HSE](www.hse.ie/covid19vaccine)**.
+  utter_covid_vaccine_29:
+  - text: 'For pregnant women, mRNA COVID-19 vaccines – Pfizer and Moderna – are the recommended vaccine and can be given at any stage of pregnancy. Millions of pregnant women have received the mRNA COVID-19 vaccines worldwide. '
+  utter_covid_vaccine_15:
+  - text: |-
+      The HSE only uses vaccines when they meet the required standards of safety and effectiveness. While the work to develop COVID-19 vaccines has moved much faster than usual, the vaccine we are offering you has gone through all the usual steps needed to develop and approve a safe and effective vaccine.
+      Studies on people who got a booster dose haven’t shown any serious side effects but we have less information on the safety of the booster and additional doses of this vaccine.
+    buttons:
+    - title: More information for vaccine safety
+      payload: /covid_vaccine_29
+  utter_covid_vaccine_30:
+  - text: |-
+      * In order to be approved for use, the COVID-19 vaccine went through all the clinical trials and safety checks all other licensed medicines go through, following international standards of safety. The vaccine we are offering you is called Nuvaxovid, manufactured by Novavax.It has:
+       * been tested with thousands of people as part of clinical trials * met strict standards of safety, quality and effectiveness, and been approved and licensed by regulators. For Ireland, the regulator is the European Medicines Agency – EMA – visit **[EMA](www.ema.europa.eu)** for more information.
+  utter_covid_vaccine_16:
+  - text: The COVID-19 vaccine is given as an injection into your upper arm. It will only take a few minutes.
+  utter_covid_vaccine_17:
+  - text: |-
+      * Like all medicines, vaccines can cause side effects. Most of these are mild to moderate, short-term, and not everyone gets them. More than 1 in 10 people will have these very common side effects:
+       * Feeling tired
+       * Feeling generally unwell
+       * Headache
+       * Nausea or Vomiting
+       * Muscle pain
+       * Joint pain
+       * Tenderness or Pain in your arm where you have had the vaccine injection
+       * Fever – Temperature of 38 degrees Celsius or above
+       * Chills
+       * Pain in extremities
+       * Redness or swelling where the vaccine was given.
+    buttons:
+    - title: Uncommon side effects of the vaccine
+      payload: /covid_vaccine_31
+    - title: More information for vaccine side effects
+      payload: /covid_vaccine_28
+  utter_covid_vaccine_31:
+  - text: |-
+      uncommon side effects of the vaccine Up to 1 in 100 people will have these uncommon side effects:
+       * swelling of the lymph glands
+       * high blood pressure lasting for a few days after vaccination
+       * a rash
+       * redness of the skin
+       * generalised itchiness
+       * itchiness where the vaccine was given
+       * hives
+
+  utter_covid_vaccine_32:
+  - text: |-
+      Some side effects are seen more often after the second dose. Serious side effects, like a severe allergic reaction, are extremely rare with COVID-19 vaccines in general. Your vaccinator is trained to treat very rare serious allergic reactions. The COVID-19 vaccine has gone through the same clinical trials and safety checks as all other licensed vaccines, however the vaccine is new and long-term side effect information is limited.
+      As more people in Ireland and around the world get this vaccine, more information on side effects may become available. The HSE will update this information regularly on our website, and if necessary, will update the information leaflets given to people at their vaccination.
+  utter_covid_vaccine_18:
+  - text: Some people who got the vaccine that you got today may get some of the side effects listed above. Most of these are mild to moderate and short-lived.
+  utter_covid_vaccine_19:
+  - text: |-
+      It’s quite common to develop a fever after a vaccination. Usually, this happens within 2 days – 48 hours – of getting the vaccine, and it goes away within 2 days. You are more likely to get a fever after your second dose of the vaccine.
+      If you feel uncomfortable, take paracetamol or ibuprofen as directed on the box or leaflet. However if your fever lasts more than 48 hours or if you are still concerned, please seek medical advice. Do not take ibuprofen if you are pregnant.
+  utter_covid_vaccine_20:
+  - text: |-
+      After having both doses of the COVID-19 vaccine, most people will have immunity. This means they will be protected against serious illness with COVID-19.
+      It takes 7 days after getting the second dose for it to work. There is a chance you might still get COVID-19, even if you have the vaccine.
+    buttons:
+    - title: How long does the Nuvaxovid vaccine last
+      payload: /covid_vaccine_23
+    - title: Is the vaccine effective for children
+      payload: /covid_vaccine_24
+  utter_covid_vaccine_21:
+  - text: |-
+      Worldwide, vaccines save at least 2 to three million lives each year, and protect many more from lifelong illnesses. Billions of people worldwide have now received COVID-19 vaccines.
+      There’s strong, reliable evidence that COVID-19 vaccines greatly reduce your risk of getting COVID-19. They’re highly effective at preventing deaths and serious illness with COVID-19.
+      If you have a weakened immune system, there is no extra risk in taking the vaccine, but it may not work as well for you.
+  utter_covid_vaccine_22:
+  - text: |-
+      * We do not know yet if having the vaccine stops you spreading the COVID-19 virus to others.
+       * You should continue to follow the current public health advice for vaccinated individuals to stop the spread of the virus.
+       * Thank you for protecting yourself and others.
+  utter_covid_vaccine_23:
+  - text: |-
+      We do not know yet how long immunity will last after your first round of vaccines with Nuvaxovid or as a booster – if you got a different COVID-19 vaccine for your first round.
+       Clinical trials are ongoing to find this out.
+  utter_covid_vaccine_24:
+  - text: |-
+      The clinical trial for the Comirnaty – Pfizer/BioNTech – vaccine
+       showed that it was highly effective at preventing COVID-19 in
+       children this age.
+    buttons:
+    - title: Is the vaccine safe for children
+      payload: /covid_vaccine_25
+    - title: Recommended vaccines for pregnant women
+      payload: /covid_vaccine_29
+  utter_covid_vaccine_25:
+  - text: |-
+      The National Immunisation Advisory Committee recommends
+       that children aged five to 11 years old be offered this COVID-19
+       vaccine.
+  utter_covid_vaccine_26:
+  - text: |-
+      To get your first round of COVID-19 vaccination, you must be age 5 or older.
+       To book online, you need a:
+       * mobile phone number
+       * email address
+       * PPS number
+       * Eircode
+
+       You can also go to a walk-in vaccination clinic without an appointment.
+  utter_covid_diabetes_1:
+  - text: There is not enough data to show whether people with diabetes are more likely to get COVID-19 than the general population. The problem people with diabetes face is they are more likely to have worse complications if they get it, not greater chance of getting the virus. Also, the more health conditions someone has (for example, diabetes plus heart disease), adds to their risk of getting those serious complications from COVID-19. .
+    buttons:
+    - title: Do people with diabetes have serious complications from COVID-19?
+      payload: /covid_diabetes_2
+    - title: Do persons with type 1 and type 2 diabetes meet different risks?
+      payload: /covid_diabetes_3
+  utter_covid_diabetes_2:
+  - text: |-
+      People with diabetes are more likely to have serious complications from COVID-19. In general, people with diabetes are more likely to have more severe symptoms and complications when infected with any virus. Your risk of getting very sick from COVID-19 is likely to be lower if your diabetes is well-managed.
+      Having heart disease or other complications in addition to diabetes could worsen the chance of getting seriously ill from COVID-19, like other viral infections, because more than one condition makes it harder for your body to fight the infection.
+    buttons:
+    - title: Do persons with type 1 and type 2 diabetes meet different risks?
+      payload: /covid_diabetes_3
+  utter_covid_diabetes_3:
+  - text: |-
+      Based on what the CDC is reporting at this time, people with type 1 or gestational diabetes might be at an increased risk for severe illness from COVID-19. important to remember that people with either type of diabetes can vary in their age, complications they’ve developedand how well they have been able to manage their diabetes.
+      People who already have diabetes-related health problems are likely to have worse outcomes if they contract COVID-19 than people with diabetes who are otherwise healthy, whichever type of diabetes they have.
+    buttons:
+    - title: Is the risk of type 1 and type 2 diabetes the same?
+      payload: /covid_diabetes_12
+    - title: Does COVID-19 cause diabetes?
+      payload: /covid_diabetes_4
+  utter_covid_diabetes_4:
+  - text: Several studies have suggested that adults face an increased risk of diabetes diagnosis after contracting COVID-19. Youth younger than 18 years old with COVID-19 were shown to be at higher risk of developing diabetes more than 30 days after their COVID-19 infection.
+    buttons:
+    - title: Can covid patients who are diabetic bring their own blood glucose monitors?
+      payload: /covid_diabetes_8
+    - title: How covid effect people with diabetes?
+      payload: /covid_diabetes_10
+  utter_covid_diabetes_5:
+  - text: |-
+      * If you fell like you are developing symptoms, call your doctor.
+       * When you call:
+       * Have your glucose reading available
+       * Have your ketone reading available
+       * Keep track of your fluid consumption (you can use a 1-liter water bottle) and report
+       * Be clear on your symptoms (for example: are you nauseated? Just a stuffy nose?)
+       * Ask your GP questions on how to manage your diabetes
+    buttons:
+    - title: what should diabetics do if they have covid?
+      payload: /covid_diabetes_6
+    - title: What should diabetics do at home to avoid the spread of covid?
+      payload: /covid_diabetes_7
+  utter_covid_diabetes_6:
+  - text: |-
+       * If you develop emergency warning signs for COVID-19 get medical attention immediately. In adults, emergency warning signs include:
+       * Difficulty breathing or shortness of breath
+       * Persistent pain or pressure in the chest
+       * New confusion
+       * Inability to wake or stay awake
+       * Bluish lips or face
+  utter_covid_diabetes_7:
+  - text: |-
+      For people with underlying health conditions, including diabetes, healthy family members in the household should take steps as if they were a significant risk to them.
+      * For example, they should be sure to:
+      * Cover their nose and mouth with a mask any time they have to leave the home.
+      * Wash their hands frequently, especially before feeding or caring for the vulnerable person.
+      * Stay at least 6 feet from people who don live in their household.
+    buttons:
+    - title: Does COVID-19 cause diabetes?
+      payload: /covid_diabetes_4
+  utter_covid_diabetes_8:
+  - text: Yes. Self-management of diabetes by a patient using their own devices, even in a hospital setting, is consistent with device labeling.
+    buttons:
+    - title: Should i stop taking certain blood pressure medication to lower my risk of covid?
+      payload: /covid_diabetes_9
+  utter_covid_diabetes_9:
+  - text: |-
+      Blood pressure control is an essential part of managing (hypertension, heart and kidney diseases and) diabetes. In addition, certain blood pressure lowering medications are often recommended for people living with diabetes to protect them from kidney and heart-related complications, even in the absence of high blood pressure.
+      At the present time, there is no confirmed scientific link between these blood pressure medications and the risk of COVID-19 infection or its complications. Please do NOT stop or change any of your medications without discussing with your GP.
+  utter_covid_diabetes_10:
+  - text: |-
+      Coronaviruses can cause more severe symptoms and complications in people with diabetes, as well as in older people and those with other long-term conditions, such as cancer or chronic lung disease. Everyone with diabetes, including those with type 1 and type 2, is more at risk of severe complications if they get coronavirus, but the way it affects you can vary depending on what type of diabetes you have.
+
+      you are more at risk of having serious blood sugar highs and lows, as well as longer-term problems with your eyes, feet and other areas of your body.
+      For most people, coronavirus is a mild illness, but some people develop a more serious form of the virus, and could die.
+  utter_covid_diabetes_11:
+  - text: |-
+      It is important that people with diabetes follow the sick day rules should they become ill from any illness. If you routinely check your blood sugar at home, you'll probably need to do it more often at least every four hours, including during the night.
+      If your blood sugar is persistently high or low, or if you have symptoms of a hyper (hyperglycaemia) contact your GP practice or diabetes team by phone who will help you if you have any queries or if you are unsure about what to do regarding your diabetes.
+  utter_covid_diabetes_12:
+  - text: |-
+      In general, the American Diabetes Association does not know of any reason to think COVID-19 will pose a difference in risk between type 1 and type 2 diabetes. More important is that people with either type of diabetes vary in their age, complications and how well they have been managing their diabetes.
+      People who already have diabetes-related health problems are likely to have worse outcomes if they contract COVID-19 than people with diabetes who are otherwise healthy, whichever type of diabetes they have.
+    buttons:
+    - title: Advice for people with diabetes to protect themselves?
+      payload: /covid_diabetes_11
+  utter_covid_cancer_1:
+  - text: |-
+      Yes. The majority of people receiving cancer treatment can have the COVID-19 vaccine. Only patients with a history of serious allergic reaction (anaphylaxis) to a COVID-19 vaccine or any of its ingredients should not receive the COVID-19 vaccine.
+      If you have a low platelet count or you are currently fighting a severe infection, your healthcare team may advise you when the best time to receive the vaccine is.
+    buttons:
+    - title: More Information for high risk groups
+      payload: /covid_risk_3
+    - title: Will I need an additional dose of a COVID-19 vaccine, if i have a cancer?
+      payload: /covid_cancer_4
+    - title: Is there a higher risk of side effects for people who are having chemotherapy or radiotherapy?
+      payload: /covid_cancer_5
+  utter_covid_cancer_2:
+  - text: Patients with a history of serious allergic reaction (anaphylaxis) to a COVID-19 vaccine or any of its ingredients should not receive the COVID-19 vaccine. The Pfizer/BioNTech and Moderna vaccines do not contain any latex, animal products or egg proteins and are not contraindicated in egg allergy
+  utter_covid_cancer_3:
+  - text: Yes. It is recommended that you get the COVID-19 vaccine as soon as possible. It is advisable to discuss the timing of vaccination with your surgeon.
+  utter_covid_cancer_4:
+  - text: |-
+       * You are likely to be invited for an additional dose if any of the following apply to you:
+       * you were treated with chemotherapy, targeted therapy, monoclonal antibodies or immunotherapies in the past 12 months
+       * you are being treated for a blood cancer, or your type of blood cancer may have  affected your response to the vaccine
+       * you have advanced or metastatic cancer
+       * you are listed for a haematopoietic stem cell transplant (HSCT), underwent a HSCT in the past 12 months, or are on immunosuppressant therapy for Graft-versus-Host disease
+       * you were treated with radiotherapy since March 2021
+       * If you have had COVID-19 since your last dose of COVID-19 vaccine, then your additional dose should be delayed for 3 months after you got sick.
+    buttons:
+    - title: Can patients with cancer on clinical trials receive the COVID-19 vaccine?
+      payload: /covid_cancer_6
+  utter_covid_cancer_5:
+  - text: Most of the known side effects of the COVID-19 vaccine are mild to moderate and usually resolve within a few days after vaccination. There have not been any reports of higher incidence of side effects in patients with cancer.
+    buttons:
+    - title: if my antibody test shows the low antibody level, do I need an additional vaccine dose?
+      payload: /covid_cancer_7
+  utter_covid_cancer_6:
+  - text: Yes, patients should avail of the COVID-19 vaccine as soon as it is offered to them. Your healthcare team will advise on the timing of vaccination in relation to the clinical trial.
+    buttons:
+    - title: My cancer surgery is coming up soon. Should I take the COVID-19 vaccine?
+      payload: /covid_cancer_3
+    - title: I have cancer, are there any risks associated with the COVID-19 vaccine?
+      payload: /covid_cancer_2
+  utter_covid_cancer_7:
+  - text: No. Those who are recommended to receive an additional dose are identified based on clinical diagnosis or treatment history, rather than antibody test results. There is no agreed or recommended antibody level above which indicates a person is protected.
+    buttons:
+    - title: Can patients with cancer on clinical trials receive the COVID-19 vaccine?
+      payload: /covid_cancer_6
+    - title: Will I need an additional dose of a COVID-19 vaccine, if i have a cancer?
+      payload: /covid_cancer_4
+
+  utter_covid_immunodeficiency_1:
+  - text: Yes. COVID-19 vaccines that are approved for use in Australia and New Zealand are
+      safe for people with primary or secondary immunodeficiencies.
+
+      People with certain pre-existing medical conditions have been identified as priority
+      groups for COVID-19 vaccines. This includes people with immunodeficiencies,
+      who are immunocompromised and are therefore at greater risk of any infections.
+    buttons:
+    - title: Do immunodeficiency treatments need to be stopped to have a COVID-19 vaccine?
+      payload: /covid_immunodeficiency_2
+    - title: Are people with immunodeficiency more likely to catch COVID-19?
+      payload: /covid_immunodeficiency_4
+  utter_covid_immunodeficiency_2:
+  - text: It is important that regular treatments for immunodeficiencies are continued, because
+      stopping these treatments can place people with these conditions at greater risk from COVID-19.
+
+      Vaccination should occur on a different day (if possible) from regular infusion
+      treatments, such as immunoglobulin (Ig) or immunosuppressant infusions.
+
+      People on regular treatments should talk to their specialist about the best time
+      to have a COVID-19 vaccine.
+    buttons:
+    - title: What are the benefits of getting a vaccine for people with immunodeficiency?
+      payload: /covid_immunodeficiency_8
+
+  utter_covid_immunodeficiency_3:
+  - text:
+      Precautions they take to prevent infections are consistent with the actions listed
+      below, and they should follow the usual advice from their physician.
+
+      People with immunodeficiencies who receive monthly immunoglobulin replacement therapy
+      infusions in hospitals still need to receive their treatment. Hospital infection control policies
+      are in place with extra precautions to isolate patients with, or at risk of getting COVID-19. If an infection
+      is suspected at the time of infusion, promptly contact the treating team for advice.
+    buttons:
+    - title: Would covid cause immunocompromised persons' immune systems to go into overdrive?
+      payload: /covid_immunodeficiency_5
+
+  utter_covid_immunodeficiency_4:
+  - text: No the risks are the same as for the general population.
+    buttons:
+    - title: What are the benefits of getting a vaccine for people with immunodeficiency?
+      payload: /covid_immunodeficiency_8
+
+  utter_covid_immunodeficiency_5:
+  - text: Immune deficiency is a misnomer much of the time.  Most of the inborn errors of immunity
+      including COVID are disorders of immune regulation and many are associated with
+      hyper inflammation outside of COVID.
+
+      Some patients with primary immunodeficiency (PID) may experience severe COVID
+      because they cannot clear the virus, whilst others may have inflammatory complications.
+      Hyperinflammation is seen in people with previously immune systems so it would not be surprising
+      to see this also in a subset of patients with primary immunodeficiency (PID) as
+      a consequence of COVID-19 infection.
+    buttons:
+    - title: Are people with immunodeficiency more likely to catch COVID-19?
+      payload: /covid_immunodeficiency_4
+
+  utter_covid_immunodeficiency_6:
+  - text: Both the Pfizer/BioNTech and Oxford-AstraZeneca coronavirus vaccine in clinical trials,
+      have been found to be safe and offer good protection. However, we do not yet know
+      how effective these vaccines might be for people with immunodeficiency.
+    buttons:
+    - title: Have any of the vaccine trials involved people with immunodeficiency?
+      payload: /covid_immunodeficiency_7
+
+  utter_covid_immunodeficiency_7:
+  - text: We do not know precisely the mix of people who have taken part in the clinical trials
+      but patients who are immunocompromised would not be eligible to take part in a vaccine
+      trial in the way that they are conventionally set up.
+    buttons:
+    - title: Are COVID-19 vaccines safe for people with immunodeficiency?
+      payload: /covid_immunodeficiency_1
+
+  utter_covid_immunodeficiency_8:
+  - text: Wider benefits include the likely development of robust herd immunity, protecting
+      immunodeficiency patients by reducing the amount of virus circulating in the community.  It
+      will also mean reliable antibody levels in plasma donors and this will be reflected
+      in replacement IVIG/SCIG therapies after about 6 months or so after the vaccine
+      is widely taken up.
+
+  utter_covid_kidney_1:
+  - text: There is no information about the safety of the vaccine specific to people with
+      kidney disease or who are on dialysis. However, the vaccine clinical trials included
+      participants who have other health problems, such as diabetes, high blood pressure,
+      heart disease, liver disease, lung disease, asthma and HIV. The results of the clinical
+      trials showed that the vaccine is safe for people who have these health problems.
+      Talk with your doctor to know if the COVID-19 vaccine is safe for you.
+    buttons:
+    - title: Should rare kidney disease patients get the COVID-19 vaccine?
+      payload: /covid_kidney_5
+
+  utter_covid_kidney_2:
+  - text: Since COVID-19 is a new disease, there is limited information regarding risk factors
+      for severe illness. Clinical expertise suggests that older adults and anyone with
+      serious underlying medical conditions might be at higher risk for severe illness
+      from COVID-19. This includes people living with kidney disease or end stage renal
+      disease and on dialysis.
+    buttons:
+    - title: Should I continue my dialysis treatment and care team appointments?
+      payload: /covid_kidney_3
+
+  utter_covid_kidney_3:
+  - text: Yes. While dialysis and care team appointments may look a little different during
+        this time, it is important that you continue your treatment as directed by your doctor or care team.
+    buttons:
+    - title: will the covid vaccine effect kidney disease treatments and medications?
+      payload: /covid_kidney_6
+
+  utter_covid_kidney_4:
+  - text: There is no evidence to suggest the COVID-19 vaccine will directly affect your kidneys.
+      The COVID-19 vaccine trains your immune system to fight against any future COVID-19
+      infection. Vaccines train your immune system to fight disease.
+    buttons:
+    - title: Should family members of kidney and transplant patients wait to get vaccinated?
+      payload: /covid_kidney_7
+    - title: Should people with End Stage Kidney Disease (ESKD) get the vaccine?
+      payload: /covid_kidney_8
+
+  utter_covid_kidney_5:
+  - text: If you have chronic kidney disease at any stage or have received an organ transplant,
+      you are at an increased risk for complications from the COVID-19 virus. As with
+      any vaccine, you have the choice to receive the COVID-19 vaccine. We strongly encourage
+      you to have a conversation with your doctor to decide if the vaccine is right for
+      you and your condition.
+
+
+  utter_covid_kidney_6:
+  - text: Generally, vaccines do not have interactions with medications. However, many kidney
+      disease patients are taking immunosuppressants, which cause your body to have a
+      weakened or suppressed immune system. It is best to discuss the COVID-19 vaccine
+      and all of your medications, including over the counter and herbal supplements,
+      with your doctor to determine what is best for you
+
+  utter_covid_kidney_7:
+  - text: People with underlying medical conditions, such as kidney disease, are likely to
+      be given access to the vaccine prior to healthy individuals.
+      Family members who get the vaccine will help protect the medically vulnerable people (people who have
+      weakened or suppressed immune systems and transplant patients) in the household.
+
+      We encourage you to have a discussion with your doctor about the COVID-19 vaccine
+      and if it is right for you and/or your family
+    buttons:
+    - title: Are people with Chronic Kidney Disease at higher risk of complications?
+      payload: /covid_kidney_2
+
+  utter_covid_kidney_8:
+  - text: Chronic kidney disease, regardless of stage, is considered a high-risk medical condition.
+      People with this diagnosis will have priority access to getting the vaccine before
+      healthy individuals of the same age. Please talk to your doctor about whether the
+      COVID-19 vaccine is right for you.
+    buttons:
+    - title: Are people with Chronic Kidney Disease at higher risk of complications?
+      payload: /covid_kidney_2
+
+  utter_covid_lung_disease_1:
+  - text: Having a chronic lung disease means that you can be more likely to get severely ill
+      and have complications from COVID-19.
+    buttons:
+    - title: Should I get vaccinated if I have lung disease?
+      payload: /covid_lung_disease_2
+    - title: What should lung disease patients do If they have symptoms of COVID-19?
+      payload: /covid_lung_disease_3
+
+  utter_covid_lung_disease_2:
+  - text: When a COVID-19 vaccine is available to you, we encourage you to utilize this safe
+        and effective tool to prevent severe illness from occurring. Don not forget
+        your flu and pneumonia vaccinations either!
+    buttons:
+    - title: Do lung disease patients more likely to get covid?
+      payload: /covid_lung_disease_5
+  utter_covid_lung_disease_3:
+  - text: If you have symptoms of COVID-19, it is important to get tested. There are new
+        treatments available that may reduce your risk of severe illness from COVID-19,
+         but you need to start them quickly. Speak with your doctor about your options.
+    buttons:
+    - title: Should I get vaccinated if I have lung disease?
+      payload: /covid_lung_disease_2
+
+  utter_covid_lung_disease_4:
+  - text: Whether you take oral or inhaled medication, it is important to continue your
+          regimen as prescribed.If you use a nebulizer to take your medication at home,
+          it is safe to continue doing so.
+
+          However, if you have suspected or diagnosed
+          COVID-19, speak with your healthcare provider about additional precautions to
+          take when using your nebulizer.
+
+  utter_covid_lung_disease_5:
+  - text: |-
+         No, the infection can be caught by anyone. However, people with underlying
+         lung conditions might be more likely to show symptoms of the infection or to have
+         a more severe infection than others.
+
+         So far, most people that get COVID-19 have a mild viral illness, but some people
+         develop a chest infection/pneumonia. The severity of COVID-19 infection can be
+         greater if you have an underlying lung condition and so you should make every
+         effort to avoid becoming infected.
+    buttons:
+    - title: Should i Keep taking my prescribed medications if i have suspected covid?
+      payload: /covid_lung_disease_4
+
+  utter_covid_lung_disease_6:
+  - text: Follow the advice from your country health authorities this will be slightly different
+      in each country depending on how many cases there are in your country.
+      If you have a lung condition, the following are important.
+
+      * Avoid contact with anyone who is sick.
+
+      * Ask sick friends or relatives not to visit you and keep distance of at least 2 metres
+      from others.
+
+      * Do not touch your mouth, nose or eyes with unwashed hands unless unavoidable.
+
+      * Wash your hands thoroughly after touching surfaces that may be contaminated.
+
+      * Wash your hands with warm water and soap for 20 seconds.
+
+      * Make sure you take all of your regular medications and keep up with your usual treatments
+      to keep your lungs as healthy as possible.
+
+    buttons:
+    - title: Should I get vaccinated if I have lung disease?
+      payload: /covid_lung_disease_2
+  utter_covid_lung_disease_7:
+  - text: It is very important not to make any changes to your treatment while the COVID-19
+      pandemic is ongoing, unless your doctor advises you to. Your treatments help to
+      keep your lungs healthy and any changes to your treatment that have not been recommended
+      by a healthcare professional could put you at higher risk of a flare-up of your
+      lung condition.
+
+      The health service in many countries is likely to be overwhelmed
+      over the coming months and so keeping everyone as healthy as possible is key to
+      reducing the burden on doctors and hospitals. Please take all of your medications exactly as prescribed.
+    buttons:
+    - title: Do lung disease patients more likely to get covid?
+      payload: /covid_lung_disease_5
+  utter_covid_lung_disease_8:
+  - text: You should follow the same advice as for anyone else in your country. In most countries
+      this means that you should self-isolate, meaning you do not go out (isolation periods
+      vary from 10-14 days across Europe) and you should get a test if this is available
+      in your region. The others in your household will also have to isolate until they
+      have completed an isolation period which is often 14 days.
+
+      Take paracetamol for any fever and keep up with the usual treatments for your lung
+      condition. Drink plenty of fluids as the fever can dehydrate you.
+
+      If the symptoms worsen or are not improving, you can get advice from your healthcare
+      professional. This works differently in different countries.
+    buttons:
+    - title: Are there additional measures for lung disease people to avoid getting covid?
+      payload: /covid_lung_disease_6
+    - title: Can I increase my normal dosage of treatments to protect myself from COVID-19?
+      payload: /covid_lung_disease_7
+
+  utter_covid_old_people_1:
+  - text:  |-
+           * stay at home as much as possibles \n
+           * limit contact with other people \n
+           * keep your distance if you do go out (stay two metres apart) \n
+           * wash your hands well and often \n
+           * work from home if you can \n
+           * Do not leave home if you or anyone in your household has symptoms. If you have symptoms
+             you should book a free test.
+    buttons:
+    - title: COVID-19 Community Helpline for old people
+      payload: /covid_old_people_2
+    - title: How can old people manage their health?
+      payload: /covid_old_people_4
+
+  utter_covid_old_people_2:
+  - text: |-
+         * A freephone helpline to help those in vulnerable groups to access information, advice
+         and support in relation to COVID-19 is open 9.00 am to 5.00pm, seven days a week.
+         The helpline is local to Northern Ireland, and is managed by Advice NI.
+         * Freephone number: 0808 802 0020
+         * Email: covid19@adviceni.net
+    buttons:
+    - title: Are old people at high risk of getting COVID-19
+      payload: /covid_old_people_5
+
+  utter_covid_old_people_3:
+  - text: If you or your loved one learn that you might have been exposed to someone diagnosed
+         with COVID-19 or if anyone in your household develops symptoms such as cough,
+         fever or shortness of breath, call your family doctor, nurse helpline or urgent
+          care facility.
+
+         For a medical emergency such as severe shortness of breath
+          or high fever, call 911.
+    buttons:
+    - title: Are old people at high risk of getting COVID-19
+      payload: /covid_old_people_5
+
+  utter_covid_old_people_4:
+  - text: Older people and those with other health conditions, particularly hypertension,
+      diabetes and heart disease, are more likely to become more seriously ill with COVID-19.
+      It is important that you take care of your general health, including any specific
+      conditions you already have.
+
+      If you have any existing conditions, it is particularly important to do everything
+      you can to reduce your risk of getting COVID-19, for example, washing your hands,
+      avoiding large gatherings of people, and staying away from anyone who is ill.
+    buttons:
+    - title: What if elderly use hydroxychloroquine on a regular basis but can't obtain a refill since it's being used for COVID-19?
+      payload: /covid_old_people_7
+  utter_covid_old_people_5:
+  - text:  Those who are most at risk are those who are not socially distancing or who are unable
+      to socially distance. Conditions that put people at risk of having severe illness
+      when they get COVID-19 include heart disease, diabetes, high blood pressure, lung
+      disease, and chronic kidney disease.
+
+      A higher proportion of hospitalized COVID-19 patients are above 70 years old,
+      however, there are new studies showing that how healthy the individual is matters
+      more than their actual age when it comes to how severe their illness is.
+    buttons:
+    - title: Does aspirin make COVID-19 worse?
+      payload: /covid_old_people_6
+
+  utter_covid_old_people_6:
+  - text: Currently, there is no evidence that taking aspirin or ibuprofen can lead to a more
+      severe infection with COVID-19. If you are taking aspirin, it is important to continue
+      taking as directed and to talk with your healthcare provider if you have any further
+      questions. Only your healthcare provider should be making changes to your medications.
+    buttons:
+    - title: What should old people do if they have dental issues?
+      payload: /covid_old_people_8
+
+  utter_covid_old_people_7:
+  - text: Unfortunately, hydroxychloroquine has been touted as a treatment for COVID-19 despite
+      the lack of scientific evidence. It is an antimalarial drug that is also commonly
+      used to treat a wide range of autoimmune diseases. If you take this medication regularly
+      and are concerned about running out, contact your primary medical provider to discuss
+      your concerns.
+    buttons:
+    - title: What should old people do if they have dental issues?
+      payload: /covid_old_people_8
+
+  utter_covid_old_people_8:
+  - text: Dental settings have unique characteristics that warrant additional infection control.
+      Postpone elective procedures, surgeries, and non-urgent dental visits. For emergency
+      dental work, dental providers must follow the CDC guidelines for providing dental
+      care. Please confirm with your dentist if their facility is able to follow the CDC
+      guidelines.
+
+  utter_covid_pregnancy_1:
+   - text: Yes. Pregnant women can receive COVID-19 vaccines. COVID-19 vaccines offer strong
+      protection against severe illness from COVID-19.
+
+      Increasing evidence on the safety and effectiveness of COVID-19 vaccination
+      during pregnancy suggests that the benefits of vaccination during pregnancy outweigh
+      potential risks whenever there is ongoing or anticipated community transmission
+      of the virus.
+
+      COVID-19 vaccination before or during pregnancy is especially important
+      in settings with moderate to high community transmission or for women at higher
+      individual risk of exposure or severe illness.
+     buttons:
+     - title: Can women who are trying to become pregnant receive COVID-19 vaccines?
+       payload: /covid_pregnancy_4
+     - title: Are COVID-19 vaccines during pregnancy effective?
+       payload: /covid_pregnancy_3
+
+  utter_covid_pregnancy_2:
+   - text: Numerous studies indicate that pregnant women with COVID-19 are more likely to develop
+       severe illness compared with non-pregnant women. This means that pregnant women with COVID-19
+       are more likely to require hospitalization, intensive care and invasive ventilation to help with breathing.
+
+       In addition, compared with pregnant women without COVID-19, pregnant women with COVID-19 have an increased risk of preterm
+       birth and of having babies that need neonatal intensive care. They might also have an increased risk of stillbirth and maternal
+       death.
+     buttons:
+     - title: Are side effects from the Johnson & Johnson (Janssen) vaccine during pregnancy?
+       payload: /covid_pregnancy_5
+     - title: Will the COVID-19 vaccine benefit my kid if I choose to get vaccinated during my pregnancy?
+       payload: /covid_pregnancy_6
+     - title: Will the vaccine affect menstrual periods?
+       payload: /covid_pregnancy_8
+
+  utter_covid_pregnancy_3:
+   - text: COVID-19 vaccines have been found to be highly effective in preventing severe illness,
+      hospitalization and death from COVID-19. Based on experience with other vaccines
+      used during pregnancy, all of the WHO EUL-approved COVID-19 vaccines are expected
+      to work as well in pregnant women as in nonpregnant people.
+
+      In addition, studies have shown that pregnant women who get COVID-19 vaccines develop
+      antibodies that are present in babies umbilical cord blood. This suggests
+      that babies may receive protective benefits from the vaccine, in addition to the
+      benefits for pregnant women.
+     buttons:
+     - title: How does COVID-19 affect pregnant women and their babies?
+       payload: /covid_pregnancy_2
+
+  utter_covid_pregnancy_4:
+   - text: Yes. Getting vaccinated beforehand is an important way for women to protect themselves
+      and their babies from COVID-19 during pregnancy. People who are trying to conceive
+      can receive COVID-19 vaccines.
+
+      In clinical trials of COVID-19 vaccines, and in a large prospective study of couples
+      trying to conceive, rates of becoming pregnant were the same for those receiving
+      COVID-19 vaccines and those not receiving the vaccines .
+
+      WHO does not recommend delaying pregnancy or terminating pregnancy because of COVID-19
+      vaccination, and no pregnancy testing is needed prior to vaccination.
+
+
+  utter_covid_pregnancy_5:
+   - text: There have been very rare reports of a type of blood clot called cerebral venous
+      sinus thrombosis among patients that have received the Johnson & Johnson vaccine.
+      Though very rare, the risk of certain blood clots appears to be highest in women
+      aged 18.
+
+      At this time, although the chance of blood clots occurring as a result of this vaccine
+      is very low, the FDA and CDC have stated that the mRNA vaccines are the preferred
+      vaccine.
+
+      Individuals who have been vaccinated with the Johnson & Johnson vaccine
+      within the last 21 days who experience severe headache, abdominal pain, leg pain,
+      or shortness of breath should seek immediate evaluation.
+
+  utter_covid_pregnancy_6:
+   - text: Yes! Recent studies on pregnant people who received the COVID-19 vaccine during
+      pregnancy demonstrate that immunity is passed to the baby. This immunity may offer
+      protection against COVID-19 to your baby.
+
+  utter_covid_pregnancy_7:
+   - text: The COVID-19 vaccines are currently being offered to breastfeeding individuals. The
+      COVID-19 vaccines are not believed to be a risk for breastfed infants of mothers
+      who were vaccinated as any vaccine component that makes it into the breast milk
+      is likely to be quickly inactivated when the milk is digested by the baby.
+
+
+      In addition, recent studies demonstrate that your COVID-19 immunity can pass to
+      the baby through the breast milk after you receive the vaccine. The Academy of Breastfeeding
+      Medicine recommends that all breastfeeding individuals get a COVID-19 vaccine.
+     buttons:
+     - title: Will getting vaccinated affect my chance of getting pregnant in the future?
+       payload: /covid_pregnancy_9
+     - title: Do I need a booster prior to pregnancy?
+       payload: /covid_pregnancy_10
+
+  utter_covid_pregnancy_8:
+   - text: Stress, changes in weight and exercise, and other major lifestyle changes can affect
+      periods. All of those changes are common during the COVID-19 pandemic. Studies have
+      also shown that some women who had COVID-19 experienced changes in the duration
+      and flow of their menstrual cycles.
+
+      Recently, some people have reported changes in their period after receiving the
+      COVID-19 vaccine. People have reported changes in duration, flow, and symptoms such
+      as pain. The NIH is funding studies to better understand these changes.
+
+      This does not mean there is any link to miscarriages. There is now data from many
+      women who have been vaccinated which suggests there is not an increased risk of
+      pregnancy loss.
+
+  utter_covid_pregnancy_9:
+   - text: Studies of mating animals have demonstrated no evidence that COVID vaccines affect
+      fertility. Follow-up data from vaccinated individuals of reproductive age as well
+      as studies on patients before and after vaccination do not show any evidence that
+      the COVID-19 vaccines cause fertility problems (problems trying to get pregnant)
+      in women or men.
+     buttons:
+     - title: How does COVID-19 affect pregnant women and their babies?
+       payload: /covid_pregnancy_2
+  utter_covid_pregnancy_10:
+   - text: The CDC recommends that everyone ages 18 years and older receive a booster.
+
+           The booster dose has been shown to provide stronger protection against severe
+           illness from the COVID variants. This additional immunity will help protect you
+          and your baby.
+actions:
+- action_covid_other_1
+- action_covid_question_type
+- action_covid_symptom_1
+- action_covid_symptom_11
+- action_covid_symptom_2
+- action_covid_test_1
+- action_covid_test_2
+- action_covid_test_5
+- action_default_ask_affirmation
+- action_default_fallback
+- action_greeting
+- action_set_profile
+- utter_anything_else
+- utter_continue
+- utter_covid_diabetes_1
+- utter_covid_diabetes_11
+- utter_covid_diabetes_12
+- utter_covid_diabetes_3
+- utter_covid_lung_disease_1
+- utter_goodbye
+- validate_make_profile_form
+forms:
+  make_profile_form:
+    required_slots:
+      name:
+      - entity: name
+        type: from_entity
+      gender:
+      - entity: gender
+        type: from_entity
+      age:
+      - entity: age
+        type: from_entity
+      condition:
+      - entity: condition
+        type: from_entity

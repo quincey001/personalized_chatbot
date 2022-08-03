@@ -1,0 +1,193 @@
+version: "2.0"
+
+stories:
+  
+- story: covid cancer 1
+  steps:
+  - intent: covid_cancer_1
+  - action: utter_covid_cancer_1
+    
+- story: covid cancer 2
+  steps:
+  - intent: covid_cancer_2
+  - action: utter_covid_cancer_2
+    
+- story: covid cancer 3
+  steps:
+  - intent: covid_cancer_3
+  - action: utter_covid_cancer_3
+    
+- story: covid cancer 4
+  steps:
+  - intent: covid_cancer_4
+  - action: utter_covid_cancer_4
+    
+- story: covid cancer 5
+  steps:
+  - intent: covid_cancer_5
+  - action: utter_covid_cancer_5
+    
+- story: covid cancer 6
+  steps:
+  - intent: covid_cancer_6
+  - action: utter_covid_cancer_6
+    
+- story: covid cancer 7
+  steps:
+  - intent: covid_cancer_7
+  - action: utter_covid_cancer_7
+    
+- story: covid cancer 11
+  steps:
+  - intent: covid_cancer_1
+  - action: utter_covid_cancer_1
+  - intent: covid_cancer_4
+  - action: utter_covid_cancer_4
+  - intent: covid_cancer_6
+  - action: utter_covid_cancer_6
+  - intent: covid_cancer_3
+  - action: utter_covid_cancer_3
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid cancer 22
+  steps:
+  - intent: covid_cancer_1
+  - action: utter_covid_cancer_1
+  - intent: covid_cancer_4
+  - action: utter_covid_cancer_4
+  - intent: covid_cancer_6
+  - action: utter_covid_cancer_6
+  - intent: covid_cancer_2
+  - action: utter_covid_cancer_2
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid cancer 12
+  steps:
+  - intent: covid_cancer_1
+  - action: utter_covid_cancer_1
+  - intent: covid_risk_3
+  - action: utter_covid_risk_3
+
+- story: covid cancer 13
+  steps:
+  - intent: covid_cancer_1
+  - action: utter_covid_cancer_1
+  - intent: covid_cancer_5
+  - action: utter_covid_cancer_5
+  - intent: covid_cancer_7
+  - action: utter_covid_cancer_7
+  - intent: covid_cancer_6
+  - action: utter_covid_cancer_6
+  - intent: covid_cancer_2
+  - action: utter_covid_cancer_2
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid cancer 14
+  steps:
+  - intent: covid_cancer_1
+  - action: utter_covid_cancer_1
+  - intent: covid_cancer_5
+  - action: utter_covid_cancer_5
+  - intent: covid_cancer_7
+  - action: utter_covid_cancer_7
+  - intent: covid_cancer_6
+  - action: utter_covid_cancer_6
+  - intent: covid_cancer_3
+  - action: utter_covid_cancer_3
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid cancer 15
+  steps:
+  - intent: covid_cancer_1
+  - action: utter_covid_cancer_1
+  - intent: covid_cancer_5
+  - action: utter_covid_cancer_5
+  - intent: covid_cancer_7
+  - action: utter_covid_cancer_7
+  - intent: covid_cancer_4
+  - action: utter_covid_cancer_4
+  - intent: covid_cancer_6
+  - action: utter_covid_cancer_6
+  - intent: covid_cancer_3
+  - action: utter_covid_cancer_3
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid cancer 16
+  steps:
+  - intent: covid_cancer_1
+  - action: utter_covid_cancer_1
+  - intent: covid_cancer_5
+  - action: utter_covid_cancer_5
+  - intent: covid_cancer_7
+  - action: utter_covid_cancer_7
+  - intent: covid_cancer_4
+  - action: utter_covid_cancer_4
+  - intent: covid_cancer_6
+  - action: utter_covid_cancer_6
+  - intent: covid_cancer_2
+  - action: utter_covid_cancer_2
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid cancer 17
+  steps:
+  - intent: covid_cancer_7
+  - action: utter_covid_cancer_7
+  - intent: covid_cancer_4
+  - action: utter_covid_cancer_4
+  - intent: covid_cancer_6
+  - action: utter_covid_cancer_6
+  - intent: covid_cancer_3
+  - action: utter_covid_cancer_3
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid cancer 18
+  steps:
+  - intent: covid_cancer_7
+  - action: utter_covid_cancer_7
+  - intent: covid_cancer_4
+  - action: utter_covid_cancer_4
+  - intent: covid_cancer_6
+  - action: utter_covid_cancer_6
+  - intent: covid_cancer_2
+  - action: utter_covid_cancer_2
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid cancer 19
+  steps:
+  - intent: covid_cancer_7
+  - action: utter_covid_cancer_7
+  - intent: covid_cancer_6
+  - action: utter_covid_cancer_6
+  - intent: covid_cancer_2
+  - action: utter_covid_cancer_2
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid cancer 19
+  steps:
+  - intent: covid_cancer_7
+  - action: utter_covid_cancer_7
+  - intent: covid_cancer_6
+  - action: utter_covid_cancer_6
+  - intent: covid_cancer_3
+  - action: utter_covid_cancer_3
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye

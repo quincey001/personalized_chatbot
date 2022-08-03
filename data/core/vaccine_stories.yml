@@ -1,0 +1,246 @@
+version: "2.0"
+
+stories:
+
+- story: covid vaccine story 1
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_1
+  - action: utter_covid_vaccine_1
+  - intent: covid_vaccine_2
+  - action: utter_covid_vaccine_2
+  - intent: covid_vaccine_11
+  - action: utter_covid_vaccine_11
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 2
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_1
+  - action: utter_covid_vaccine_1
+  - intent: covid_vaccine_2
+  - action: utter_covid_vaccine_2
+  - intent: covid_vaccine_12
+  - action: utter_covid_vaccine_12
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 3
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_1
+  - action: utter_covid_vaccine_1
+  - intent: covid_vaccine_3
+  - action: utter_covid_vaccine_3
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 4
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_4
+  - action: utter_covid_vaccine_4
+  - intent: covid_vaccine_5
+  - action: utter_covid_vaccine_5
+  - intent: covid_vaccine_27
+  - action: utter_covid_vaccine_27
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 5
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_4
+  - action: utter_covid_vaccine_4
+  - intent: covid_vaccine_6
+  - action: utter_covid_vaccine_6
+  - intent: covid_vaccine_11
+  - action: utter_covid_vaccine_11
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 6
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_4
+  - action: utter_covid_vaccine_4
+  - intent: covid_vaccine_6
+  - action: utter_covid_vaccine_6
+  - intent: covid_vaccine_12
+  - action: utter_covid_vaccine_12
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 7
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_7
+  - action: utter_covid_vaccine_7
+  - intent: covid_vaccine_8
+  - action: utter_covid_vaccine_8
+  - intent: covid_vaccine_13
+  - action: utter_covid_vaccine_13
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 8
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_7
+  - action: utter_covid_vaccine_7
+  - intent: covid_vaccine_8
+  - action: utter_covid_vaccine_8
+  - intent: covid_vaccine_14
+  - action: utter_covid_vaccine_14
+  - intent: covid_vaccine_28
+  - action: utter_covid_vaccine_28
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: covid vaccine story 9
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_7
+  - action: utter_covid_vaccine_7
+  - intent: covid_vaccine_8
+  - action: utter_covid_vaccine_8
+  - intent: covid_vaccine_14
+  - action: utter_covid_vaccine_14
+  - intent: covid_vaccine_29
+  - action: utter_covid_vaccine_29
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 10
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_7
+  - action: utter_covid_vaccine_7
+  - intent: covid_vaccine_9
+  - action: utter_covid_vaccine_9
+  - intent: covid_vaccine_20
+  - action: utter_covid_vaccine_20
+  - intent: covid_vaccine_23
+  - action: utter_covid_vaccine_23
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 11
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_7
+  - action: utter_covid_vaccine_7
+  - intent: covid_vaccine_9
+  - action: utter_covid_vaccine_9
+  - intent: covid_vaccine_20
+  - action: utter_covid_vaccine_20
+  - intent: covid_vaccine_24
+  - action: utter_covid_vaccine_24
+  - intent: covid_vaccine_25
+  - action: utter_covid_vaccine_25
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 12
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_7
+  - action: utter_covid_vaccine_7
+  - intent: covid_vaccine_9
+  - action: utter_covid_vaccine_9
+  - intent: covid_vaccine_20
+  - action: utter_covid_vaccine_20
+  - intent: covid_vaccine_24
+  - action: utter_covid_vaccine_24
+  - intent: covid_vaccine_29
+  - action: utter_covid_vaccine_29
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 13
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_7
+  - action: utter_covid_vaccine_7
+  - intent: covid_vaccine_9
+  - action: utter_covid_vaccine_9
+  - intent: covid_vaccine_21
+  - action: utter_covid_vaccine_21
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 14
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_7
+  - action: utter_covid_vaccine_7
+  - intent: covid_vaccine_10
+  - action: utter_covid_vaccine_10
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 15
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_15
+  - action: utter_covid_vaccine_15
+  - intent: covid_vaccine_29
+  - action: utter_covid_vaccine_29
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 16
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_17
+  - action: utter_covid_vaccine_17
+  - intent: covid_vaccine_28
+  - action: utter_covid_vaccine_28
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid vaccine story 17
+  steps:
+  - intent: ask_covid_question_type
+  - action: action_covid_question_type
+  - intent: covid_vaccine_17
+  - action: utter_covid_vaccine_17
+  - intent: covid_vaccine_31
+  - action: utter_covid_vaccine_31
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye

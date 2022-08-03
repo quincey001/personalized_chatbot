@@ -1,0 +1,126 @@
+version: "2.0"
+
+nlu:
+- intent: covid_pregnancy_1
+  examples: |
+    - Can pregnant women receive COVID-19 vaccines?
+    - can pregnant people receive COVID-19 vaccines?
+    - can i get a covid vaccine, if i am pregnant
+    - if i am pregnant, can i get a covid vaccine
+    - Can pregnant women be vaccinated against COVID-19?
+    - Can pregnant women take COVID-19 vaccines?
+    - Can pregnant women receive COVID-19 vaccines?
+    - Can pregnant women get COVID vaccines?
+    - can i receive COVID vaccine if i am pregnant
+    - Can pregnant women be vaccinated against COVID?
+    - Can pregnant women take COVID vaccines?
+    - Can pregnant women receive COVID vaccines?
+    - Can pregnant women get COVID vaccines?
+    - can i receive COVID vaccine if i am pregnant
+    - Can pregnant mom be vaccinated against COVID?
+    - Can pregnant mom take COVID vaccines?
+    - Can pregnant mom receive COVID vaccines?
+    - Can pregnant mom get COVID vaccines?
+
+- intent: covid_pregnancy_2
+  examples: |
+    - How does COVID-19 affect pregnant women and their babies?
+    - What is the impact of COVID-19 on pregnant mothers and their babies?
+    - How does covid affect pregnant women and their babies?
+    - What is the impact of covid on pregnant mothers and their babies?
+    - How does covid impact pregnant women and their babies?
+    - How does COVID-19 influence pregnant mothers and their babies?
+    - What are the effects of COVID-19 on pregnant mothers and their babies?
+    - What are the effects of covid on pregnant woman and their babies?
+    - What are the effects of COVID-19 on pregnant mother and infant?
+    - i am pregnant, does the covid affect me and my baby?
+
+- intent: covid_pregnancy_3
+  examples: |
+    - Are COVID-19 vaccines during pregnancy effective?
+    - Are COVID-19 vaccinations effective during pregnancy?
+    - Are covid vaccines during pregnancy effective?
+    - Are covid vaccinations effective during pregnancy?
+    - does covid vaccine effective for pregnant woman
+    - does coivd vaccine effective for pregnant mom
+    - is the covid vaccine effective to pregnant people
+
+
+- intent: covid_pregnancy_4
+  examples: |
+    - Can women who are trying to become pregnant receive COVID-19 vaccines?
+    - Can women who are attempting to conceive be given COVID-19 vaccines?
+    - Can women who are trying to conceive be given COVID-19 vaccines?
+    - can i get a vaccine if i am trying to become pregnant
+    - can i receive COVID-19 vaccine if i am attempting to get pregnant
+    - can i get a covid vaccine if i am attempting to become pregnant
+    - Can women who are attempting to conceive be taken COVID-19 vaccines?
+    - Can women who are trying to become pregnant receive covid vaccines?
+    - Can women who are attempting to conceive be given covid vaccines?
+
+
+- intent: covid_pregnancy_5
+  examples: |
+    - Are there concerns about serious side effects from the Johnson & Johnson (Janssen) vaccine during pregnancy?
+    - Are there any worries about the Johnson & Johnson (Janssen) vaccination causing major adverse effects during pregnancy?
+    - are there serious side effects from the Johnson & Johnson (Janssen) vaccine during pregnancy?
+    - side effects from the Johnson & Johnson (Janssen) vaccine during pregnancy?
+    - Is there any danger from the Johnson & Johnson (Janssen) vaccination during pregnancy?
+    - Are there any major adverse effects from the Johnson & Johnson (Janssen) vaccination during pregnancy?
+    - Are there any major adverse effects from the Johnson & Johnson (Janssen) vaccine during pregnancy?
+    - Is the Johnson & Johnson (Janssen) vaccination safe to use during pregnancy?
+    - Is the Johnson & Johnson (Janssen) vaccination safe to pregnant women?
+
+- intent: covid_pregnancy_6
+  examples: |
+    - Will the COVID-19 vaccine benefit my kid if I choose to get vaccinated during my pregnancy?
+    - If I decide to get vaccinated during pregnancy, will this vaccine also protect my baby from COVID-19?
+    - If the vaccine can protect my baby during pregnancy
+    - Can the COVID-19 vaccine benefit my kid if I choose to get vaccinated during my pregnancy?
+    - Does the COVID-19 vaccine benefit my kid if I choose to get vaccinated during my pregnancy?
+    - Does the COVID-19 vaccine protect my kid if I choose to get vaccinated during my pregnancy?
+
+
+- intent: covid_pregnancy_7
+  examples: |
+    - I am breastfeeding. Should I get vaccinated?
+    - I'm breastfeeding. Should I be vaccinated?
+    - can i get vaccinated if i am breastfeeding
+    - can i get a vaccine if i am breastfeeding
+    - is safe to get vaccine if i am breastfeeding
+    - should i have a vaccine if i am breastfeeding
+    - i want to know should i get a vaccine if i am breastfeeding
+
+
+- intent: covid_pregnancy_8
+  examples: |
+    - Will the vaccine affect menstrual periods?
+    - Will the vaccination have an effect on menstruation?
+    - will the vaccine effect my menstrual periods?
+    - Will the vaccine have an effect on menstruation?
+    - Will the vaccine have an impact on menstruation?
+    - Does the vaccine have an impact on menstruation?
+    - Does the vaccine have an effect on menstruation?
+    - Will the vaccination have an impact on menstrual periods?
+
+- intent: covid_pregnancy_9
+  examples: |
+    - Will getting vaccinated affect my chance of getting pregnant in the future?
+    - Will getting vaccinated influence my future chances of becoming pregnant?
+    - Will getting vaccinated influence my future chances of getting pregnant?
+    - Will getting vaccinated affect my future chances of becoming pregnant?
+    - Will getting vaccinated affect my future chances of being pregnant?
+    - Does getting vaccinated affect my future chances of being pregnant?
+    - Does getting vaccinated affect my future chances of becoming pregnant?
+    - Will getting vaccinated influence my chances of becoming pregnant in the future?
+
+- intent: covid_pregnancy_10
+  examples: |
+    - If I have completed my primary vaccine series, do I need a booster prior to pregnancy, during pregnancy, or while breast feeding?
+    - do I need a booster prior to pregnancy, during pregnancy, or while breast feeding
+    - do I need a booster prior to pregnancy
+    - do I need a booster during pregnancy, or while breast feeding
+    - do I need a booster while breast feeding
+    - i want to know if I need a booster prior to pregnancy
+    - i want to know if I need a booster during pregnancy, or while breast feeding
+    - i want to know if I need a booster while breast feeding

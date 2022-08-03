@@ -1,0 +1,114 @@
+version: "2.0"
+
+stories:
+  
+- story: covid immune 1
+  steps:
+  - intent: covid_immunodeficiency_1
+  - action: utter_covid_immunodeficiency_1
+    
+- story: covid immune 2
+  steps:
+  - intent: covid_immunodeficiency_2
+  - action: utter_covid_immunodeficiency_2
+    
+- story: covid immune 3
+  steps:
+  - intent: covid_immunodeficiency_3
+  - action: utter_covid_immunodeficiency_3
+    
+- story: covid immune 4
+  steps:
+  - intent: covid_immunodeficiency_4
+  - action: utter_covid_immunodeficiency_4
+    
+- story: covid immune 5
+  steps:
+  - intent: covid_immunodeficiency_5
+  - action: utter_covid_immunodeficiency_5
+    
+- story: covid immune 6
+  steps:
+  - intent: covid_immunodeficiency_6
+  - action: utter_covid_immunodeficiency_6
+    
+- story: covid immune 7
+  steps:
+  - intent: covid_immunodeficiency_7
+  - action: utter_covid_immunodeficiency_7
+    
+- story: covid immune 8
+  steps:
+  - intent: covid_immunodeficiency_8
+  - action: utter_covid_immunodeficiency_8
+    
+    
+- story: covid immune 11
+  steps:
+  - intent: covid_immunodeficiency_1
+  - action: utter_covid_immunodeficiency_1
+  - intent: covid_immunodeficiency_2
+  - action: utter_covid_immunodeficiency_2
+  - intent: covid_immunodeficiency_8
+  - action: utter_covid_immunodeficiency_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid immune 12
+  steps:
+  - intent: covid_immunodeficiency_1
+  - action: utter_covid_immunodeficiency_1
+  - intent: covid_immunodeficiency_4
+  - action: utter_covid_immunodeficiency_4
+  - intent: covid_immunodeficiency_8
+  - action: utter_covid_immunodeficiency_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid immune 13
+  steps:
+  - intent: covid_immunodeficiency_3
+  - action: utter_covid_immunodeficiency_3
+  - intent: covid_immunodeficiency_5
+  - action: utter_covid_immunodeficiency_5
+  - intent: covid_immunodeficiency_4
+  - action: utter_covid_immunodeficiency_4
+  - intent: covid_immunodeficiency_8
+  - action: utter_covid_immunodeficiency_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid immune 14
+  steps:
+  - intent: covid_immunodeficiency_6
+  - action: utter_covid_immunodeficiency_6
+  - intent: covid_immunodeficiency_7
+  - action: utter_covid_immunodeficiency_7
+  - intent: covid_immunodeficiency_1
+  - action: utter_covid_immunodeficiency_1
+  - intent: covid_immunodeficiency_4
+  - action: utter_covid_immunodeficiency_4
+  - intent: covid_immunodeficiency_8
+  - action: utter_covid_immunodeficiency_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: covid immune 15
+  steps:
+  - intent: covid_immunodeficiency_6
+  - action: utter_covid_immunodeficiency_6
+  - intent: covid_immunodeficiency_7
+  - action: utter_covid_immunodeficiency_7
+  - intent: covid_immunodeficiency_1
+  - action: utter_covid_immunodeficiency_1
+  - intent: covid_immunodeficiency_2
+  - action: utter_covid_immunodeficiency_2
+  - intent: covid_immunodeficiency_8
+  - action: utter_covid_immunodeficiency_8
+  - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye

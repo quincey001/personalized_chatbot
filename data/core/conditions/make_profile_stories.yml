@@ -1,0 +1,29 @@
+version: "2.0"
+
+stories:
+- story: profile_story_1
+  steps:
+  - intent: greet
+  - action: action_greeting
+  - action: make_profile_form
+  - active_loop: make_profile_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set:
+    - name: naomi
+  - slot_was_set:
+    - requested_slot: gender
+  - slot_was_set:
+    - gender: female
+  - slot_was_set:
+    - requested_slot: age
+  - slot_was_set:
+    - age: 34
+  - slot_was_set:
+    - gender: female
+  - slot_was_set:
+      - requested_slot: condition
+  - slot_was_set:
+      - condition: cancer
+  - active_loop: null
+  - action: action_set_profile
