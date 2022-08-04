@@ -158,6 +158,22 @@ nlu:
     - set my gender as [male](gender)
     - set [female](gender)
     - set [male](gender)
+- lookup: gender
+  examples: |
+    - female
+    - male
+- synonym: female
+  examples: |
+    - Female
+    - Femalee
+    - femalee
+    - feamale
+    - FEMALE
+- synonym: male
+  examples: |
+    - Male
+    - malee
+    - MALE
 
 - intent: make_age_request
   examples: |
@@ -204,22 +220,41 @@ nlu:
     - diabetes
     - bad diabetes
     - diabetes disease
+    - Diabetes
+    - Bad Diabetes
+    - DIABETES
+    - Dibetes Disease
+    - diabetes treatment
+    - Diabetes Treatment
 
 - synonym: kidney disease
   examples: |
     - kidney
     - chronic kidney disease
     - Kidney
+    - Kidney disease
+    - Kidney Disease
+    - KIDNEY DISEASE
+    - KIDNEY
 - synonym: immunodeficiency
   examples: |
     - immunodeficiency syndrome
     - severe combined immunodeficiency syndrome
     - combined immunodeficiency syndrome
+    - Immunodeficiency
+    - Immunodeficiency Syndrome
+    - Severe Immunodeficiency
 - synonym: cancer
   examples: |
     - cancer treatment
     - Cancer
+    - CANCER
+    - Cancer treatment
+    - Canceer
 - synonym: lung disease
   examples: |
     - lung problems
     - lung issue
+    - Lung Disease
+    - LUNG DISEASE
+    - LUNG
