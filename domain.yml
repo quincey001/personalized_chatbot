@@ -247,11 +247,19 @@ responses:
        * None (Don't have any health condition)
   utter_set_profile:
   - text: |-
-      ^_^ Your profile is set up to use:
+      ^_^ Your profile is set up to use: 🚀🚀
        * Name: {name}
        * Gender: {gender}
        * Age: {age}
        * Health Condition: {condition}.
+  utter_set_name:
+  - text: Your name {name} was set up 🎉🎉💗.
+  utter_set_gender:
+  - text: Your gender {gender} was set up 🎉🎉💗.
+  utter_set_age:
+  - text: Your age was set up as {age} 🎉🎉💗.
+  utter_set_condition:
+  - text: Your health condition is {condition} 🎉🎉💗.
   utter_covid_test_1:
   - text: |-
       There are 2 types of free COVID-19 tests available online from the HSE:

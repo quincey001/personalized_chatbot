@@ -50,7 +50,7 @@ class ValidateProfileForm(FormValidationAction):
             msg = "Sorry🤗, This name is not in our database. Please select the name in the list: \n"
             dispatcher.utter_message(text=msg + GetRandomName().name_recom)
             return {"name": None}
-
+        dispatcher.utter_message(response="utter_set_name", name=user_name)
         return {"name": user_name}
     def validate_gender(
             self,
@@ -66,7 +66,7 @@ class ValidateProfileForm(FormValidationAction):
             msg = "Sorry🤗, Please type female or male as your fictitious gender"
             dispatcher.utter_message(text=msg)
             return {"gender": None}
-        dispatcher.utter_message(text="your gender ")
+        dispatcher.utter_message(response="utter_set_gender", gender=user_gender)
         return {"gender": user_gender}
 
     def validate_age(
@@ -86,6 +86,7 @@ class ValidateProfileForm(FormValidationAction):
             msg = "Sorry🤗, Please type age over 18"
             dispatcher.utter_message(text=msg)
             return {"age": None}
+        dispatcher.utter_message(response="utter_set_age", age=user_age)
         return {"age": user_age}
 
     def validate_condition(
@@ -101,7 +102,7 @@ class ValidateProfileForm(FormValidationAction):
             msg = "Sorry🤗, Please choose the condition in the list"
             dispatcher.utter_message(text=msg)
             return {"condition": None}
-
+        dispatcher.utter_message(response="utter_set_condition", condition=user_condition)
         return {"condition": user_condition}
 
 
