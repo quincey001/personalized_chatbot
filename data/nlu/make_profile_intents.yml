@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: make_name_request
   examples: |
@@ -57,26 +56,50 @@ nlu:
     - can i choose [Maya](name)
     - can i choose [Robert](name)
     - can i choose [Andrew](name)
-- lookup: name
+- intent: make_gender_request
   examples: |
-    - Victoria
-    - Hannah
-    - Addison
-    - Paul
-    - Leah
-    - Lucy
-    - Steven
-    - Eliana
-    - Ivy
-    - Everly
-    - Lillian
-    - John
-    - Paisley
-    - Elena
-    - Naomi
-    - Maya
-    - Robert
-    - Andrew
+    - [female](gender)
+    - [male](gender)
+    - i want to choose [female](gender)
+    - i want to choose [male](gender)
+    - i want to use [female](gender)
+    - i want to use [male](gender)
+    - choose [male](gender)
+    - choose [female](gender)
+    - i prefer [female](gender)
+    - i prefer [male](gender)
+    - my preference is [female](gender)
+    - my preference is [male](gender)
+    - set my gender as [female](gender)
+    - set my gender as [male](gender)
+    - set [female](gender)
+    - set [male](gender)
+- intent: make_age_request
+  examples: |
+    - my age is [20](age)
+    - i am [20](age)
+    - [20](age)
+    - I want to choose [48](age) as for my age
+    - set my age as [48](age)
+- intent: make_condition_request
+  examples: |
+    - i have [diabetes](condition)
+    - i have [kidney disease](condition)
+    - i have [immunodeficiency](condition)
+    - i have [cancer](condition)
+    - i have [lung disease](condition)
+    - i have [diabetes](condition) health condition
+    - i have [kidney disease](condition) health condition
+    - i have [immunodeficiency](condition) health condition
+    - i have [cancer](condition) health condition
+    - i have [lung disease](condition) health condition
+    - i have [none](condition) health condition
+    - [diabetes](condition)
+    - [kidney disease](condition)
+    - [immunodeficiency](condition)
+    - [cancer](condition)
+    - [lung disease](condition)
+    - [none](condition)
 - synonym: Victoria
   examples: |
     - victoria
@@ -139,29 +162,6 @@ nlu:
 - synonym: Andrew
   examples: |
     - andrew
-
-- intent: make_gender_request
-  examples: |
-    - [female](gender)
-    - [male](gender)
-    - i want to choose [female](gender)
-    - i want to choose [male](gender)
-    - i want to use [female](gender)
-    - i want to use [male](gender)
-    - choose [male](gender)
-    - choose [female](gender)
-    - i prefer [female](gender)
-    - i prefer [male](gender)
-    - my preference is [female](gender)
-    - my preference is [male](gender)
-    - set my gender as [female](gender)
-    - set my gender as [male](gender)
-    - set [female](gender)
-    - set [male](gender)
-- lookup: gender
-  examples: |
-    - female
-    - male
 - synonym: female
   examples: |
     - Female
@@ -174,50 +174,8 @@ nlu:
     - Male
     - malee
     - MALE
-
-- intent: make_age_request
-  examples: |
-    - my age is [20](age)
-    - i am [20](age)
-    - [20](age)
-    - I want to choose [48](age) as for my age
-    - set my age as [48](age)
-
-- regex: age
-  examples: |
-    - \d{1,3}
-
-- intent: make_condition_request
-  examples: |
-    - i have [diabetes](condition)
-    - i have [kidney disease](condition)
-    - i have [immunodeficiency](condition)
-    - i have [cancer](condition)
-    - i have [lung disease](condition)
-    - i have [diabetes](condition) health condition
-    - i have [kidney disease](condition) health condition
-    - i have [immunodeficiency](condition) health condition
-    - i have [cancer](condition) health condition
-    - i have [lung disease](condition) health condition
-    - i have [none](condition) health condition
-    - [diabetes](condition)
-    - [kidney disease](condition)
-    - [immunodeficiency](condition)
-    - [cancer](condition)
-    - [lung disease](condition)
-    - [none](condition)
-
-- lookup: condition
-  examples: |
-    - diabetes
-    - kidney disease
-    - immunodeficiency
-    - cancer
-    - lung disease
-    - none
 - synonym: diabetes
   examples: |
-    - diabetes
     - bad diabetes
     - diabetes disease
     - Diabetes
@@ -226,7 +184,6 @@ nlu:
     - Dibetes Disease
     - diabetes treatment
     - Diabetes Treatment
-
 - synonym: kidney disease
   examples: |
     - kidney
@@ -258,3 +215,38 @@ nlu:
     - Lung Disease
     - LUNG DISEASE
     - LUNG
+- regex: age
+  examples: |
+    - \d{1,3}
+- lookup: name
+  examples: |
+    - Victoria
+    - Hannah
+    - Addison
+    - Paul
+    - Leah
+    - Lucy
+    - Steven
+    - Eliana
+    - Ivy
+    - Everly
+    - Lillian
+    - John
+    - Paisley
+    - Elena
+    - Naomi
+    - Maya
+    - Robert
+    - Andrew
+- lookup: gender
+  examples: |
+    - female
+    - male
+- lookup: condition
+  examples: |
+    - diabetes
+    - kidney disease
+    - immunodeficiency
+    - cancer
+    - lung disease
+    - none
