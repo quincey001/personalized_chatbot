@@ -258,3 +258,7 @@ nlu:
     - Lung Disease
     - LUNG DISEASE
     - LUNG
+- synonym: none
+  examples: |
+    - None
+    - non
