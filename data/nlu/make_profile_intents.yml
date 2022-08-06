@@ -185,7 +185,7 @@ nlu:
 
 - regex: age
   examples: |
-    - \d{1,2}
+    - \d{1,3}
 
 - intent: make_condition_request
   examples: |
